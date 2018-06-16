@@ -1,0 +1,19 @@
+# 605 - Manych
+
+# County Title
+title = c_manych
+
+# Settlements
+max_settlements = 4
+b_mozdok = tribal
+b_makhmudmekteb = temple
+
+#b_nartkala = castle
+#b_malgobekbalka = castle
+#b_karabulak = castle
+#b_kunay = city
+#b_makhach = castle
+
+culture = avar
+religion = tengri_mani
+1066.1.1 = { }

@@ -1,0 +1,1576 @@
+decisions = {
+
+	hold_a_epic_tournament  = {
+		only_independent = yes
+		is_high_prio = yes
+		potential = {
+			is_playable = yes
+			NOT = {
+				trait = incapable
+			}
+			NOR = {
+				has_character_modifier = epic_tournament
+				has_character_flag = epic_tournament
+			}
+			NOR = {
+				culture = bedouin_arabic
+				culture = levantine_arabic
+				culture = andalusian_arabic
+				culture = egyptian_arabic
+				culture = maghreb_arabic
+				culture = sabaean
+				religion_group = tengri_group
+				religion = norse_pagan
+				religion = norse_war
+				religion = ragnarok
+				religion = sowilo
+				religion_group = finnish_group
+				religion_group = baltic_group
+				religion_group = slavic_group
+				religion_group = indian_group
+				religion_group = mani_group
+				religion_group = mand_group
+			}
+			independent = yes
+			NOT = { is_nomadic = yes }
+			OR = {
+				is_female = no
+				gender_equality_trigger = yes
+			}
+			OR = {
+				tier = king
+				tier = emperor 
+			}
+			location = {
+				owner = { character = ROOT }
+			}
+		}
+		allow = {
+			war = no
+			prisoner = no
+			in_command = no
+			is_inaccessible_trigger = no
+			age = 16
+			prestige = 500
+			wealth = 200
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			add_character_modifier = {
+				name = epic_tournament
+				years = 100
+				hidden = yes
+			}
+			set_character_flag = do_not_disturb
+			clr_character_flag = tournament_has_ended
+			hidden_tooltip = { character_event = { id = 70999 days = 300 } } # Safety catch flag clearing
+			wealth = -200
+			prestige = 100
+			character_event = { id = 70033 tooltip = "tournament_invite" }
+			hidden_tooltip = {
+				clr_character_flag = tournament_has_ended
+			}
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						wealth = 1000
+						scaled_wealth = 3.0
+					}
+				}
+			}
+		}
+	}
+	
+	buy_indulgence_for_sins = {
+		only_playable = yes
+		potential = {
+			is_playable = yes
+			religion = catholic
+			age = 16
+			demesne_size = 1
+			NOT = { has_character_flag = ask_for_indulgence }
+		}
+		allow = {
+			scaled_wealth = 1.0
+			wealth = 25
+			is_heretic = no
+		}
+		effect = {
+			set_character_flag = ask_for_indulgence
+			rightful_religious_head_scope = {
+				character_event = { id = 39250 days = 5 random = 12 tooltip = "indulgence_ask" }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { scaled_wealth = 10.0 }
+					piety = 0
+				}
+			}
+		}
+	}
+
+	issue_declaration_of_repentance = {
+		only_playable = yes
+		potential = {
+			is_playable = yes
+			religion = catholic
+			age = 16
+			demesne_size = 1
+			NOT = { has_character_flag = ask_for_repentance }
+			rightful_religious_head_scope = {
+				ROOT = {
+					excommunicated_for = PREV
+				}
+			}
+		}
+		allow = {
+			scaled_wealth = 2.0
+			is_heretic = no
+		}
+		effect = {
+			set_character_flag = ask_for_repentance
+			rightful_religious_head_scope = {
+				character_event = { id = 39252 days = 5 random = 12 tooltip = "repentance_ask" }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 10.0
+				}
+			}
+		}
+	}
+	
+	demand_liege_title = {
+		only_playable = yes
+		is_high_prio = yes
+		potential = {
+			ai = no
+			is_playable = yes
+			has_ambition = obj_gain_any_title
+			liege = {
+				NOT = { character = ROOT }
+			}
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		allow = {
+			prestige = 60
+			liege = {
+				has_regent = no
+				NOT = { has_opinion_modifier = { who = ROOT modifier = requested_land } }
+				demesne_size = 3
+				any_demesne_title = {
+					can_be_given_away = yes
+					tier = COUNT
+					NOT = { location = { is_capital = yes } }
+				}
+			}
+		}
+		effect = {
+			prestige = -60
+			liege = {
+				opinion = {
+					who = ROOT
+					years = 2
+					modifier = requested_land
+				}
+				random_demesne_title = {
+					limit = {
+						can_be_given_away = yes
+						tier = COUNT
+						NOT = { location = { is_capital = yes } }
+					}
+					save_event_target_as = vassal_wanted_title
+				}
+			}
+			custom_tooltip = {
+				text = demand_liege_title_tooltip
+				hidden_tooltip = {
+					liege = {
+						letter_event = { id = 63041 days = 4 tooltip = "EVTTOOLTIP63041" } # "vassal_request_events.txt"
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0 # The AI is limited to the similar event 63040
+		}
+	}
+	
+	sadaqah_saddka  = {
+		only_playable = yes
+		potential = {
+			is_playable = yes
+			ai = no
+			religion_group = muslim
+			is_adult = yes
+			demesne_size = 1
+			NOT = { has_character_flag = voluntary_charity }
+			rightful_religious_head_scope = {	
+				NOT = {
+					character = ROOT
+				}
+				NOT = {
+					has_opinion_modifier = { who = ROOT modifier = opinion_sadaqah }
+				}
+			}
+		}
+		allow = {
+			scaled_wealth = 1.0
+			is_heretic = no
+		}
+		effect = {
+			set_character_flag = voluntary_charity
+			scaled_wealth = -0.25
+			piety = 25
+			rightful_religious_head_scope = {
+				character_event = { id = 31000 days = 5 random = 12 tooltip = "sadaqah_voluntary_charity" }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				ai = yes
+				OR = {
+					NOT = { scaled_wealth = 10.0 }
+					piety = 0
+				}
+			}
+		}
+	}
+
+	hold_a_furusiyya  = {
+		only_independent = yes
+		is_high_prio = yes
+		potential = {
+			is_playable = yes
+			NOR = {
+				has_character_flag = epic_tournament_furusiyya
+				has_character_modifier = epic_tournament_furusiyya
+			}
+			OR = {
+				religion_group = muslim
+				culture = bedouin_arabic
+				culture = levantine_arabic
+				culture = andalusian_arabic
+				culture = egyptian_arabic
+				culture = maghreb_arabic
+				culture = sabaean
+			}
+			OR = {
+				gender_equality_trigger = yes
+				NOT = { is_female = yes	}
+			}
+			OR = {
+				tier = king
+				tier = emperor 
+			}
+			location = {
+				owner = { character = ROOT }
+			}
+		}
+		allow = {
+			war = no
+			in_command = no
+			prisoner = no
+			is_inaccessible_trigger = no
+			age = 16
+			prestige = 500
+			wealth = 200
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			set_character_flag = do_not_disturb
+			add_character_modifier = {
+				name = epic_tournament_furusiyya
+				years = 100
+				hidden = yes
+			}
+			clr_character_flag = tournament_has_ended_furusiyya
+			hidden_tooltip = { character_event = { id = 88999 days = 300 } } # Safety catch flag clearing
+			wealth = -200
+			prestige = 100
+			decadence = -5
+			character_event = { id = 88283 tooltip = "furusiyya_invite" }
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						wealth = 1000
+						scaled_wealth = 3.0
+					}
+				}
+			}
+		}
+	}
+	
+	restore_roman_empire = {
+		only_independent = yes
+		is_high_prio = yes
+		potential = {
+			is_playable = yes
+			OR = {
+				culture = roman
+				culture = galloroman
+				culture = romanobrython
+				culture = greek #IDK about the Rhomaion
+			}
+			has_dlc = "Legacy of Rome"
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { has_global_flag = rome_restored }
+		}
+		allow = {
+			primary_title = {
+				OR = {
+					title = e_byzantium
+					title = e_roman
+				}
+			}
+			has_landed_title = e_byzantium
+			has_landed_title = e_roman
+			prestige = 3000
+		}
+		effect = {
+			wealth = -500
+			prestige = 500
+			activate_title = { title = e_roman_empire status = yes }
+			hidden_tooltip = {
+				k_italy = { de_jure_liege = e_roman_empire }
+				k_siracusa = { de_jure_liege = e_roman_empire }
+				k_sicily = { de_jure_liege = e_roman_empire }
+				k_lombardia = { de_jure_liege = e_roman_empire }
+				k_venice = { de_jure_liege = e_roman_empire }
+				k_byzantium = { de_jure_liege = e_roman_empire }
+				k_macedonia = { de_jure_liege = e_roman_empire }
+				k_greece = { de_jure_liege = e_roman_empire }
+				k_sparta = { de_jure_liege = e_roman_empire }
+				k_krete = { de_jure_liege = e_roman_empire }
+				k_pergamon = { de_jure_liege = e_roman_empire }
+				k_cyprus = { de_jure_liege = e_roman_empire }
+				k_epirus = { de_jure_liege = e_roman_empire }
+				k_isauria = { de_jure_liege = e_roman_empire }
+				k_galatia = { de_jure_liege = e_roman_empire }
+				k_armenia = { de_jure_liege = e_roman_empire }
+				k_cilicia = { de_jure_liege = e_roman_empire }
+				k_bulgaria = { de_jure_liege = e_roman_empire }
+				k_serbia = { de_jure_liege = e_roman_empire }
+				k_croatia = { de_jure_liege = e_roman_empire }
+				if = {
+					limit = { has_landed_title = e_byzantium }
+					e_byzantium = {
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = e_roman_empire
+						}
+					}
+				}
+				if = {
+					limit = { has_landed_title = e_roman }
+					e_roman = {
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = e_roman_empire
+						}
+					}
+				}
+			}
+			primary_title = {
+				e_roman_empire = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+					copy_title_history = PREV
+				}
+			}
+			hidden_tooltip = { e_roman_empire = { make_primary_title = yes } }
+			if = {
+				limit = {
+					OR = {
+						has_landed_title = e_byzantium
+						e_byzantium = { has_holder = no }
+					}
+				}
+				e_byzantium = { destroy_landed_title = THIS }
+				activate_title = { title = e_byzantium status = no }
+			}
+			if = {
+				limit = {
+					OR = {
+						has_landed_title = e_roman
+						e_roman = { has_holder = no }
+					}
+				}
+				e_roman = { destroy_landed_title = THIS }
+				activate_title = { title = e_roman status = no }
+			}
+			set_global_flag = rome_restored
+			narrative_event = { id = LoR.20 tooltip = EVTTOOLTIPLoR.20 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	claim_constantinople = {
+		only_independent = yes
+		is_high_prio = yes
+		potential = {
+			is_playable = yes
+			has_dlc = "Legacy of Rome"
+			has_landed_title = e_byzantium
+			NOT = { has_landed_title = c_byzantion }
+			any_realm_lord = { 
+				ai = yes
+				has_landed_title = c_byzantion 
+			}
+		}
+		allow = {
+			NOT = { has_landed_title = c_byzantion }
+			any_realm_lord = { 
+				has_landed_title = c_byzantion 
+			}
+		}
+		effect = {
+			ROOT = {
+				c_byzantion = {
+					usurp_title_plus_barony_if_unlanded_and_vassals = PREV
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	make_rome_capital = {
+		only_independent = yes
+		is_high_prio = yes
+		potential = {
+			is_playable = yes
+			ai = no
+			has_dlc = "Legacy of Rome"
+			OR = {
+				has_landed_title = e_roman_empire
+				has_landed_title = e_roman
+			}
+			capital_scope = {
+				NOT = { province_id = 275 }
+			}
+			any_realm_lord = { 
+				ai = yes
+				has_landed_title = c_roma 
+			}
+		}
+		allow = {
+			OR = {
+				has_landed_title = e_roman_empire
+				has_landed_title = e_roman
+			}
+			any_realm_lord = { has_landed_title = c_roma }
+		}
+		effect = {
+			custom_tooltip = {
+				text = rome_capital
+				hidden_tooltip = {
+					ROOT = {
+						c_roma = {
+							usurp_title = PREV
+						}
+					}
+					c_roma = {
+						capital_holding = {
+							ROOT = { capital = PREV }
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	petition_doge_for_tp = {
+		is_high_prio = yes
+		potential = {
+			is_playable = yes
+			is_merchant_republic = no
+			is_patrician = yes
+			liege = { is_merchant_republic = yes }
+			NOT = { has_character_flag = petition_doge_for_tp_taken }
+			OR = {
+				liege = {
+					any_vassal = {
+						is_patrician = yes
+						num_of_trade_post_diff = {
+							character = ROOT
+							value = 10
+						}
+					}
+				}
+				AND = {
+					NOT = { num_of_trade_posts = 1 }
+					liege = {
+						any_vassal = {
+							is_patrician = yes
+							num_of_trade_posts = 10
+						}
+					}
+				}
+			}
+		}
+		allow = {
+			liege = {
+				opinion = {
+					who = ROOT
+					value = 25
+				}
+			}
+		}
+		effect = {
+			set_character_flag = petition_doge_for_tp_taken
+			liege = {
+				letter_event = { id = REP.500 days = 5 tooltip = EVTTOOLTIP_REP_500 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	usurp_tp = {
+		is_high_prio = yes
+		potential = {
+			is_playable = yes
+			is_merchant_republic = yes
+			is_patrician = yes
+			NOT = { has_character_flag = usurp_tp_taken }
+			OR = {
+				any_vassal = {
+					is_patrician = yes
+					num_of_trade_post_diff = {
+						character = ROOT
+						value = 10
+					}
+				}
+				AND = {
+					NOT = { num_of_trade_posts = 1 }
+					any_vassal = {
+						is_patrician = yes
+						num_of_trade_posts = 10
+					}
+				}
+			}
+		}
+		allow = {
+			is_merchant_republic = yes
+		}
+		effect = {
+			set_character_flag = usurp_tp_taken
+			if = {
+				limit = {
+					num_of_trade_posts = 1
+					any_vassal = {
+						is_patrician = yes
+						num_of_trade_post_diff = {
+							character = ROOT
+							value = 10
+						}
+					}
+				}
+				random_vassal = {
+					limit = {
+						is_patrician = yes
+						num_of_trade_post_diff = {
+							character = ROOT
+							value = 10
+						}
+					}
+					set_character_flag = target_patrician_doge
+					letter_event = { id = REP.510 days = 5 tooltip = EVTTOOLTIP_REP_510 }
+				}
+			}
+			if = {
+				limit = {
+					NOT = { num_of_trade_posts = 1 }
+					any_vassal = {
+						is_patrician = yes
+						num_of_trade_posts = 10
+					}
+				}
+				random_vassal = {
+					limit = {
+						is_patrician = yes
+						num_of_trade_posts = 10
+					}
+					set_character_flag = target_patrician_doge
+					letter_event = { id = REP.510 days = 5 tooltip = EVTTOOLTIP_REP_510 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_saoshyant = {
+		is_high_prio = yes
+		potential = {
+			has_dlc = "The Old Gods"
+			religion_group = zoroastrian_group
+			NOT = { has_global_flag = saoshyant_appears }
+		}
+		allow = {
+			has_landed_title = e_sassanid
+			completely_controls = d_azerbaijan
+			completely_controls = d_tabriz
+			completely_controls = d_kermanshah
+			completely_controls = d_mazandaran
+			completely_controls = d_hamadan
+			completely_controls = d_merv
+			completely_controls = d_khorasan
+			completely_controls = d_esfahan
+			completely_controls = d_hormuz
+			completely_controls = d_fars
+			piety = 1500
+			OR = {
+				trait = elusive_shadow
+				trait = grey_eminence
+				trait = midas_touched
+				trait = brilliant_strategist
+				trait = mastermind_theologian
+				trait = genius
+			}
+		}
+		effect = {
+			set_global_flag = saoshyant_appears
+			give_nickname = nick_the_saoshyant
+			add_trait = saoshyant
+			prestige = 500
+			piety = 500
+			hidden_tooltip = {
+				narrative_event = { id = TOG.6000 }
+				any_child = {
+					character_event = { id = TOG.6001 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_new_kingdom = {
+		only_independent = yes
+		is_high_prio = yes
+		potential = {
+			is_playable = yes
+			tier = DUKE
+			NOT = { tier = KING }
+			
+			has_dlc = "Charlemagne"
+			
+			holy_order = no
+			
+			NOT = {
+				has_game_rule = {
+					name = dynamic_realms
+					value = off
+				}
+			}
+			
+			OR = {
+				ai = no
+				AND = {
+					trait = proud
+					prestige = 5000
+				}
+				AND = {
+					trait = ambitious
+					prestige = 5000
+				}
+				AND = {
+					realm_size = 70
+					any_demesne_title = {
+						count = 4
+						tier = DUKE
+					}
+				}
+				prestige = 15000
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			independent = yes
+			prestige = 1000
+			OR = {
+				realm_size = 35
+				custom_tooltip = {
+					text = form_new_kingdom_requirement_tooltip
+					hidden_tooltip = {
+						any_demesne_title = {
+							count = 3
+							tier = DUKE
+						}
+					}
+				}
+			}
+			wealth = 300
+		}
+		effect = {
+			primary_title = {
+				create_title = {
+					tier = KING
+					landless = no
+					temporary = no
+					custom_created = yes
+					culture = ROOT
+					holder = ROOT
+					base_title = THIS
+					copy_title_laws = yes
+				}
+
+				hidden_tooltip = {
+					empire = {
+						ROOT = {
+							primary_title = {
+								de_jure_liege = PREVPREV
+							}
+						}
+					}
+
+					ROOT = {
+						primary_title = {
+							holder_scope = {
+								any_title_under = {
+									limit = {
+										tier = DUKE
+										kingdom = {
+											has_holder = no
+										}
+									}
+									de_jure_liege = PREVPREV
+								}
+								any_title_under = {
+									limit = {
+										tier = COUNT
+										location = {
+											duchy = {
+												kingdom = {
+													has_holder = no
+												}
+												
+												NOT = { de_jure_liege_or_above = PREVPREVPREVPREV }
+												ROOT = {
+													completely_controls = PREV
+												}
+											}
+										}
+									}
+									location = {
+										duchy = {
+											de_jure_liege = PREVPREVPREVPREV
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+			}
+			wealth = -300
+			custom_tooltip = { text = form_new_kingdom_tooltip }
+			chronicle = {
+				entry = CHRONICLE_FOUNDED_NEW_KINGDOM_OR_EMPIRE
+				portrait = [Root.GetID]
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_new_empire = {
+		only_independent = yes
+		is_high_prio = yes
+		potential = {
+			is_playable = yes
+			tier = KING
+			is_nomadic = no
+			has_dlc = "Charlemagne"
+			
+			holy_order = no
+			
+			NOT = { tier = EMPEROR }
+			OR = {
+				ai = no
+				AND = {
+					trait = proud
+					prestige = 40000
+				}
+				AND = {
+					trait = ambitious
+					prestige = 40000
+				}
+				prestige = 120000
+			}
+			
+			NOT = {
+				has_game_rule = {
+					name = dynamic_realms
+					value = off
+				}
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			independent = yes
+			prestige = 8000
+			OR = {
+				realm_size = 180
+				custom_tooltip = {
+					text = form_new_empire_requirement_tooltip
+					hidden_tooltip = {
+						any_demesne_title = {
+							count = 3
+							tier = KING
+						}
+					}
+				}
+			}
+			wealth = 1000
+		}
+		effect = {
+			primary_title = {
+				create_title = {
+					tier = EMPEROR
+					landless = no
+					temporary = no
+					custom_created = yes
+					culture = ROOT
+					holder = ROOT
+					base_title = THIS
+					copy_title_laws = yes
+				}
+
+				hidden_tooltip = {
+					ROOT = {
+						primary_title = {
+							holder_scope = {
+								any_title_under = {
+									limit = {
+										tier = KING
+										empire = {
+											has_holder = no
+										}
+									}
+									de_jure_liege = PREVPREV
+								}
+								any_title_under = {
+									limit = {
+										tier = DUKE
+										location = {
+											kingdom = {
+												empire = {
+													has_holder = no
+												}
+												
+												NOT = { de_jure_liege_or_above = PREVPREVPREVPREV }
+												ROOT = {
+													completely_controls = PREV
+												}
+											}
+										}
+									}
+									location = {
+										kingdom = {
+											de_jure_liege = PREVPREVPREVPREV
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			wealth = -1000
+			custom_tooltip = { text = form_new_empire_tooltip }
+			chronicle = {
+				entry = CHRONICLE_FOUNDED_NEW_KINGDOM_OR_EMPIRE
+				portrait = [Root.GetID]
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Hold Wargames - for nomads
+	hold_nomad_wargames = {
+		only_playable = yes
+		
+		potential = {
+			is_playable = yes
+			is_nomadic = yes
+			NOT = { has_character_modifier = holding_nomad_wargames }
+			NOT = { has_character_modifier = held_nomad_wargames }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			is_inaccessible_trigger = no
+			war = no
+			any_demesne_title = {
+				lower_tier_than = duke
+				is_occupied = no
+			}
+			wealth = 20
+			prestige = 100
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			wealth = -30
+			add_character_modifier = {
+				name = holding_nomad_wargames
+				duration = -1
+			}
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			hidden_tooltip = { character_event = { id = HL.7000 } }
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 200
+				}
+			}
+			modifier = {
+				factor = 2
+				current_heir = {
+					dynasty = ROOT
+					combat_rating = 8
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { martial = 10 }
+			}	
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}	
+		}
+	}
+	
+	convert_to_feudalism_indep  = {
+		only_independent = yes
+		is_high_prio = yes
+		potential = {
+			is_playable = yes
+			is_tribal = yes
+			independent = yes
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = TT_NOT_UNREFORMED_PAGAN
+				hidden_tooltip = {
+					OR = {
+						LI_pagan_trigger = no
+						is_reformed_religion = yes
+					}
+				}
+			}
+			primary_title = { has_law = clanic_centralization_4 }
+			capital_holding = {
+				OR = {
+					AND = {
+						holding_type = tribal
+						has_building = tb_hillfort_4
+					}
+					holding_type = castle
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = { ai = no }
+				set_character_flag = achievement_not_a_tribe
+			}
+			
+			if = {
+				limit = {
+					NOT = { religion_group = muslim }
+				}
+				
+				if = {
+					limit = {
+						ai = no
+					}
+					chronicle = {
+						entry = CHRONICLE_ADOPTED_FEUDALISM
+						picture = GFX_evt_castle_construction
+					}
+				}
+				set_government_type = feudal_government
+			}
+			
+			if = {
+				limit = {
+					religion_group = muslim
+				}
+				
+				if = {
+					limit = {
+						ai = no
+					}
+					chronicle = {
+						entry = CHRONICLE_ADOPTED_IQTA
+						picture = GFX_evt_castle_construction
+					}
+				}
+				set_government_type = muslim_government
+			}
+			
+#			if = {
+#				limit = {
+#					higher_tier_than = king
+#				}
+#				primary_title = {
+#					add_law = feudal_administration
+#				}
+#			}
+			
+			hidden_tooltip = {
+				any_demesne_title = {
+					limit = {
+						tier = baron
+						holding_type = tribal
+					}
+					convert_to = CASTLE
+					refill_holding_levy = yes
+					
+					if = {
+						limit = {
+							dejure_liege_title = {
+								holder = ROOT
+								location = {
+									num_of_empty_holdings = 2
+								}
+								NOT = {
+									any_direct_de_jure_vassal_title = {
+										holding_type = city
+									}
+								}
+							}
+						}
+						location = {
+							build_holding = {
+								type = city
+							}
+						}
+					}
+					if = {
+						limit = {
+							dejure_liege_title = {
+								holder = ROOT
+								location = {
+									num_of_empty_holdings = 2
+								}
+								NOT = {
+									any_direct_de_jure_vassal_title = {
+										holding_type = temple
+									}
+								}
+							}
+						}
+						location = {
+							build_holding  ={
+								type = temple
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	convert_to_feudalism_vassal = {
+		only_rulers = yes
+		is_high_prio = yes
+		potential = {
+			is_ruler = yes
+			is_tribal = yes
+			independent = no
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = TT_NOT_UNREFORMED_PAGAN
+				hidden_tooltip = {
+					OR = {
+						LI_pagan_trigger = no
+						is_reformed_religion = yes
+					}
+				}
+			}
+			liege = {
+				OR = {
+					is_feudal = yes
+					is_republic = yes
+					AND = {
+						is_theocracy = yes
+						custom_tooltip = {
+							text = TT_NOT_UNREFORMED_PAGAN
+							hidden_tooltip = {
+								unreformed_pagan_trigger = no
+							}
+						}
+					}
+				}
+			}
+			capital_holding = {
+				OR = {
+					AND = {
+						holding_type = tribal
+						has_building = tb_hillfort_4
+					}
+					holding_type = castle
+				}
+			}
+		}
+		
+		effect = {
+			set_character_flag = achievement_not_a_tribe
+			
+			if = {
+				limit = {
+					NOT = { religion_group = muslim }
+				}
+				
+				if = {
+					limit = {
+						ai = no
+					}
+					chronicle = {
+						entry = CHRONICLE_ADOPTED_FEUDALISM
+						picture = GFX_evt_castle_construction
+					}
+				}
+				set_government_type = feudal_government
+			}
+			
+			if = {
+				limit = {
+					religion_group = muslim
+				}
+				
+				if = {
+					limit = {
+						ai = no
+					}
+					chronicle = {
+						entry = CHRONICLE_ADOPTED_IQTA
+						picture = GFX_evt_castle_construction
+					}
+				}
+				set_government_type = muslim_government
+			}
+			
+			hidden_tooltip = {
+				any_demesne_title = {
+					limit = {
+						tier = baron
+						holding_type = tribal
+					}
+					convert_to = CASTLE
+					refill_holding_levy = yes
+					
+					if = {
+						limit = {
+							dejure_liege_title = {
+								holder = ROOT
+								location = {
+									num_of_empty_holdings = 2
+								}
+								NOT = {
+									any_direct_de_jure_vassal_title = {
+										holding_type = city
+									}
+								}
+							}
+						}
+						location = {
+							build_holding = {
+								type = city
+							}
+						}
+					}
+					if = {
+						limit = {
+							dejure_liege_title = {
+								holder = ROOT
+								location = {
+									num_of_empty_holdings = 2
+								}
+								NOT = {
+									any_direct_de_jure_vassal_title = {
+										holding_type = temple
+									}
+								}
+							}
+						}
+						location = {
+							build_holding = {
+								type = temple
+							}
+						}
+					}
+				}
+				
+				liege = {
+					character_event = { id = 55100 } # Notify Liege
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.001
+				liege = {
+					OR = {
+						NOT = { religion_group = ROOT }
+						AND = {
+							LI_pagan_trigger = yes
+							NOT = { religion = ROOT }
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0.01
+				liege = {
+					NOT = { culture_group = ROOT }
+				}
+			}
+			
+			modifier = {
+				factor = 0.01
+				liege = {
+					religion_group = ROOT
+#					LI_pagan_trigger = no
+					NOT = { religion = ROOT }
+				}
+			}
+			modifier = {
+				factor = 0.1
+				liege = {
+					culture_group = ROOT
+					NOT = { culture = ROOT }
+				}
+			}
+		}
+	}
+	
+	convert_to_republic_indep  = {
+		only_independent = yes
+		is_high_prio = yes
+		potential = {
+			is_playable = yes
+			is_tribal = yes
+			independent = yes
+			has_dlc = "The Republic"
+		}
+		allow = {
+			war = no
+			is_female = no
+			higher_tier_than = COUNT
+			custom_tooltip = {
+				text = TT_NOT_UNREFORMED_PAGAN
+				hidden_tooltip = {
+					OR = {
+						LI_pagan_trigger = no
+						is_reformed_religion = yes
+					}
+				}
+			}
+			primary_title = { has_law = clanic_centralization_4 }
+			capital_scope = {
+				port = yes
+			}
+			capital_holding = {
+				OR = {
+					AND = {
+						holding_type = tribal
+						has_building = tb_market_town_4
+					}
+					holding_type = city
+				}
+			}
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				create_family_palace = yes
+				
+				set_government_type = merchant_republic_government
+				
+				if = {
+					limit = {
+						NOT = {
+							num_of_government_vassals = {
+								government = merchant_republic_government
+								value = 1
+							}
+						}
+					}
+					
+					any_unique_dynasty_vassal = { # gives random vassals a family palace
+						count = 4
+						limit = {
+							is_female = no
+							OR = {
+								is_republic = yes
+								is_tribal = yes
+							}
+							is_patrician = no
+							prisoner = no
+							NOT = { trait = incapable }
+							is_adult = yes
+							NOT = { 
+								dynasty = none 
+							}
+						}
+						
+						if = {
+							limit = { is_tribal = yes }
+							
+							hidden_tooltip = {
+								any_demesne_title = {
+									limit = {
+										tier = baron
+										holding_type = tribal
+									}
+									convert_to = CITY
+									refill_holding_levy = yes
+									
+									if = {
+										limit = {
+											dejure_liege_title = {
+												holder = PREVPREV
+												location = {
+													num_of_empty_holdings = 2
+												}
+												NOT = {
+													any_direct_de_jure_vassal_title = {
+														holding_type = castle
+													}
+												}
+											}
+										}
+										location = {
+											build_holding = {
+												type = castle
+											}
+										}
+									}
+									if = {
+										limit = {
+											dejure_liege_title = {
+												holder = PREVPREV
+												location = {
+													num_of_empty_holdings = 2
+												}
+												NOT = {
+													any_direct_de_jure_vassal_title = {
+														holding_type = temple
+													}
+												}
+											}
+										}
+										location = {
+											build_holding = {
+												type = temple
+											}
+										}
+									}
+								}
+							}
+						}
+						
+						create_family_palace = yes
+					}
+				}
+				
+				any_demesne_title = {
+					limit = {
+						tier = baron
+						holding_type = tribal
+					}
+					convert_to = CITY
+					refill_holding_levy = yes
+					
+					if = {
+						limit = {
+							dejure_liege_title = {
+								holder = ROOT
+								location = {
+									num_of_empty_holdings = 2
+								}
+								NOT = {
+									any_direct_de_jure_vassal_title = {
+										holding_type = castle
+									}
+								}
+							}
+						}
+						location = {
+							build_holding = {
+								type = castle
+							}
+						}
+					}
+					if = {
+						limit = {
+							dejure_liege_title = {
+								holder = ROOT
+								location = {
+									num_of_empty_holdings = 2
+								}
+								NOT = {
+									any_direct_de_jure_vassal_title = {
+										holding_type = temple
+									}
+								}
+							}
+						}
+						location = {
+							build_holding  ={
+								type = temple
+							}
+						}
+					}
+				}
+			}
+			
+			if = {
+				limit = { ai = no }
+				set_character_flag = achievement_res_publica
+			}
+			
+			if = {
+				limit = {
+					ai = no
+				}
+				chronicle = {
+					entry = CHRONICLE_FOUNDED_MERCHANT_REPUBLIC
+					picture = GFX_evt_busy_trading_dock_republic
+				}
+			}
+			
+			set_government_type = merchant_republic_government
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}
+

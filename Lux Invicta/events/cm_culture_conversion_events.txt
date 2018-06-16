@@ -1,0 +1,9 @@
+
+###########################################
+#                                         #
+# Charlemagne culture conversion events   #
+#                                         #
+# ID CM.1-CM.499                          #
+#                                         #
+###########################################
+#Irrelevant for LI

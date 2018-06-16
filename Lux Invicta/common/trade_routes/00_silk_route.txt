@@ -1,0 +1,104 @@
+silk_road = {
+	wealth = 100		#Total base wealth of route
+
+	modifier = {		#How the trade route modifies the provinces it passes through
+		castle_tax_modifier = 0.15
+		city_tax_modifier = 0.15
+		temple_tax_modifier = 0.15
+		trade_route_value = 1
+	}
+	
+	start = {
+		1577 1578
+	}
+	
+	#Northern Silk Route
+	path = {	#Northern Tarim
+		1577 1222 1221 1220 1219 1218 1217 1215 1216
+	}
+	path = {	#Southern Tarim
+		1577 1207 1208 1209 1210 1211 1212 1213 1214 1216
+	}
+	path = {
+		1216 1261
+	}
+	path = {
+		1261 1262
+	}
+	path = {	#East bank of Indus
+		1262 1189 1024 1025 1026 1028
+	}
+	path = {
+		1028 1031 1032 1033
+	}
+	path = {	#Hindu Kush
+		1262 1263 1020 1023 1022 1028
+	}
+	path = {
+		1261 1259 1257 1255 1254
+	}
+	path = {
+		1254 646 647 639 661 662 665 674 696 731
+	}
+	path = {
+		1254 645 644 642 633 610 608 609 602 560 557 1361 1360 1358 552
+	}
+	path = {
+		552 1358 1359 1356
+	}
+	path = {
+		1356 517
+	}
+	#Southern silk route
+	path = {
+		1578 1159 1161 1154
+	}
+	path = {
+		1154 1155
+	}
+	path = {	#Grand Trunk Road
+		1154 1135 1136 1151 1150 1149 1148 1144 1147 1048 1041 1028
+	}
+	path = {	#India coastal
+		1155 1309 1310 1124 1311 1312 1065 1313 1314 1057
+	}
+	path = {
+		1057 1314 1315 1033
+	}
+	path = {
+		1033 1316 1317
+		}
+	path = {
+		1317 705 1318 699 698 730 731
+	}
+	path = {
+		731 734 740 1557 757 758 803 802
+	}
+	path = {
+		1317 707 1319 1320 1321 714 1322 1323 1324 826 1537 1325
+		}
+	path = {
+		1325 999
+	}
+	path = {
+		802 1327 1328 779
+	}
+	path = {
+		1325 1329 779
+	}
+	path = {
+		779 1353
+	}
+	path = {
+		1353 1355 1356
+	}
+	path = {
+		1353 1352 498
+	}
+	path = {
+		999 1330 1351 498
+	}
+	path = {
+		498 1350 1346 288 1349 1348 1347 305
+	}
+}

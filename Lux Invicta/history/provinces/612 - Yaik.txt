@@ -1,0 +1,21 @@
+# 616 - Yaik
+
+# County Title
+title = c_yaik
+
+# Settlements
+max_settlements = 3
+
+b_orenburg = tribal
+b_saraktash = temple
+
+#b_sakmara = castle
+#b_khutorka = castle
+#b_tolkachi = castle
+#b_kichkas = castle
+#b_sadovy = castle
+
+# Misc
+culture = khazar
+religion = jud_sabaoth
+1066.1.1 = { }

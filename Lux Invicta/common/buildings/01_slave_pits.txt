@@ -1,0 +1,250 @@
+ # Triggers are in Province scope. The From Scope contains the settlement holder (character)
+ # start trigger is in title scope.
+ # All credits to the AGOT team
+ ## RIKNAP, this might need LIBERT3 balance. In case we implement the "slave camps" anyway.
+ 
+# Castle
+castle = {
+	ca_asoiaf_slavepit_1 = {
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 300
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	ca_asoiaf_slavepit_2 = {
+		upgrades_from = ca_asoiaf_slavepit_1
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 400
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	ca_asoiaf_slavepit_3 = {
+		upgrades_from = ca_asoiaf_slavepit_2
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 500
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	ca_asoiaf_slavepit_4 = {
+		upgrades_from = ca_asoiaf_slavepit_3
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 600
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	ca_asoiaf_slavepit_5 = {
+		upgrades_from = ca_asoiaf_slavepit_4
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 700
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+}
+city = {
+	ct_asoiaf_slavepit_1 = {
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 300
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	ct_asoiaf_slavepit_2 = {
+		upgrades_from = ct_asoiaf_slavepit_1
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 400
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	ct_asoiaf_slavepit_3 = {
+		upgrades_from = ct_asoiaf_slavepit_2
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 500
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	ct_asoiaf_slavepit_4 = {
+		upgrades_from = ct_asoiaf_slavepit_3
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 600
+		gold_cost = 600
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	ct_asoiaf_slavepit_5 = {
+		upgrades_from = ct_asoiaf_slavepit_4
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 700
+		gold_cost = 700
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+}
+temple = {
+	tp_asoiaf_slavepit_1 = {
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 300
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	tp_asoiaf_slavepit_2 = {
+		upgrades_from = tp_asoiaf_slavepit_1
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 400
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	tp_asoiaf_slavepit_3 = {
+		upgrades_from = tp_asoiaf_slavepit_2
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 500
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	tp_asoiaf_slavepit_4 = {
+		upgrades_from = tp_asoiaf_slavepit_3
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 600
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	tp_asoiaf_slavepit_5 = {
+		upgrades_from = tp_asoiaf_slavepit_4
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 700
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+}
+family_palace = {
+	fp_asoiaf_slavepit_1 = {
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 300
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	fp_asoiaf_slavepit_2 = {
+		upgrades_from = fp_asoiaf_slavepit_1
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 400
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	fp_asoiaf_slavepit_3 = {
+		upgrades_from = fp_asoiaf_slavepit_2
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 500
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	fp_asoiaf_slavepit_4 = {
+		upgrades_from = fp_asoiaf_slavepit_3
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 600
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+	fp_asoiaf_slavepit_5 = {
+		upgrades_from = fp_asoiaf_slavepit_4
+		potential = {
+			FROM = { NOT = { trait = liberator } }
+		}
+		trigger = { always = no }
+		ai_creation_factor = 0
+		gold_cost = 700
+		build_time = 1000
+		tax_income = -0.1
+		extra_tech_building_start = 10.0
+	}
+}

@@ -1,0 +1,20 @@
+# 873 - Harer
+
+# County Title
+title = c_harer
+
+# Settlements
+max_settlements = 4
+
+b_diridawa = castle
+b_harar = temple
+
+b_kombolcha = city
+#b_diridawa = castle
+#b_dakkar = castle
+#b_kurfachele = castle
+#b_babile = castle
+
+# Misc
+culture = phoenician
+religion = kothar

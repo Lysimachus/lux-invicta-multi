@@ -1,0 +1,14 @@
+# 906 - Daochéng
+
+# County Title
+title = c_toro
+
+# Settlements
+max_settlements = 2
+b_toro = tribal
+#b_mbarara = 
+#b_kibaale = 
+
+# Misc
+culture = muganda
+religion = kintu

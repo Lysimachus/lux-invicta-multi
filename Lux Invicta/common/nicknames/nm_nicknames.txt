@@ -1,0 +1,600 @@
+nick_the_divine = {
+	allow = {
+		has_character_modifier = nm_possessed_odin_recognised
+		has_character_modifier = nm_possessed_freya_recognised
+		has_character_modifier = nm_possessed_loke_recognised
+	}
+	chance = {
+		factor = 16
+	}
+}
+
+nick_the_explorer = {
+	allow = {
+		trait = nm_exploring_vinland
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+nick_the_vinlandsfarer = {
+	allow = {
+		trait = nm_exploring_vinland
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+nick_the_jorsalafarer = {
+	allow = {
+		trait = crusader
+		OR = {
+			culture = norwegian
+			culture = swedish
+			culture = danish
+#			culture = norse
+		}
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+nick_the_miklagardsfarer = {
+	allow = {
+		trait = varangian_trait
+		OR = {
+			culture = norwegian
+			culture = swedish
+			culture = danish
+#			culture = norse
+		}
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+nick_the_mage = {
+	allow = {
+		trait = nm_seidmann
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 1.2
+			learning = 6
+		}
+		modifier = {
+			factor = 1.2
+			learning = 12
+		}
+		modifier = {
+			factor = 1.2
+			learning = 18
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 6
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 12
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 18
+		}
+	}
+}
+
+nick_the_seidmann = {
+	allow = {
+		trait = nm_seidmann
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 1.2
+			learning = 6
+		}
+		modifier = {
+			factor = 1.2
+			learning = 12
+		}
+		modifier = {
+			factor = 1.2
+			learning = 18
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 6
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 12
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 18
+		}
+	}
+}
+
+
+nick_the_volva = {
+	allow = {
+		trait = nm_volva
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 1.2
+			learning = 6
+		}
+		modifier = {
+			factor = 1.2
+			learning = 12
+		}
+		modifier = {
+			factor = 1.2
+			learning = 18
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 6
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 12
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 18
+		}
+	}
+}
+
+nick_the_wise_woman = {
+	allow = {
+		trait = nm_volva
+		age = 30
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 1.2
+			learning = 6
+		}
+		modifier = {
+			factor = 1.2
+			learning = 12
+		}
+		modifier = {
+			factor = 1.2
+			learning = 18
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 6
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 12
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 18
+		}
+	}
+}
+
+nick_the_seer = {
+	allow = {
+		OR = {
+		trait = nm_volva
+		trait = nm_seidmann
+		}
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 1.2
+			learning = 6
+		}
+		modifier = {
+			factor = 1.2
+			learning = 12
+		}
+		modifier = {
+			factor = 1.2
+			learning = 18
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 6
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 12
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 18
+		}
+	}
+}
+
+nick_the_fatespinner = {
+	allow = {
+		OR = {
+		trait = nm_volva
+		trait = nm_seidmann
+		}
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 1.2
+			learning = 6
+		}
+		modifier = {
+			factor = 1.2
+			learning = 12
+		}
+		modifier = {
+			factor = 1.2
+			learning = 18
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 6
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 12
+		}
+		modifier = {
+			factor = 1.2
+			intrigue = 18
+		}
+	}
+}
+
+nick_the_viking = {
+	allow = {
+		trait = viking
+		NOT = { trait = craven }
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 1.2
+			martial = 8
+		}
+		modifier = {
+			factor = 1.2
+			martial = 12
+		}
+		modifier = {
+			factor = 1.2
+			martial = 16
+		}
+		modifier = {
+			factor = 2.0
+			trait = brave
+		}
+		modifier = {
+			factor = 2.0
+			trait = greedy
+		}
+		modifier = {
+			factor = 2.0
+			trait = ambitious
+		}
+	}
+}
+
+nick_the_berserker = {
+	allow = {
+		trait = berserker
+	}
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 1.2
+			martial = 8
+		}
+		modifier = {
+			factor = 1.2
+			martial = 12
+		}
+		modifier = {
+			factor = 1.2
+			martial = 16
+		}
+		modifier = {
+			factor = 2.0
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			factor = 1.2
+			trait = lunatic
+		}
+	}
+}
+
+nick_the_ulfhednar = {
+	allow = {
+		nm_trigger = yes
+		OR = {
+			trait = berserker
+			AND = {
+				trait = wroth
+				trait = zealous
+			}
+		}
+	}
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 1.2
+			martial = 8
+		}
+		modifier = {
+			factor = 1.2
+			martial = 12
+		}
+		modifier = {
+			factor = 1.2
+			martial = 16
+		}
+		modifier = {
+			factor = 1.2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.2
+			trait = craven
+		}
+		modifier = {
+			factor = 2.5
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.2
+			trait = cynical
+		}
+	}
+}
+nick_the_godi = {
+	allow = {
+		trait = nm_gode
+	}
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 1.2
+			learning = 8
+		}
+		modifier = {
+			factor = 1.2
+			learning = 12
+		}
+		modifier = {
+			factor = 1.2
+			learning = 16
+		}
+	}
+}
+
+nick_the_ironshirt = {
+	allow = {
+		martial = 12
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 1
+	}
+}
+
+nick_the_trolltongued = {
+	allow = {
+		trait = deceitful
+		diplomacy = 14
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 6
+		modifier = {
+			factor = 1.5
+			trait = cruel
+		}
+	}
+}
+
+nick_the_kinbane = {
+	allow = {
+		trait = kinslayer
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+nick_the_hardruler = {
+	allow = {
+		is_ruler = yes
+		trait = cruel
+		trait = arbitrary
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 5
+	}
+}
+
+nick_the_tall = {
+	allow = {
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 1
+	}
+}
+nick_the_kneecapper = {
+	allow = {
+		trait = dwarf
+		trait = wroth
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 12
+	}
+}
+nick_the_stygg = {
+	allow = {
+		trait = ugly
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 4
+	}
+}
+nick_the_raider = {
+	allow = {
+		trait = viking
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 5
+	}
+}
+nick_the_scourge = {
+	allow = {
+		trait = viking
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 5
+	}
+}
+nick_the_farmer = {
+	allow = {
+		trait = gardener
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 3
+	}
+}
+nick_the_digre = {
+	allow = {
+		OR = {
+			trait = strong
+			trait = gluttonous
+		}
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 3
+	}
+}
+nick_the_ironbeard = {
+	allow = {
+		age = 50
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 1
+	}
+}
+nick_the_yellowpaints = {
+	allow = {
+		trait = craven
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 3
+	}
+}
+nick_the_skywatcher = {
+	allow = {
+		trait = proud
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 2
+	}
+}
+nick_the_firebelly = {
+	allow = {
+		trait = gluttonous
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 2
+	}
+}
+nick_the_changeling = {
+	allow = {
+		NOT = { age = 10 }
+		OR = {
+			trait = ugly
+			trait = lunatic
+			trait = possessed
+		}
+		OR = {
+			nm_trigger = yes
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
+			religion = lugh
+		}
+	}
+	chance = {
+		factor = 2
+	}
+}
+nick_the_trollspawn = {
+	allow = {
+		NOT = { age = 10 }
+		OR = {
+			trait = ugly
+			trait = lunatic
+			trait = possessed
+		}
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 2
+	}
+}
+nick_the_foreigner = {
+	allow = {
+		NOR = {
+			culture_group = north_germanic
+			culture = norsegael
+			culture = norman
+		}
+		nm_trigger = yes
+	}
+	chance = {
+		factor = 1
+	}
+}
+nick_the_skald = {
+	allow = {
+		culture_group = north_germanic
+		trait = poet
+	}
+	chance = {
+		factor = 4
+	}
+}

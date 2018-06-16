@@ -1,0 +1,20 @@
+# 728 - Damascus
+
+# County Title
+title = c_damascus
+
+# Settlements
+max_settlements = 1
+
+#b_qsarbardawil = castle
+b_daraa = tribal
+#b_shahba = castle
+
+#b_suada = city
+#b_alsanamayn = castle
+#b_izra = castle
+#b_duma = castle
+
+# Misc
+culture = levantine_arabic
+religion = murjiah

@@ -1,0 +1,18 @@
+# 298 - Småland
+
+# County Title
+title = c_smaland
+
+# Settlements
+max_settlements = 5
+b_nasborg = tribal
+b_alvesta = temple
+
+#b_kronoberg = castle	
+#b_piksborg = castle
+#b_aringsas = temple
+
+# Misc
+culture = geat
+religion = norse_pagan
+1066.1.1 = { }

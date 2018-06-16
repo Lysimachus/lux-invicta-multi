@@ -1,0 +1,13 @@
+# 891 - Zimbabwe
+
+# County Title
+title = c_zimbabwe
+
+# Settlements
+max_settlements = 2
+b_zimbabwe = castle
+b_khami = temple
+
+# Misc
+culture = shona
+religion = mwari

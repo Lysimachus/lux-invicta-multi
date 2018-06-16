@@ -1,0 +1,14 @@
+# 1953 - Gode
+
+# County Title
+title = c_gode
+
+# Settlements
+max_settlements = 2
+b_gode = tribal
+b_geladin = temple
+#b_shinile = city
+
+# Misc
+culture = macrobian
+religion = waaq

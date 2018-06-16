@@ -1,0 +1,14 @@
+# 896 - Maravi
+
+# County Title
+title = c_maravi
+
+# Settlements
+max_settlements = 3
+b_maravi = castle
+b_machinga = temple
+#b_dedza = 
+
+# Misc
+culture = amaravi
+religion = nyau

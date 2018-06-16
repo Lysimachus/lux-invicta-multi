@@ -1,0 +1,20 @@
+# 564 - Desht-i-Kipchak
+
+# County Title
+title = c_desht-i-kipchak
+
+# Settlements
+max_settlements = 5
+
+b_bakhmut = tribal
+b_sviatohirsk = temple
+
+#b_dobropillia = castle
+#b_druzhkivka = castle
+#b_kramatorsk = castle
+#b_lyman = castle
+#b_mospyne = castle
+
+# Misc
+culture = cuman
+religion = tengri_pagan

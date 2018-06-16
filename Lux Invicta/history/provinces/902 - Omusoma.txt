@@ -1,0 +1,13 @@
+# 902 - Omusoma
+
+# County Title
+title = c_omusoma
+
+# Settlements
+max_settlements = 1
+b_omusoma = tribal
+#b_butiama = city
+
+# Misc
+culture = luo
+religion = nyasaye

@@ -1,0 +1,16 @@
+# 765 - Archa
+
+# County Title
+title = c_archa
+
+# Settlements
+max_settlements = 4
+b_famia = castle
+b_shayzar = city
+b_masyaf = temple
+
+#b_salqin = castle
+
+# Misc
+culture = greek
+religion = melkite

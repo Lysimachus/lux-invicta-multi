@@ -1,0 +1,129 @@
+
+#INDIA
+
+technology = {
+	titles = {
+		d_sindh				#Added
+		d_sakala			#Added
+		d_pentapotamia		#Added
+		d_taxila			#Added
+		d_kumaon			#Added
+		d_garhwal			#Added
+		d_avanti			#Added
+		d_tripuri			#Added
+		d_khajuraho			#Added
+		d_ajayameru			#Added
+		d_citrakuta			#Added
+		d_kotah				#Added
+		d_thar				#Added
+		d_kannauj			#Added
+		d_vatsa				#Added
+		d_anga				#Added
+		d_kathmandu			#Added
+		d_jumla				#Added
+		d_kamapa			#Added
+		d_radha				#Added
+		d_tripura			#Added
+		d_kataka			#Added
+		d_tamralipti		#Added
+		d_utkala			#Added
+		d_dandaka			#Added
+		d_thana				#Added
+		d_vidarbha			#Added
+		
+		
+		d_orugallu			#Added
+		d_tondaimandalam	#Added
+		d_idaturainadu		#Added
+		d_alupa				#Added
+		d_mahishaka			#Added
+		d_mysore			#Added
+		d_kotthasara		#Added
+		d_ruhuna			#Added
+		d_nagadipa			#Added
+#		d_sauvira			#Checked - absent
+#		d_bhakkar			#Checked - absent
+#		d_multan			#Checked - absent
+#		d_lahore			#Checked - absent
+#		d_gandhara			#Checked - absent
+		d_kuru				#Checked
+		d_haritanaka		#Checked
+		d_mathura			#Checked
+#		d_vodamayutja		#Checked - absent
+#		d_gurjara_mandala	#Checked - absent
+#		d_anartta			#Checked - absent
+		d_saurashtra		#Checked
+		d_lata				#Checked
+#		d_maru				#Checked - absent
+#		d_jangladesh		#Checked - absent
+#		d_stravani			#Checked - absent
+#		d_medapata			#Checked - absent
+#		d_ajmer				#Checked - absent
+#		d_dadhipadra		#Checked - absent
+#		d_akara_dasarna		#Checked - absent
+#		d_anupa				#Checked - absent
+#		d_kanyakubja		#Checked - absent
+#		d_saryupara			#Checked - absent
+#		d_jejakabhukti		#Checked - absent
+#		d_dahala			#Checked - absent
+#		d_ratanpur			#Checked - absent
+		d_vanga				#Checked
+#		d_varendra			#Checked - absent
+		d_gauda				#Checked
+#		d_nadia				#Checked - absent
+#		d_suhma				#Checked - absent
+#		d_kamarupanagara	#Checked - absent
+#		d_para_lauhitya		#Checked - absent
+#		d_sutiya			#Checked - absent
+		d_daksina_kosala	#Checked
+#		d_tosali			#Checked - absent
+#		d_kalinga			#Checked - absent
+#		d_dandakaranya		#Checked - absent
+#		d_tirabhukti		#Checked - absent
+#		d_kasi				#Checked - absent
+#		d_jharkand			#Checked - absent
+#		d_magadha			#Checked - absent
+#		d_vidharba			#Checked - absent
+		d_konkana			#Checked
+#		d_nasikya			#Checked - absent
+#		d_devagiri			#Checked - absent
+#		d_rattapadi			#Checked - absent
+#		d_kalyani			#Checked - absent
+#		d_gangavadi			#Checked - absent
+#		d_nulambavadi		#Checked - absent
+#		d_raichur_doab		#Checked - absent
+		d_chola_nadu		#Checked
+		d_pandya_nadu		#Checked
+		d_chera_nadu		#Checked
+#		d_tondai_nadu		#Checked - absent
+		d_vengi				#Checked
+#		d_udayagiri			#Checked - absent
+#		d_warangal			#Checked - absent
+#		d_racakonda			#Checked - absent
+#		d_lanka				#Checked - absent
+#		d_sinhala			#Checked - absent
+	}
+
+	#preliminary flattening
+	1066 = { 
+		military = 0.0
+		economy = 0.0
+		culture = 0.0		
+	}
+}
+
+
+# Trade republics
+technology = {
+	titles = {
+		d_sarasvatamandala	#Added
+		d_maldives			#Added
+	}
+
+	1066 = {
+		military = 0.0
+		economy = 0.1
+		culture = 0.0
+		TECH_TRADE_PRACTICES = 1.0
+	}
+}

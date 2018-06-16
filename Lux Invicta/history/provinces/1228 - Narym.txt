@@ -1,0 +1,14 @@
+# 1883 - Chulym
+
+# County Title
+title = c_chulym
+
+# Settlements
+max_settlements = 3
+b_eushta = tribal
+#b_nadezhda =
+#b_gubino =
+
+# Misc
+culture = xiongnu
+religion = tengri_pagan

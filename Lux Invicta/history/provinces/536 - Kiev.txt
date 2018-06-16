@@ -1,0 +1,20 @@
+# 547 - Kiev
+
+# County Title
+title = c_kiev
+
+# Settlements
+max_settlements = 7
+b_malyn = tribal
+b_kiev = city
+b_yuriev = temple
+b_ovruch = tribal
+b_zhitomir = city
+
+
+#b_fastiv = castle
+
+# Misc
+culture = russian
+religion = perun
+1066.1.1 = { }

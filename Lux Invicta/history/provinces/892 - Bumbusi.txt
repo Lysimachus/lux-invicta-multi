@@ -1,0 +1,12 @@
+# 892 - Bumbusi
+
+# County Title
+title = c_bumbusi
+
+# Settlements
+max_settlements = 2
+b_bumbusi = tribal
+
+# Misc
+culture = shona
+religion = mwari

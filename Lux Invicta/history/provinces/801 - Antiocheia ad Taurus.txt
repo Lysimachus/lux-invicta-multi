@@ -1,0 +1,16 @@
+# 734 - Aintab
+
+# County Title
+title = c_aintab
+
+# Settlements
+max_settlements = 4
+b_aintab = castle
+b_marash = city
+b_kyrrhos = temple
+#b_tell_bashir = castle
+
+# Misc
+culture = armenian
+religion = melkite
+1066.1.1 = { }

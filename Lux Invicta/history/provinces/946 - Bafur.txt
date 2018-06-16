@@ -1,0 +1,12 @@
+# 924 - Western Sahara
+
+# County Title
+title = c_bafour
+
+# Settlements
+max_settlements = 1
+b_bafour = tribal
+
+# Misc
+culture = berber
+religion = gurzil

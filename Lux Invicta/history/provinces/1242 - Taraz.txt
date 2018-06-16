@@ -1,0 +1,18 @@
+# 1242 - Chatkal
+
+# County Title
+title = c_talas
+
+# Settlements
+max_settlements = 4
+b_byulkuldek = tribal
+b_dolona = temple
+#b_kolba =
+#b_budennyy =
+#b_orlevka =
+#b_kalinino =
+#b_karagayna =
+
+# Misc
+culture = hunnic
+religion = mani

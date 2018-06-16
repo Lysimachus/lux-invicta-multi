@@ -1,0 +1,14 @@
+# 875 - Zanzibar
+
+# County Title
+title = c_zanzibar
+
+# Settlements
+max_settlements = 2
+b_zanzibar = castle
+b_koani = temple
+#b_mkokotoni = city
+
+# Misc
+culture = persian
+religion = zor_hindu

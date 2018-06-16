@@ -1,0 +1,20 @@
+# 647 - Margiana
+
+# County Title
+title = c_merv
+
+# Settlements
+max_settlements = 5
+b_merv = castle
+b_yoloten = castle
+b_bayramaly = city
+b_tagtabazar = temple
+b_kushka = temple
+
+#b_gulanly = castle
+#b_sakarcage = city
+#b_wekilbazar = castle
+# Misc
+culture = parthian
+religion = mazdakism
+1066.1.1 = { }

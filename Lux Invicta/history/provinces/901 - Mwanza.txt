@@ -1,0 +1,14 @@
+# 901 - Mwanza
+
+# County Title
+title = c_mwanza
+
+# Settlements
+max_settlements = 3
+b_mwanza = tribal
+b_sengerema = temple
+#b_kahama = 
+
+# Misc
+culture = luo
+religion = nyasaye

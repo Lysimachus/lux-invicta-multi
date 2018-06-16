@@ -1,0 +1,18 @@
+# 1250 - Kumkent
+
+# County Title
+title = c_kumkent
+
+# Settlements
+max_settlements = 4
+b_kyzylkol = tribal
+b_dzhanatas = temple
+#b_chulakkurgan =
+#b_zhuantobe =
+#b_toretogan =
+#b_shyganak =
+#b_zhdanov =
+
+# Misc
+culture = turkish
+religion = tengri_bud

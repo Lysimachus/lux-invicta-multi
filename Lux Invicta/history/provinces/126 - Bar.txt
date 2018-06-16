@@ -1,0 +1,15 @@
+# 930 - Bar
+
+# County Title
+title = c_bar
+
+# Settlements
+max_settlements = 3
+b_barleduc = castle
+b_commercy = city
+b_saintdizier = temple
+
+# Misc
+culture = frankish
+religion = antinomian
+1066.1.1 = { }

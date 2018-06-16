@@ -1,0 +1,19 @@
+# 911 - Timbuktu
+
+# County Title
+title = c_timbuktu
+
+# Settlements
+max_settlements = 5
+b_timbuktu = tribal
+b_sankore = temple
+
+#b_lafia = castle
+#b_ber = castle
+#b_boureminaly = castle #Bourem-Inaly
+#b_toya = castle
+#b_aglal = castle
+
+# Misc
+culture = fula
+religion = yoruba

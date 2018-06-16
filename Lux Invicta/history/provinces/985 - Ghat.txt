@@ -1,0 +1,20 @@
+# 727 - Syria
+
+# County Title
+title = c_syria
+
+# Settlements
+max_settlements = 4
+
+b_amrah = tribal
+b_adra = temple
+
+#b_hayjanah = city
+#b_jarba = castle
+#b_qasmiye = castle
+#b_buraq - castle
+#b_baly = castle
+
+# Misc
+culture = berber
+religion = berber_pagan

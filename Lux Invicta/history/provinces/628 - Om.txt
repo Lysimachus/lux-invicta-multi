@@ -1,0 +1,18 @@
+# 898 - Omsk
+
+# County Title
+title = c_omsk
+
+# Settlements
+max_settlements = 5
+b_omsk = tribal
+b_isilkul = temple
+
+#b_kalachinsk = castle
+#b_tyukalinsk = castle
+#b_krasnyyar = castle
+#b_sargatka = castle
+
+# Misc
+culture = uyghur
+religion = mani

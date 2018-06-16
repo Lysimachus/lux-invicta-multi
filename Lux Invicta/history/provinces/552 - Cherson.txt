@@ -1,0 +1,21 @@
+# 560 - Cherson
+
+# County Title
+title = c_cherson
+
+# Settlements
+max_settlements = 5
+
+b_kherson = city
+b_neapol = castle
+b_doros = temple
+b_charax = castle
+
+#b_kerkinitis = castle
+#b_cembalo = castle
+#b_sevastoupolis = castle
+#b_kalamita = castle
+
+# Misc
+culture = greek
+religion = audianist

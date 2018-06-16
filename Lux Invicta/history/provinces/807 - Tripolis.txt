@@ -1,0 +1,19 @@
+# 767 - Tripoli
+
+# County Title
+title = c_tripoli
+
+# Settlements
+max_settlements = 5
+
+b_tripoli = castle
+b_gibelet = city
+b_nephin = temple
+
+#b_chekka = castle
+#b_bsharri = castle
+
+# Misc
+culture = syroaramean
+religion = sol_christ
+1066.1.1 = { }

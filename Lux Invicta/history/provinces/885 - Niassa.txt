@@ -1,0 +1,14 @@
+# 885 - Niassa
+
+# County Title
+title = c_niassa
+
+# Settlements
+max_settlements = 3
+b_niassa = tribal
+b_metangula = temple
+#b_chuanga = 
+
+# Misc
+culture = amaravi
+religion = makonde_pagan

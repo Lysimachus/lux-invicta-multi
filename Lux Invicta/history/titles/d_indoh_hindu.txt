@@ -1,0 +1,4 @@
+1060.1.1={
+	liege = k_sindhia
+	holder = 1822022
+}

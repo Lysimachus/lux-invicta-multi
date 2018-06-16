@@ -1,0 +1,50 @@
+# 1254 - Marakanda
+
+# County Title
+title = c_samarkand
+
+# Settlements
+max_settlements = 6
+b_afrasiyab = castle
+b_samarkand = city
+b_parsiab = temple
+
+b_ishtikhon = city
+b_urgut = castle
+#b_koshrabot = castle
+#b_ziadin = castle
+#b_laish = castle
+
+# Misc
+culture = tocharian
+religion = bud_pureland
+
+# History
+1066.1.1 = { 
+	b_afrasiyab = ct_control_1
+	b_afrasiyab = ct_control_2
+	b_afrasiyab = ct_control_3
+	b_afrasiyab = ct_control_4
+	b_afrasiyab = ct_control_5
+	b_afrasiyab = ct_control_6
+	b_afrasiyab = ct_control_7
+	b_afrasiyab = ct_admin_1
+	b_afrasiyab = ct_definit_1
+	b_afrasiyab = ct_definit_1
+	b_afrasiyab = ca_wall_1
+	b_afrasiyab = ca_wall_2
+	b_afrasiyab = ct_partner_1
+	b_afrasiyab = ct_partner_2
+	b_afrasiyab = ct_partner_3
+	b_afrasiyab = ct_partner_4
+	b_afrasiyab = ct_partner_5
+	b_afrasiyab = ct_partner_6
+	b_afrasiyab = ct_partner_7
+	b_afrasiyab = ct_marketplace_1
+	b_afrasiyab = ct_farming_1
+	b_afrasiyab = ct_farming_2
+	b_afrasiyab = ct_farming_3
+	b_afrasiyab = ct_herding_1
+	b_afrasiyab = ct_herding_2
+	b_afrasiyab = ct_herding_3
+}

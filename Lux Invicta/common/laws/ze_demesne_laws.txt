@@ -1,0 +1,882 @@
+law_groups = {
+	status_of_women = {
+		law_type = realm
+	}
+	sovereignty_title_law = {
+		law_type = realm
+		allowed_for_councillors = yes
+	}
+	ze_administration_laws = {
+		law_type = realm
+	}
+}
+
+laws = {
+	sovereignty_title_law_0 = {
+		group = sovereignty_title_law
+		show_as_title = yes
+		default = yes
+		allow = { 
+			NOT = { has_law = sovereignty_title_law_2 } }
+		potential = {
+			has_dlc = "Zeus"
+			NOT = { holder_scope = { is_nomadic = yes } }
+		}
+		revoke_allowed = { always = no }
+		ai_will_do = { factor = 0 }
+		ai_will_revoke = { factor = 0 }
+		pass_effect = { }
+		effect = {
+			set_allow_title_revokation = no
+			IF = {
+				limit = {
+					holder_scope = {
+						is_tribal = no
+						is_republic = no
+					}
+				}
+				set_protected_inheritance = no					
+			}
+			hidden_tooltip = {
+				revoke_law = sovereignty_title_law_1
+				revoke_law = sovereignty_title_law_2
+			}
+		}
+	}
+	sovereignty_title_law_1 = {
+		group = sovereignty_title_law
+		show_as_title = yes
+		allow = {
+			OR = {
+				has_law = centralization_2
+				has_law = clanic_centralization_4
+			}
+		}
+		potential = {
+			has_dlc = "Zeus"
+			NOT = { holder_scope = { is_nomadic = yes } }
+		}
+		revoke_allowed = { always = no }
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				factor = 0.05
+				has_law = sovereignty_title_law_0
+			}
+			modifier = {
+				factor = 0
+				has_law = sovereignty_title_law_2
+			}
+		}
+		ai_will_revoke = { factor = 0 }
+		pass_effect = { }
+		effect = {
+			set_allow_title_revokation = yes
+			IF = {
+				limit = {
+					holder_scope = {
+						is_tribal = no
+						is_republic = no
+					}
+				}
+				set_protected_inheritance = yes					
+			}
+			custom_tooltip = { text = fabricate_claims_possible	}
+			hidden_tooltip = {
+				revoke_law = sovereignty_title_law_0
+				revoke_law = sovereignty_title_law_2
+			}
+		}
+	}
+	sovereignty_title_law_2 = {
+		group = sovereignty_title_law
+		show_as_title = yes
+		allow = {
+			NOT = { has_law = sovereignty_title_law_0 }
+			has_law = centralization_4
+		}
+		potential = {
+			has_dlc = "Zeus"
+			NOT = { holder_scope = { is_nomadic = yes } }
+		}
+		revoke_allowed = { always = no }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+			}
+			modifier = {
+				factor = 10
+				holder_scope = { trait = ambitious }
+			}
+		}
+		ai_will_revoke = { factor = 0 }
+		pass_effect = { }
+		effect = {
+			set_allow_title_revokation = yes
+			set_allow_free_revokation = yes
+			if = {
+				limit = {
+					holder_scope = {
+						is_tribal = no
+						is_republic = no
+					}
+				}
+				set_protected_inheritance = yes					
+			}
+			custom_tooltip = { text = fabricate_claims_possible	}
+			custom_tooltip = { text = fabricate_claims_bonus }
+			hidden_tooltip = {
+				revoke_law = sovereignty_title_law_0
+				revoke_law = sovereignty_title_law_1
+			}
+		}
+	}
+
+	status_of_women_0 = {
+		group = status_of_women
+		allow = {
+			custom_tooltip = {
+				text = feminism_0_tooltip
+				hidden_tooltip = {
+					holder_scope = {
+						feminism_0_religions_trigger = yes
+					}
+				}
+			}
+		}
+		potential = {
+			has_dlc = "Zeus"
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		pass_effect = {
+			
+		}
+		effect = {
+			if = {
+				limit = {
+					has_law = status_of_women_1
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_SPYMASTER
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_2
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_SPYMASTER
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_CHANCELLOR
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_TREASURER
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_3
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_SPYMASTER
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_CHANCELLOR
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_TREASURER
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_MARSHAL
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_4
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_SPYMASTER
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_CHANCELLOR
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_TREASURER
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_MARSHAL
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_TRUE_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_COMMANDERS
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_ENATIC_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_ENATIC
+				}
+			}
+			hidden_tooltip = {
+				revoke_law = status_of_women_1
+				revoke_law = status_of_women_2
+				revoke_law = status_of_women_3
+				revoke_law = status_of_women_4
+			}
+			set_allow_feminism = no
+			set_allow_gender_laws = no
+		}
+	}
+	status_of_women_1 = {
+		group = status_of_women
+		allow = {
+			holder_scope = {
+				OR = {
+					custom_tooltip = {
+						text = feminism_1_tooltip
+						hidden_tooltip = {
+							feminism_1_religions_trigger = yes
+						}
+					}
+					AND = {
+						custom_tooltip = {
+							text = feminism_0_tooltip
+							hidden_tooltip = {
+								feminism_0_religions_trigger = yes
+							}
+						}
+						is_female = yes
+						trait = ambitious
+					}
+				}
+			}
+		}
+		potential = {
+			has_dlc = "Zeus"
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		pass_effect = {
+			
+		}
+		effect = {
+			if = {
+				limit = {
+					has_law = status_of_women_0
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_SPYMASTER
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_2
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_CHANCELLOR
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_TREASURER
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_3
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_CHANCELLOR
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_TREASURER
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_MARSHAL
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_4
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_CHANCELLOR
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_TREASURER
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_MARSHAL
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_TRUE_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_COMMANDERS
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_ENATIC_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_ENATIC
+				}
+			}
+			
+			hidden_tooltip = {
+				revoke_law = status_of_women_0
+				revoke_law = status_of_women_2
+				revoke_law = status_of_women_3
+				revoke_law = status_of_women_4
+			}
+			set_allow_feminism = no
+			set_allow_gender_laws = no
+		}
+	}
+	status_of_women_2 = {
+		group = status_of_women
+		allow = {
+			holder_scope = {
+				OR = {
+					custom_tooltip = {
+						text = feminism_2_tooltip
+						hidden_tooltip = {
+							feminism_2_religions_trigger = yes
+						}
+					}
+					AND = {
+						custom_tooltip = {
+							text = feminism_1_tooltip
+							hidden_tooltip = {
+								feminism_1_religions_trigger = yes
+							}
+						}
+						is_female = yes
+						trait = ambitious
+					}
+				}
+			}
+		}
+		potential = {
+			has_dlc = "Zeus"
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		pass_effect = {
+			
+		}
+		effect = {
+			if = {
+				limit = {
+					has_law = status_of_women_0
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_SPYMASTER
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_CHANCELLOR
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_TREASURER
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_1
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_CHANCELLOR
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_TREASURER
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_3
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_MARSHAL
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_4
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_MARSHAL
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_TRUE_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_COMMANDERS
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_ENATIC_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_ENATIC
+				}
+			}
+			hidden_tooltip = {
+				revoke_law = status_of_women_0
+				revoke_law = status_of_women_1
+				revoke_law = status_of_women_3
+				revoke_law = status_of_women_4
+			}
+			set_allow_feminism = no
+			set_allow_gender_laws = no
+		}
+	}
+	status_of_women_3 = {
+		group = status_of_women
+		allow = {
+			holder_scope = {
+				OR = {
+					custom_tooltip = {
+						text = feminism_3_tooltip
+						hidden_tooltip = {
+							feminism_3_religions_trigger = yes
+						}
+					}
+					AND = {
+						custom_tooltip = {
+							text = feminism_2_tooltip
+							hidden_tooltip = {
+								feminism_2_religions_trigger = yes
+							}
+						}
+						is_female = yes
+						trait = ambitious
+					}
+				}
+			}
+		}
+		potential = {
+			has_dlc = "Zeus"
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		pass_effect = {
+			
+		}
+		effect = {
+			if = {
+				limit = {
+					has_law = status_of_women_0
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_SPYMASTER
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_CHANCELLOR
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_TREASURER
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_MARSHAL
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_1
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_CHANCELLOR
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_TREASURER
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_MARSHAL
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_2
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_MARSHAL
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_4
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_TRUE_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_FEMALE_COMMANDERS
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_ENATIC_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_DISALLOW_ENATIC
+				}
+			}
+			hidden_tooltip = {
+				revoke_law = status_of_women_0
+				revoke_law = status_of_women_1
+				revoke_law = status_of_women_2
+				revoke_law = status_of_women_4
+			}
+			set_allow_feminism = no
+			set_allow_gender_laws = yes
+		}
+	}
+	status_of_women_4 = {
+		group = status_of_women
+		allow = {
+			holder_scope = {
+				OR = {
+					custom_tooltip = {
+						text = feminism_4_tooltip
+						hidden_tooltip = {
+							feminism_4_religions_trigger = yes
+						}
+					}
+					AND = {
+						custom_tooltip = {
+							text = feminism_3_tooltip
+							hidden_tooltip = {
+								feminism_3_religions_trigger = yes
+							}
+						}
+						is_female = yes
+						trait = ambitious
+					}
+				}
+			}
+		}
+		potential = {
+			has_dlc = "Zeus"
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		pass_effect = {
+			
+		}
+		effect = {
+			if = {
+				limit = {
+					has_law = status_of_women_0
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_SPYMASTER
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_CHANCELLOR
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_TREASURER
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_MARSHAL
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_TRUE_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_ENATIC_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_ENATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_COMMANDERS
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_1
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_CHANCELLOR
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_TREASURER
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_MARSHAL
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_TRUE_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_ENATIC_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_ENATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_COMMANDERS
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_2
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_MARSHAL
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_TRUE_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_ENATIC_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_ENATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_COMMANDERS
+				}
+			}
+			if = {
+				limit = {
+					has_law = status_of_women_3
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_TRUE_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_ENATIC_COGNATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_ENATIC
+				}
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_FEMALE_COMMANDERS
+				}
+			}
+			hidden_tooltip = {
+				revoke_law = status_of_women_0
+				revoke_law = status_of_women_1
+				revoke_law = status_of_women_2
+				revoke_law = status_of_women_3
+			}
+			set_allow_feminism = yes
+			set_allow_gender_laws = yes
+		}
+	}
+	
+	ze_administration_laws_0 = {
+		group = ze_administration_laws
+		default = yes
+		allow = {
+			NOT = { has_law = ze_administration_laws_2 }
+			NOT = { holder_scope = { government = classical_government } }
+		}
+		potential = {
+			has_dlc = "Zeus"
+			NOT = { holder_scope = { is_nomadic = yes } }
+		}
+		ai_will_do = { factor = 0 }
+		ai_will_revoke = { factor = 0 }
+		pass_effect = { }
+		effect = {
+			custom_tooltip = {
+				text = TOOLTIP_DISALLOW_ADDITIONAL_SUCCESSION_LAWS
+			}
+			if = {
+				limit = { 
+					NOT = { has_dlc = "Charlemagne" } 
+				}
+				set_allow_free_duchy_revokation = no
+			}
+			if = {
+				limit = { 
+					has_dlc = "Charlemagne" 
+				}
+				set_allow_free_vice_royalty_revokation = no
+			}
+			hidden_tooltip = {
+				revoke_law = ze_administration_laws_1
+				revoke_law = ze_administration_laws_2
+			}
+		}
+	}
+	ze_administration_laws_1 = {
+		group = ze_administration_laws
+		allow = {
+			holder_scope = {
+				custom_tooltip = {
+					text = is_a_reformed_rel
+					hidden_tooltip = {
+						is_a_reformed_religion_trigger = yes
+					}
+				}
+				stewardship = 10
+				primary_title = {
+					OR = {
+						has_law = centralization_3
+						has_law = centralization_4
+						holder_scope = { government = classical_government }
+						AND = {
+							holder_scope = { government = oriental_monarchy_government }
+							has_law = centralization_2
+						}
+					}
+				}
+			}
+		}
+		potential = {
+			has_dlc = "Zeus"
+			NOT = { holder_scope = { is_nomadic = yes } }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.2
+				always = yes
+			}
+			modifier = {
+				factor = 0
+				has_law = ze_administration_laws_2
+			}
+		}
+		ai_will_revoke = { factor = 0 }
+		pass_effect = { }
+		effect = {
+			if = {
+				limit = { has_law = ze_administration_laws_0 }
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_ADDITIONAL_SUCCESSION_LAWS
+				}
+			}
+			if = {
+				limit = { 
+					NOT = { has_dlc = "Charlemagne" } 
+				}
+				set_allow_free_duchy_revokation = no
+			}
+			if = {
+				limit = { 
+					has_dlc = "Charlemagne" 
+				}
+				set_allow_free_vice_royalty_revokation = no
+			}
+			hidden_tooltip = {
+				revoke_law = ze_administration_laws_0
+				revoke_law = ze_administration_laws_2
+			}
+		}
+	}
+	ze_administration_laws_2 = {
+		group = ze_administration_laws
+		allow = {
+			tier = EMPEROR
+			holder_scope = {
+				stewardship = 12
+				OR = {
+					AND = {
+						custom_tooltip = {
+							text = is_a_reformed_rel
+							hidden_tooltip = {
+								is_a_reformed_religion_trigger = yes
+							}
+						}
+						OR = {
+							has_law = centralization_4
+							AND = { 
+								government = oriental_monarchy_government
+								has_law = centralization_3
+							}
+						}
+						has_law = ze_administration_laws_1
+					}
+					AND = {
+						has_law = clanic_centralization_4
+						prestige = 2000
+					}
+				}
+			}
+#			NOT = { has_law = ze_administration_laws_0 } # commenting gives a way out for non reformed religions, if they succeed in creating an empire
+			has_law = law_voting_power_0
+			has_law = war_voting_power_0
+			has_law = revoke_title_voting_power_0
+			has_law = imprison_voting_power_0
+			has_law = grant_title_voting_power_0
+			has_law = banish_voting_power_0
+			has_law = execution_voting_power_0
+		}
+		potential = {
+			has_dlc = "Zeus"
+			NOT = { holder_scope = { is_nomadic = yes } }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		ai_will_revoke = { factor = 0 }
+		pass_effect = { }
+		effect = {
+			if = {
+				limit = { has_law = ze_administration_laws_0 }
+				custom_tooltip = {
+					text = TOOLTIP_ALLOW_ADDITIONAL_SUCCESSION_LAWS
+				}
+			}
+			if = {
+				limit = { 
+					NOT = { has_dlc = "Charlemagne" } 
+				}
+				set_allow_free_duchy_revokation = yes
+			}
+			if  = {
+				limit = {
+					has_dlc = "Charlemagne"
+				}
+				add_law = vice_royalty_2
+				set_allow_free_vice_royalty_revokation = yes
+			}
+			hidden_tooltip = {
+				revoke_law = ze_administration_laws_0
+				revoke_law = ze_administration_laws_1
+			}
+		}
+		
+		vassal_limit = 25
+		feudal_opinion = -10
+	}
+}

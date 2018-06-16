@@ -1,0 +1,84 @@
+#BYZ
+
+technology = {
+	titles = {
+		d_makedonia			#Added
+#		d_strymon			#Added
+		d_lychnidos			#Added
+		d_hellas			#Added
+		d_cephalonia		#Added
+		d_nikopolis			#Added
+		d_seleukia			#Added
+		d_kappadokia		#Added
+		d_vaspurakan		#Added
+		d_provincia_mesopotamia	#Added
+		d_albania			#Added
+		d_nikaea			#Checked
+		d_samos				#Checked
+		d_aegean_islands	#Checked
+#		d_adrianopolis		#Checked - absent
+		d_thessalonika		#Checked
+		d_dyrrachion		#Checked
+#		d_epirus			#Checked - absent
+		
+		d_achaia			#Checked
+		d_krete				#Checked
+		d_cyprus			#Checked
+		
+		d_anatolia			#Checked
+		d_thracesia			#Checked
+		d_charsianon		#Checked
+		d_armeniacon		#Checked
+		d_paphlagonia		#Checked
+		d_trebizond			#Checked
+		d_armenia_minor		#Checked
+		d_armenia			#Checked
+#		d_mesopotamia		#Checked - absent
+		d_edessa			#Checked
+#		d_coloneia			#Checked - absent
+		d_turnovo			#Checked
+		d_karvuna			#Checked
+		d_kartli			#Checked
+		d_derbent			#Checked
+		d_abkhazia			#Checked
+	}
+	
+	#preliminary flattening
+	1066 = { 
+		military = 0.0
+		economy = 0.0
+		culture = 0.0		
+	}
+}
+
+#The Gateway to the East
+technology = {
+	titles = {
+		d_thrace			#Checked
+	}
+
+	#preliminary flattening
+	1066 = { 
+		military = 0.0
+		economy = 0.0
+		culture = 0.0		
+	}
+}
+
+# Trade republics
+technology = {
+	titles = {
+		d_athens			#Checked
+		d_cibyrrhaeot		#Checked
+	}
+
+	1066 = {
+		military = 0.0
+		economy = 0.1
+		culture = 0.0
+		TECH_TRADE_PRACTICES = 1.0
+	}
+}
+
+
+

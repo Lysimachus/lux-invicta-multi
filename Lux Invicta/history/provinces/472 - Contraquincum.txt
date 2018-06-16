@@ -1,0 +1,21 @@
+# 522 - Pest
+
+# County Title
+title = c_pest
+
+# Settlements
+max_settlements = 5
+
+b_pest = tribal
+b_vac = temple
+
+#b_kiskunhalas = castle
+#b_szentendre = castle
+#b_cegled = city
+#b_abrahamtelke = castle
+#b_kiskoros = castle
+
+# Misc
+culture = hungarian
+religion = tengri_mani
+1066.1.1 = { }

@@ -1,0 +1,19 @@
+# 636 - Lut
+
+# County Title
+title = c_lut
+
+# Settlements
+max_settlements = 3
+b_tabas = tribal
+b_mazanabad = temple
+
+#b_aspak = castle
+#b_amanieh = castle
+#b_kalateh = castle
+#b_bibaz = castle
+#b_esfandiar = castle
+
+# Misc
+culture = berber
+religion = berber_pagan

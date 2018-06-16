@@ -1,0 +1,14 @@
+# 1370 - Mogadishu
+
+# County Title
+title = c_mogadishu
+
+# Settlements
+max_settlements = 3
+b_xamar = castle
+b_balcad = temple
+#b_mareeg = city
+
+# Misc
+culture = roman
+religion = sol

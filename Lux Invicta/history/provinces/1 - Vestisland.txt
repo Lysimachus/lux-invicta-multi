@@ -1,0 +1,16 @@
+# 1 - Vestisland
+
+# County Title
+title = c_vestisland
+
+# Settlements
+max_settlements = 3
+b_thingvellir = tribal
+b_skalholt = temple
+#b_reykjavik = city
+#b_hvamm = castle
+
+# Misc
+culture = icelandic
+religion = norse_pagan
+terrain = mountain

@@ -1,0 +1,15 @@
+# 1238 - Karatal
+
+# County Title
+title = c_karamergen
+
+# Settlements
+max_settlements = 4
+b_kopbirlik = tribal
+#b_ashchisu =
+#b_ushmola =
+#b_krushdalasy =
+
+# Misc
+culture = hunnic
+religion = erlik

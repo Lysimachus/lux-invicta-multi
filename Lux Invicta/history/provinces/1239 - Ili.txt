@@ -1,0 +1,14 @@
+# 1239 - Ili
+
+# County Title
+title = c_navikat
+
+# Settlements
+max_settlements = 4
+b_birlik_navikat = tribal
+#b_akzhar =
+#b_ushzharma =
+
+# Misc
+culture = hunnic
+religion = erlik

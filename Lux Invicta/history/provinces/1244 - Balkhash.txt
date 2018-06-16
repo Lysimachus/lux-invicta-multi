@@ -1,0 +1,18 @@
+# 1244 - Balkhash
+
+# County Title
+title = c_balkhash
+
+# Settlements
+max_settlements = 4
+b_kashakanteniz = tribal
+#b_saryashagan =
+#b_rybalka_tas_aral =
+#b_targyz =
+#b_shashubay =
+#b_ozernyy =
+#b_gulshat =
+
+# Misc
+culture = turkish
+religion = tengri_bud

@@ -1,0 +1,18 @@
+# 833 - Atlas Mnt
+
+# County Title
+title = c_tissemsilt
+
+# Settlements
+max_settlements = 2
+
+b_zabi = castle
+
+#b_equizeto = city
+
+
+# Misc
+culture = berber
+religion = ibadi
+
+# History

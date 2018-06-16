@@ -1,0 +1,17 @@
+# 766 - Tortosa
+
+# County Title
+title = c_tortosa
+
+# Settlements
+max_settlements = 4
+
+b_arwad = castle
+b_tortosa = city
+b_balemia = temple
+
+#b_jableh = castle
+
+# Misc
+culture = hellenistic
+religion = sol

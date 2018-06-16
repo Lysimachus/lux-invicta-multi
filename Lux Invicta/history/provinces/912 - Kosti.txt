@@ -1,0 +1,19 @@
+# 1940 - Kosti
+
+# County Title
+title = c_kosti
+
+# Settlements
+max_settlements = 4
+b_tandalti = tribal
+b_abbeit = temple
+
+#b_kaduqli = city
+#b_umm_ruwaba = temple
+#b_lagawa = castle
+#b_dalang = castle
+
+
+# Misc
+culture = fur
+religion = isis

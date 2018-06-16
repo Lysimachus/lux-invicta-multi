@@ -1,0 +1,5 @@
+1024.1.1= { holder=1712003 }
+1042.1.1={
+	holder=719
+	law = agnatic_succession
+}

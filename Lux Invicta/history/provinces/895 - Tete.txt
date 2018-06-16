@@ -1,0 +1,14 @@
+# 895 - Tete
+
+# County Title
+title = c_tete
+
+# Settlements
+max_settlements = 3
+b_tete = castle
+#b_zumbo = temple
+#b_chifunde = city
+
+# Misc
+culture = amaravi
+religion = nyau

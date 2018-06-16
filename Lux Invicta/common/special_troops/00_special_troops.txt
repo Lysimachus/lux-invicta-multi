@@ -1,0 +1,87 @@
+### LUX INVICTA SPECIAL TROOPS ###
+
+
+### VANILLA ARCHIVED SPECIAL TROOPS ###
+horse_archers = {
+	morale = 3
+	maintenance = 4
+	phase_skirmish_attack = 4
+	phase_melee_attack = 1
+	phase_pursue_attack = 7
+	phase_skirmish_defense = 4.5
+	phase_melee_defense = 2
+	phase_pursue_defense = 4.5
+	base_type = light_cavalry
+	#graphical_culture_type = easterngfx
+}
+
+war_elephants = {
+	morale = 15
+	maintenance = 20
+	phase_skirmish_attack = 0.25
+	phase_melee_attack = 25
+	phase_pursue_attack = 3
+	phase_skirmish_defense = 6
+	phase_melee_defense = 10
+	phase_pursue_defense = 3
+	base_type = heavy_cavalry
+	#graphical_culture_type = indiangfx
+}
+
+camel_cavalry = {
+	morale = 5
+	maintenance = 3
+	phase_skirmish_attack = 3
+	phase_melee_attack = 6
+	phase_pursue_attack = 3
+	phase_skirmish_defense = 2
+	phase_melee_defense = 2
+	phase_pursue_defense = 1.5
+	base_type = light_cavalry
+	#graphical_culture_type = muslimgfx
+}
+
+## GENERICS ##
+
+SPUN_HKC = {
+	#characteristics: Mdefence+, Moffence+, Pdefence+, morale+
+	morale = 6
+	maintenance = 2
+	phase_skirmish_attack = 1
+	phase_melee_attack = 9
+	phase_pursue_attack = 2
+	phase_skirmish_defense = 6
+	phase_melee_defense = 5
+	phase_pursue_defense = 4
+	base_type = heavy_infantry
+	#graphical_culture_type = hedgeknightsgfx
+}
+
+SPUN_RDC = {
+	#characteristics: Soffence+, Sdefence++, Moffence+, Mdefence+, Poffence-, Pdefence-, morale+
+	morale = 4
+	maintenance = 1
+	phase_skirmish_attack =  9
+	phase_melee_attack = 4
+	phase_pursue_attack = 1
+	phase_skirmish_defense = 3
+	phase_melee_defense = 4
+	phase_pursue_defense = 2
+	base_type = archers
+	#graphical_culture_type = rhodokigfx
+}
+
+
+SPUN_SWC = {
+	#characteristics: Sdefence+, Mdefence++, morale+
+	morale = 6
+	maintenance = 2
+	phase_skirmish_attack =  0.1
+	phase_melee_attack = 6.9
+	phase_pursue_attack = 1
+	phase_skirmish_defense = 7
+	phase_melee_defense = 10
+	phase_pursue_defense = 2
+	base_type = pikemen
+	#graphical_culture_type = elitespearwallgfx
+}

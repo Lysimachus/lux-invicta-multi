@@ -1,0 +1,100 @@
+############################################
+#					   #
+# CHARACTER REGLIGIOUS MODIFIERS BY NUMAHR #
+#					   #
+############################################
+
+sectarian_light = {
+	customizer = no
+	
+	general_opinion = -10
+	same_opinion_if_same_religion = 20
+	infidel_opinion = -20
+}
+
+sectarian_heavy = {
+	customizer = no
+	
+	general_opinion = -20
+	same_opinion_if_same_religion = 40
+	infidel_opinion = -40
+}
+
+# new trait for SELIN #
+# generous - charitable on steroids
+generous = {
+	personality = yes
+	opposites = {
+		greedy
+	} # I didn't add "frugal" from F&F here.  A person can be frugal while at the same time generous ( which isn't exactly a good idea anyway, but I personally know people like that so I can say they do exist )
+	
+	global_tax_modifier = -0.2
+	monthly_character_prestige = 0.2
+	
+	diplomacy = 3
+	stewardship = -1
+	intrigue = -1
+	
+	vassal_opinion = 25
+	same_opinion = 15
+	
+	ai_greed = -100
+	ai_honor = 25
+	
+}
+
+messianic_savior = {
+	customizer = no
+	random = no
+	religious = yes
+	
+	same_religion_opinion = 20
+	infidel_opinion = -10
+	
+	command_modifier = {
+		religious_enemy = 0.5
+		morale_offence = 0.2
+		defence = 0.2
+	}
+}
+
+clanic_defense_0_commander = {
+	customizer = no
+	random = no
+
+	martial = 3
+	diplomacy = 2
+	tribal_opinion = 30
+
+	command_modifier = {
+		morale_defence = 1
+		defence = 1
+	}
+}
+
+clanic_defense_1_commander = {
+	customizer = no
+	random = no
+
+	martial = 2
+	diplomacy = 1
+	tribal_opinion = 20
+
+	command_modifier = {
+		morale_defence = 0.5
+		defence = 0.5
+	}
+}
+
+clanic_defense_2_commander = {
+	customizer = no
+	random = no
+
+	martial = 1
+	tribal_opinion = 10
+
+	command_modifier = {
+		morale_defence = 0.2
+		defence = 0.2
+	}
+}

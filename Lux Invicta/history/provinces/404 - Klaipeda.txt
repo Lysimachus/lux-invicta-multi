@@ -1,0 +1,19 @@
+# 372 - Memel
+
+# County Title
+title = c_memel
+
+# Settlements
+max_settlements = 4
+b_gargzdai = tribal
+b_kretingale = temple
+
+#b_kaup = city
+#b_juodkrante = castle
+#b_nida = castle
+#b_dreverna = castle
+#b_palanga = castle
+
+# Misc
+culture = lettigallish
+religion = dievas

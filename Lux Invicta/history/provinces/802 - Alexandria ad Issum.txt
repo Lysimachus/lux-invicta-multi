@@ -1,0 +1,18 @@
+# 763 - Alexandretta
+
+# County Title
+title = c_alexandretta
+
+# Settlements
+max_settlements = 4
+
+b_alexandretta = castle
+b_rhosus = temple
+b_myriandros = city
+#b_belen = castle
+
+# Misc
+culture = greek
+religion = melkite
+terrain = mountain
+1066.1.1 = { }

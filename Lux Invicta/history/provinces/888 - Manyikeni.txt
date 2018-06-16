@@ -1,0 +1,12 @@
+# 888 - Manyikeni
+
+# County Title
+title = c_manyikeni
+
+# Settlements
+max_settlements = 3
+b_manyikeni = tribal
+
+# Misc
+culture = zulu
+religion = zulu_pagan

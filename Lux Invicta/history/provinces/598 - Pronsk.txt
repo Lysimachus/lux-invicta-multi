@@ -1,0 +1,20 @@
+# 577 - Pronsk
+
+# County Title
+title = c_pronsk
+
+# Settlements
+max_settlements = 4
+b_pronsk = tribal
+b_yelets = temple
+
+#b_mikhaylov = castle
+#b_skopin = castle
+#b_ryazhsk = city
+#b_sergijewskoje = castle
+#b_bogoroditsk = castle
+
+# Misc
+culture = russian
+religion = tengri_rod
+1066.1.1 = { }

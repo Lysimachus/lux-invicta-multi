@@ -1,0 +1,18 @@
+# 768 - Baalbek
+
+# County Title
+title = c_baalbek
+
+# Settlements
+max_settlements = 4
+
+b_baalbek = castle
+b_laboue = city
+b_hermel = temple
+
+#b_yammoune = castle
+
+# Misc
+culture = syroaramean
+religion = sol
+1066.1.1 = { }

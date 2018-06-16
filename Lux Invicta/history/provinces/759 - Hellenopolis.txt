@@ -1,0 +1,16 @@
+# 708 - Tell Bashir
+
+# County Title
+title = c_tell_bashir
+
+# Settlements
+max_settlements = 4
+b_turbessel = castle
+b_nizip = city
+b_manbij = temple
+#b_birtha = castle
+
+# Misc
+culture = greek
+religion = melkite
+1066.1.1 = { }

@@ -1,0 +1,16 @@
+# 1564 - Lepiel
+
+# County Title
+title = c_lepiel
+
+# Settlements
+max_settlements = 3
+b_lepiel = tribal
+
+#b_novolukoml = castle
+
+# Misc
+culture = russian
+religion = slavic_pagan
+
+# History

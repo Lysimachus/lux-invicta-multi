@@ -1,0 +1,21 @@
+# 255 - Thüringen
+
+# County Title
+title = c_thuringen
+
+# Settlements
+max_settlements = 4
+b_henneberg = castle
+b_erfurt = tribal
+b_muhlhausen = temple
+
+#b_eichsfeld = castle
+#b_reuss = castle
+#b_salzungen = castle
+#b_schmalkalden = castle
+
+
+# Misc
+culture = teutonic
+religion = allfather
+1066.1.1 = { }

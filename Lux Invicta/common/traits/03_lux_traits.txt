@@ -1,0 +1,7540 @@
+###Dynastic Destinty DLC definitions###
+#modified AI parameters (values per point, max of 2x)#
+#diplomacy/martial
+#ai_honor = 30
+#diplomacy
+#ai_rationality = 20
+#martial
+#ai_zeal = 20
+##stewardship
+#ai_rationality = 30
+#intrigue
+#ai_honor = -30
+#stewardship/intrigue
+#ai_greed = 20
+#lux special-dynasty base additions (all dynasties get this)
+#ai_ambition = 30
+#
+
+
+#alexandros
+hist_alexandros = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_zeal = 40
+	ai_honor = 60
+}
+hist_ptolemaios = {
+	inherit_chance = 100
+		
+	opposites =  {
+		hist_alexandros
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	stewardship = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_rationality = 60
+	ai_greed = 40
+}
+hist_gelimer = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_seleukos = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_sassanid = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 40
+}
+hist_julianos = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	intrigue = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5	
+	ai_rationality = 20
+	ai_greed = 20
+}
+hist_agiad = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_karling = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 1
+	diplomacy = 1
+	health = 0.5
+	fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_merovingian = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	intrigue = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_rationality = 20
+	ai_greed = 20
+}
+hist_capet = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	stewardship = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 30
+	ai_rationality = 50
+	ai_greed = 20
+}
+hist_barcelona = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_decebal = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_brian = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_oleg = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_rurik = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_parmenion = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_almaqah = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	stewardship = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_rationality = 60
+	ai_greed = 40
+}
+hist_artorius = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_vespasian = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_kahina = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_verus = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 40
+}
+hist_amyntas = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_severus = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_muawiyah = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	intrigue = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_rationality = 20
+	ai_greed = 20
+}
+hist_calgacus = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_theodemir = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_hengist = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	intrigue = 1
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_zeal = 20
+	ai_greed = 20
+}
+hist_aelle = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	intrigue = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_rationality = 20
+	ai_greed = 20
+}
+hist_aescwine = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 40
+}
+hist_raedwald = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_oswald = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1	
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_offa = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	stewardship = 2	
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_rationality = 60
+	ai_greed = 40
+}
+hist_urien = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1	
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_maelgwn = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1	
+	intrigue = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_rationality = 20
+	ai_greed = 20
+}
+hist_mathrafal = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_artgal = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_samo = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1	
+	stewardship = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 30
+	ai_rationality = 50
+	ai_greed = 20
+}
+hist_cerdic = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1	
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_wisimar = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1	
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_gabran = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1	
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_findlaech = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	intrigue = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = -60
+	ai_greed = 40
+}
+hist_britconstantine = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_ivar = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	intrigue = 1	
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_zeal = 20
+	ai_greed = 20
+}
+hist_fergus = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1	
+	stewardship = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 30
+	ai_rationality = 50
+	ai_greed = 20
+}
+hist_guthrum = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 2	
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 40
+}
+hist_halfdan = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2	
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_sweyn = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_rognvald = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_zenobia = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_warcislaw = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_krak = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	stewardship = 1
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 30
+	ai_zeal = 20
+	ai_rationality = 30
+	ai_greed = 20
+}
+hist_piast = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	intrigue = 1
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_zeal = 20
+	ai_greed = 20
+}
+hist_cech = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+hist_rus = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_attila = {
+	inherit_chance = 100
+		opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_diocletian = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 1
+	stewardship = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 30
+	ai_zeal = 20
+	ai_rationality = 30
+	ai_greed = 20
+}
+hist_valentinian = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_aurelius = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 1
+	stewardship = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 30
+	ai_zeal = 20
+	ai_rationality = 30
+}
+hist_augustus = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_popiel = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	stewardship = 1
+	intrigue = 1
+	health = 0.5 fertility = 0.1
+	ai_rationality = 30
+	ai_honor = -30
+	ai_greed = 40
+}
+hist_theodosius = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_aetius = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	martial = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+hist_david = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_ptolemaios
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+
+	diplomacy = 1
+	stewardship = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+
+#LI v6hI1 additions
+
+#mithridates
+hist_mithridates = {
+	inherit_chance = 100
+	
+	opposites =  {
+			hist_alexandros
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+	martial = 1
+	intrigue = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_zeal = 20
+	ai_greed = 20
+#	ai_honor = 0
+}
+
+#hieron
+hist_hieron = {
+	inherit_chance = 100
+	
+	opposites =  {
+			hist_alexandros
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+	diplomacy = 1
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+
+#maccabeus
+hist_maccabeus = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+	diplomacy = 1
+	martial = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 20
+	ai_zeal = 20
+}
+
+#viriathus
+hist_viriathus = {
+	inherit_chance = 100
+	
+	opposites =  {
+			hist_alexandros
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+	martial = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 40
+}
+
+#chlorus
+hist_chlorus = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_theodoric
+		hist_arminius
+		hist_asander
+	}
+	diplomacy = 2
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_rationality = 40
+}
+
+#theodoric
+hist_theodoric = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_arminius
+		hist_asander
+	}
+	diplomacy = 1
+	intrigue = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_rationality = 40
+	ai_greed = 20
+}
+
+#arminius
+hist_arminius = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_asander
+	}
+	martial = 1
+	diplomacy = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 60
+	ai_zeal = 20
+	ai_rationality = 20
+}
+
+#asander
+hist_asander = {
+	inherit_chance = 100
+	
+	opposites =  {
+		hist_alexandros
+		hist_gelimer
+		hist_seleukos
+		hist_sassanid
+		hist_julianos
+		hist_agiad
+		hist_karling
+		hist_merovingian
+		hist_capet
+		hist_barcelona
+		hist_decebal
+		hist_brian
+		hist_oleg
+		hist_rurik
+		hist_parmenion
+		hist_almaqah
+		hist_artorius
+		hist_vespasian
+		hist_kahina
+		hist_verus
+		hist_amyntas
+		hist_severus
+		hist_muawiyah
+		hist_calgacus
+		hist_theodemir
+		hist_hengist
+		hist_aelle
+		hist_aescwine
+		hist_raedwald
+		hist_oswald
+		hist_offa
+		hist_urien
+		hist_maelgwn
+		hist_mathrafal
+		hist_artgal
+		hist_samo
+		hist_cerdic
+		hist_wisimar
+		hist_gabran
+		hist_findlaech
+		hist_britconstantine
+		hist_ivar
+		hist_fergus
+		hist_guthrum
+		hist_halfdan
+		hist_sweyn
+		hist_rognvald
+		hist_zenobia
+		hist_warcislaw
+		hist_krak
+		hist_piast
+		hist_cech
+		hist_rus
+		hist_attila
+		hist_diocletian
+		hist_valentinian
+		hist_aurelius
+		hist_augustus
+		hist_popiel
+		hist_theodosius
+		hist_aetius
+		hist_david
+		hist_mithridates
+		hist_hieron
+		hist_maccabeus
+		hist_viriathus
+		hist_chlorus
+		hist_theodoric
+		hist_arminius
+	}
+	diplomacy = 1
+	stewardship = 1
+	health = 0.5 fertility = 0.1
+	ai_ambition = 30
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	ai_honor = 30
+	ai_rationality = 50
+	ai_greed = 20
+}
+hetairos = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		tengri_warrior
+		leo_mithras
+		korybantes
+		son_of_mahrem
+		mukarrib
+		induna
+		nyau_akakairo
+		son_of_ifri
+		gongfu_warrior
+		dragon_knight
+		guardian_of_elect
+		seal_holder
+		warrior_of_light
+		medjay
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+leo_mithras = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		korybantes
+		son_of_mahrem
+		mukarrib
+		induna
+		nyau_akakairo
+		son_of_ifri
+		gongfu_warrior
+		dragon_knight
+		guardian_of_elect
+		seal_holder
+		warrior_of_light
+		medjay
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+korybantes = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		son_of_mahrem
+		mukarrib
+		induna
+		nyau_akakairo
+		son_of_ifri
+		gongfu_warrior
+		dragon_knight
+		guardian_of_elect
+		seal_holder
+		warrior_of_light
+		medjay
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+son_of_mahrem = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		korybantes
+		mukarrib
+		induna
+		nyau_akakairo
+		son_of_ifri
+		gongfu_warrior
+		dragon_knight
+		guardian_of_elect
+		seal_holder
+		warrior_of_light
+		medjay
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+mukarrib = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		korybantes
+		son_of_mahrem
+		induna
+		nyau_akakairo
+		son_of_ifri
+		gongfu_warrior
+		dragon_knight
+		guardian_of_elect
+		seal_holder
+		warrior_of_light
+		medjay
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+azande = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		korybantes
+		son_of_mahrem
+		mukarrib
+		induna
+		nyau_akakairo
+		son_of_ifri
+		gongfu_warrior
+		dragon_knight
+		guardian_of_elect
+		seal_holder
+		warrior_of_light
+		medjay
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+induna = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		korybantes
+		son_of_mahrem
+		mukarrib
+		azande
+		nyau_akakairo
+		son_of_ifri
+		gongfu_warrior
+		dragon_knight
+		guardian_of_elect
+		seal_holder
+		warrior_of_light
+		medjay
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+nyau_akakairo = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		korybantes
+		son_of_mahrem
+		mukarrib
+		azande
+		induna
+		son_of_ifri
+		gongfu_warrior
+		dragon_knight
+		guardian_of_elect
+		seal_holder
+		warrior_of_light
+		medjay
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+son_of_ifri = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		korybantes
+		son_of_mahrem
+		mukarrib
+		azande
+		induna
+		nyau_akakairo
+		gongfu_warrior
+		dragon_knight
+		guardian_of_elect
+		seal_holder
+		warrior_of_light
+		medjay
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+gongfu_warrior = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		korybantes
+		son_of_mahrem
+		mukarrib
+		azande
+		induna
+		nyau_akakairo
+		son_of_ifri
+		dragon_knight
+		guardian_of_elect
+		seal_holder
+		warrior_of_light
+		medjay
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+dragon_knight = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		korybantes
+		son_of_mahrem
+		mukarrib
+		azande
+		induna
+		nyau_akakairo
+		son_of_ifri
+		gongfu_warrior
+		guardian_of_elect
+		seal_holder
+		warrior_of_light
+		medjay
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+guardian_of_elect = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		korybantes
+		son_of_mahrem
+		mukarrib
+		azande
+		induna
+		nyau_akakairo
+		son_of_ifri
+		gongfu_warrior
+		dragon_knight
+		seal_holder
+		warrior_of_light
+		medjay
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+seal_holder = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		korybantes
+		son_of_mahrem
+		mukarrib
+		azande
+		induna
+		nyau_akakairo
+		son_of_ifri
+		gongfu_warrior
+		dragon_knight
+		guardian_of_elect
+		warrior_of_light
+		medjay
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+warrior_of_light = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		korybantes
+		son_of_mahrem
+		mukarrib
+		azande
+		induna
+		nyau_akakairo
+		son_of_ifri
+		gongfu_warrior
+		dragon_knight
+		guardian_of_elect
+		seal_holder
+		medjay
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+medjay = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		korybantes
+		son_of_mahrem
+		mukarrib
+		azande
+		induna
+		nyau_akakairo
+		son_of_ifri
+		gongfu_warrior
+		dragon_knight
+		guardian_of_elect
+		seal_holder
+		warrior_of_light
+		vel_wielder
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+vel_wielder = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		korybantes
+		son_of_mahrem
+		mukarrib
+		azande
+		induna
+		nyau_akakairo
+		son_of_ifri
+		gongfu_warrior
+		dragon_knight
+		guardian_of_elect
+		seal_holder
+		warrior_of_light
+		medjay
+		serpent_warrior
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+serpent_warrior = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		shaddai
+		gondi_shahansha
+		hetairos
+		leo_mithras
+		korybantes
+		son_of_mahrem
+		mukarrib
+		azande
+		induna
+		nyau_akakairo
+		son_of_ifri
+		gongfu_warrior
+		dragon_knight
+		guardian_of_elect
+		seal_holder
+		warrior_of_light
+		medjay
+		vel_wielder
+	}
+	
+	martial = 2
+	combat_rating = 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+sympathy_abrahamics = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = abrahamic_group }
+	}
+
+	tolerates_abrahamic_group = yes
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_anatolians = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = anatolian_group }
+	}
+
+	tolerates_anatolian_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_east_africans = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = east_african_group }
+	}
+
+	tolerates_east_african_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_arabpagans = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = arabpagan_group }
+	}
+
+	tolerates_arabpagan_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_aztecs = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = aztec_group }
+	}
+
+	tolerates_aztec_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_baltics = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = baltic_group }
+	}
+
+	tolerates_baltic_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_bantus = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = bantu_group }
+	}
+
+	tolerates_bantu_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_berbers = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = berberpagan_group }
+	}
+
+	tolerates_berberpagan_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_buddhists = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = bud_group }
+	}
+
+	tolerates_bud_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_celtics = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = celtic_group }
+	}
+
+	tolerates_celtic_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_chinese = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = chinese_group }
+	}
+
+	tolerates_chinese_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_nordic = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = norsegerman_group }
+	}
+
+	tolerates_norsegerman_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_egyptian = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = egyptian_group }
+	}
+
+	tolerates_egyptian_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_finnish = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = finnish_group }
+	}
+
+	tolerates_finnish_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_graecoroman = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = graecoroman_group }
+	}
+
+	tolerates_graecoroman_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_indohellens = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = indohelen_group }
+	}
+
+	tolerates_indohelen_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_inuit = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = inuit_group }
+	}
+
+	tolerates_inuit_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_luwians = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = luwian_group }
+	}
+
+	tolerates_luwian_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_mande = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = mand_group }
+	}
+
+	tolerates_mand_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_manichaeans = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = mani_group }
+	}
+
+	tolerates_mani_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_mithraics = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = mithra_group }
+	}
+
+	tolerates_mithra_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_platonics = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = neoplato_group }
+	}
+
+	tolerates_neoplato_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_palmyrans = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = palmyranpagan_group }
+	}
+
+	tolerates_palmyranpagan_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_sererics = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = serer_group }
+	}
+
+	tolerates_serer_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_slavics = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = slavic_group }
+	}
+
+	tolerates_slavic_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_sol = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = sol_group }
+	}
+
+	tolerates_sol_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_tengri = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = tengri_group }
+	}
+
+	tolerates_tengri_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_yazd = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = yazd_group }
+	}
+
+	tolerates_yazd_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_zal = {
+	opposites = {
+		zealous
+	}
+
+	potential = {
+		NOT = { religion_group = zal_group }
+	}
+
+	tolerates_zal_group = yes
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}

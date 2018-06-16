@@ -1,0 +1,16 @@
+# 1236 - Alatau
+
+# County Title
+title = c_barskhan
+
+# Settlements
+max_settlements = 2
+b_barskhan = tribal
+b_tamga = temple
+#b_chon_jargylchak =
+#b_akterek =
+#b_chychkan =
+
+# Misc
+culture = hunnic
+religion = mani

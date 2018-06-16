@@ -1,0 +1,3752 @@
+###Family Matters
+## ID RANGES 1830000-1839999
+
+### The Leper King of Carthage's family
+# Leper King's elder brother - assasinated
+1830000 = {
+	name = "Gaiseric"
+	father = 1716042
+	dynasty = 1100103
+	religion = "arian"
+	culture = "vandal"
+	
+	add_trait = "hist_gelimer"
+	1029.1.2 = {
+		birth = yes
+	}
+	1061.1.2 = {
+		death = {
+			death_reason = death_murder
+			killer = 301
+		}
+	}
+}
+
+# Leper King's younger sister - executed
+1830001 = {
+	name = "Chlotild"
+	father = 1716042
+	dynasty = 1100103
+
+	add_trait = "hist_gelimer"
+	religion = "arian"
+	culture = "vandal"
+	female = yes
+	
+	1040.1.2 = {
+		birth = yes
+	}
+	1062.1.2 = {
+		death = {
+			death_reason = death_execution
+			killer = 301
+		}
+	}
+}
+
+# Leper King's deformed son
+1830002 = {
+	name = "Magneric"
+	father = 301
+	mother = 1830004
+	dynasty = 1100103
+	
+	religion = "arian"
+	culture = "vandal"
+	add_trait = "hist_gelimer"
+	add_trait = "clubfooted"
+	add_trait = "hunchback"
+	
+	1062.1.2 = {
+		birth = yes
+	}
+	1100.1.2 = {
+		death = yes
+	}
+}
+
+# Leper King's vengeful old uncle
+1830003 = {
+	name = "Sigeric"
+	father = 1716041
+	dynasty = 1100103
+	
+	add_trait = "hist_gelimer"
+	add_trait = "wroth"
+	add_trait = "skilled_tactician"
+	add_trait = "proud"
+	add_trait = "honest"
+	add_trait = "depressed"
+	
+	religion = "arian"
+	culture = "vandal"
+	
+	987.1.2 = {
+		birth = yes
+	}
+	
+	1061.1.2 = {
+		employer = 441 # At Cagliari
+		effect = {
+			k_carthage = {
+				holder_scope = {
+					add_rival = ROOT 
+				}
+			}
+		}
+	}
+	
+	1070.1.2 = {
+		death = yes
+	}
+}
+
+# Leper King's young wife
+1830004 = {
+	name = "Berthefled"
+	dynasty = 1100295
+	father = 1716046 
+	female = yes
+	religion = "arian"
+	culture = "vandal"
+	add_trait = "naive_appeaser"
+	add_trait = "trusting"	
+	1045.1.2 = {
+		birth = yes
+	}
+	1061.1.2 = {
+		add_spouse = 301
+	}
+	1100.1.2 = {
+		death = yes
+	}
+}
+
+# Leper King's cousin - raised to end his reign
+1830005 = {
+	name = "Gelimer"
+	father = 1830003
+	dynasty = 1100103
+	
+	religion = "arian"
+	culture = "vandal"
+	
+	add_trait = "hist_gelimer"
+	add_trait = "brilliant_strategist"
+	add_trait = "quick"
+	add_trait = "patient"
+	add_trait = "honest"
+	add_trait = "brave"
+	add_trait = "proud"
+	
+	1048.1.2 = {
+		birth = yes
+	}
+	
+	1063.1.2 = {
+		employer = 441 # At Cagliari
+		effect = {
+			k_carthage = {
+				holder_scope = {
+					add_rival = ROOT 
+				}
+			}
+		}
+	}
+	
+	1100.1.2 = {
+		death = yes
+	}
+}
+
+### Flavius' (EREmperor) family
+# His wife, a Dionysian cultist through and through
+1830006 = {
+	name = "Xene"
+	dynasty = 1100471 #
+	# father = 1716046 
+	female = yes
+	religion = "dionysos"
+	culture = "hellenistic"
+	trait = "charismatic_negotiator"
+	trait = "fair"
+	trait = "hedonist"
+	trait = "mystic"
+	trait = "arbitrary"
+	trait = "lustful"
+	
+	1034.1.2 = {
+		birth = yes
+	}
+	1049.1.2 = {
+		add_spouse = 1
+	}
+	1100.1.2 = {
+		death = yes
+	}
+}
+
+# His son
+1830007 = {
+	name = "Helias"
+	dynasty = 1100101 #
+	father = 1 
+	mother = 1830006 
+	religion = "sol"
+	culture = "greek"
+	add_trait = "hist_julianos"
+	trait = "shy"
+	trait = "trusting"
+	
+	1052.1.2 = {
+		birth = yes
+	}
+	1100.1.2 = {
+		death = yes
+	}
+}
+
+# His twin daughters ( 1 )
+1830008 = {
+	name = "Zoe"
+	dynasty = 1100101 #
+	father = 1 
+	mother = 1830006 
+	female = yes
+	religion = "sol"
+	culture = "greek"
+	add_trait = "hist_julianos"
+	trait = "twin"
+	trait = "fair"
+	trait = "content"
+	
+	1051.1.2 = {
+		birth = yes
+	}
+	1100.1.2 = {
+		death = yes
+	}
+}
+
+# His twin daughters ( 2 )
+1830009 = {
+	name = "Valeria"
+	dynasty = 1100101 #
+	father = 1 
+	mother = 1830006 
+	female = yes
+	religion = "sol"
+	culture = "greek"
+	add_trait = "hist_julianos"
+	trait = "twin"
+	trait = "fair"
+	trait = "gregarious"
+	
+	1051.1.2 = {
+		birth = yes
+	}
+	1100.1.2 = {
+		death = yes
+	}
+}
+#Little brother and family (character generator)
+1830010={
+	name = Eugenios
+	dynasty = 1100101
+		add_trait = "hist_julianos"
+	father = 12550
+	dna = "jhalmjgdhec"
+	culture = greek religion = sol
+	martial = 4 diplomacy = 4 stewardship = 5 intrigue = 8 learning = 8
+	add_trait = grey_eminence add_trait = hunter add_trait = charitable add_trait = craven add_trait = just add_trait = cruel add_trait = gregarious 
+	1033.5.11={ birth=yes }
+	1096.11.11={ death=yes }
+}
+1830011={
+	name = Matthaios
+	dynasty = 1100101
+		add_trait = "hist_julianos"
+	dna = "mhlamjhdhfc"
+	culture = greek religion = sol
+	martial = 4 diplomacy = 4 stewardship = 6 intrigue = 7 learning = 8
+	add_trait = scholarly_theologian add_trait = temperate add_trait = ambitious add_trait = kind add_trait = gregarious add_trait = lustful add_trait = diligent add_trait = stressed 
+	father = 1830010	#Eugenios
+	mother = 1830016
+	1054.6.22={ birth=yes }
+	1102.11.18={ death=yes }
+}
+1830012={
+	name = Sophia
+	female = yes
+	dynasty = 1100101
+		add_trait = "hist_julianos"
+	dna = "jcafnapdoeg"
+	culture = greek religion = sol
+	father = 1830010	#Eugenios
+	mother = 1830016
+	1056.6.8={ birth=yes }
+	1132.4.14={ death=yes }
+}
+1830013={
+	name = Germanos
+	dynasty = 1100101
+		add_trait = "hist_julianos"
+	dna = "hhglmegohki"
+	culture = greek religion = sol
+	martial = 5 diplomacy = 8 stewardship = 7 intrigue = 4 learning = 6
+	add_trait = elusive_shadow add_trait = charitable add_trait = brave 
+	father = 1830010	#Eugenios
+	mother = 1830016
+	1059.4.3={ birth=yes }
+	1125.2.9={ death=yes }
+}
+1830014={
+	name = Neoptolemus
+	dynasty = 1100101
+		add_trait = "hist_julianos"
+	dna = "jhafmagpcep"
+	culture = greek religion = sol
+	martial = 4 diplomacy = 4 stewardship = 6 intrigue = 4 learning = 6
+	add_trait = midas_touched add_trait = deceitful add_trait = gregarious add_trait = charitable 
+	father = 1830010	#Eugenios
+	mother = 1830016
+	1063.9.2={ birth=yes }
+	1147.12.20={ death=yes }
+}
+1830015={
+	name = Anastasia
+	female = yes
+	dynasty = 1100101
+		add_trait = "hist_julianos"
+	dna = "jhalpjkgcec"
+	culture = greek religion = sol
+	father = 1830010	#Eugenios
+	mother = 1830016
+	1064.9.27={ birth=yes }
+	1116.5.30={ death=yes }
+}
+1830016= {
+	name = "Hypatia"
+	female = yes
+	religion = "sol"
+	culture = "greek"
+	trait = "charismatic_negotiator"
+	
+	1034.1.2 = {
+		birth = yes
+	}
+	1049.1.2 = {
+		add_spouse = 1830010
+	}
+	1100.1.2 = {
+		death = yes
+	}
+}
+
+#Dorotheos' family
+
+#Extra family members (by tsf4)
+1830017 = { 
+	name = "Candida"
+	female="yes"
+	dynasty = 1100265
+	dna = "dclflahsxki"
+	properties = "0fyh0h00000"
+	health = 7.5
+	religion = "roman_imperial"
+	culture = "roman"
+	add_trait = "hist_augustus"
+	add_trait = "zealous"
+	add_trait = "gregarious"
+	add_trait = "proud"
+	father = 1712500
+	1055.1.1 = {
+		birth = "1055.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830018 = {
+	name = "Avitus"
+	dynasty = 1100265
+	health = 7.5
+	religion = "roman_imperial"
+	culture = "roman"
+	add_trait = "hist_augustus"
+	add_trait = "charismatic_negotiator"
+	add_trait = "envious"
+	add_trait = "ambitious"
+	1050.1.1 = {
+		birth = "1050.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830019 = {
+	name = "Predslava"
+	female="yes"
+	dynasty = 1100266
+	dna = "nkdyubmxgcu"
+	health = 7.5
+	religion = "sol_norse"
+	culture = "varangian"
+	add_trait = "hist_rurik"
+	father = 13509
+	1056.1.1 = {
+		birth = "1056.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830020 = {
+	name = "Kari"
+	dynasty = 1100266
+	health = 7.5
+	religion = "sol_norse"
+	culture = "varangian"
+	add_trait = "hist_rurik"
+	1051.1.1 = {
+		birth = "1051.1.1"
+	}
+	1100.1.2 = {
+		death = "1100.1.2"
+	}
+}
+1830021 = {
+	name = "Lifeyjar"
+	dynasty = 1100267
+	health = 7.5
+	religion = "norse_pagan"
+	culture = "varangian"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830022 = {
+	name = "Premyslava"
+	female = "yes"
+	dynasty = 1100267
+	dna = "uscrqjppgck"
+	health = 7.5
+	father = "1830021"
+	religion = "norse_pagan"
+	culture = "varangian"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830023 = {
+	name = "Már"
+	dynasty = 1100267
+	health = 7.5
+	father = "1830021"
+	religion = "norse_pagan"
+	culture = "varangian"
+	1051.1.1 = {
+		birth = "1051.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830024 = {
+	name = "Eupraxia"
+	female = "yes"
+	dynasty = 1100268
+	dna = "usjfzqzjgci"
+	health = 7.5
+	father = 13522
+	religion = "sol_slav"
+	culture = "varangian"
+	1051.1.1 = {
+		birth = "1051.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830025 = {
+	name = "Ormulfr"
+	dynasty = 1100268
+	health = 7.5
+	religion = "sol_slav"
+	culture = "varangian"
+	1046.1.1 = {
+		birth = "1046.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830026 = {
+	name = "Malmfred"
+	female = "yes"
+	dynasty = 1100269
+	dna = "wseubyuhgcs"
+	properties = "ti0fck00000"
+	health = 7.5
+	father = 13525
+	religion = "sol_slav"
+	culture = "varangian"
+	1051.1.1 = {
+		birth = "1051.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830027 = {
+	name = "Rorik"
+	dynasty = 1100269
+	health = 7.5
+	religion = "sol_slav"
+	culture = "varangian"
+	1046.1.1 = {
+		birth = "1046.1.1"
+	}
+	1105.1.2 = {
+		death = "1100.1.2"
+	}
+}
+1830028 = {
+	name = "Gleb" #chernigov
+	dynasty = 1100270
+	properties = "0djsad00000"
+	health = 7.5
+	religion = "slavic_christian"
+	culture = "russian"
+	add_trait = "hist_rurik"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830029 = {
+	name = "Yekaterina" #chernigov
+	female = "yes"
+	dynasty = 1100270
+	dna = "qflufcmfnna"
+	health = 7.5
+	father = 1830028
+	religion = "slavic_christian"
+	culture = "russian"
+	add_trait = "hist_rurik"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830030 = {
+	name = "Lev" #chernigov
+	dynasty = 1100270
+	health = 7.5
+	religion = "slavic_christian"
+	culture = "russian"
+	add_trait = "hist_rurik"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830031 = {
+	name = "Radoslav" #pereyas
+	dynasty = 1100271
+	properties = "0d0gbh00000"
+	health = 7.5
+	religion = "slavic_christian"
+	culture = "russian"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830032 = {
+	name = "Fevronia" #pereyas
+	female = "yes"
+	dynasty = 1100271
+	dna = "fcdpwqmnjcj"
+	health = 7.5
+	father = 1830031
+	religion = "slavic_christian"
+	culture = "russian"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830033 = {
+	name = "Sviapotulk" #pereyas
+	dynasty = 1100271
+	health = 7.5
+	religion = "slavic_christian"
+	culture = "russian"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830034 = {
+	name = "Malusha" #kiev
+	female = "yes"
+	dynasty = 1100272
+	dna = "fsgocjnwgcc"
+	health = 7.5
+	religion = "perun"
+	culture = "russian"
+	father = 16367
+	add_trait = "hist_oleg"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830035 = {
+	name = "Voislav" #kiev
+	dynasty = 1100272
+	properties = "cj0dad00000"
+	health = 7.5
+	religion = "perun"
+	culture = "russian"
+	add_trait = "hist_oleg"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830036 = {
+	name = "Rogneda"
+	female = "yes"
+	dynasty = 1100273
+	dna = "ycympqzdzrm"
+	properties = "cmvcbd00000"
+	health = 7.5
+	religion = "mani_slavic"
+	culture = "russian"
+	father = 16343
+	add_trait = "hist_rus"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830037 = {
+	name = "Vysheslav"
+	dynasty = 1100273
+	health = 7.5
+	religion = "mani_slavic"
+	culture = "russian"
+	add_trait = "hist_rus"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830038 = {
+	name = "Berimir" #volyn
+	dynasty = 1100275
+	properties = "tjudck00000"
+	health = 7.5
+	religion = "rod"
+	culture = "russian"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830039 = {
+	name = "Verkhoslava" #volyn
+	female = "yes"
+	dynasty = 1100275
+	dna = "udrmqzgircy"
+	health = 7.5
+	father = 1830038
+	religion = "rod"
+	culture = "russian"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830040 = {
+	name = "Gradimir" #volyn
+	dynasty = 1100275
+	health = 7.5
+	religion = "rod"
+	culture = "russian"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830041 = {
+	name = "Beloslava" #turov
+	dynasty = 1100276
+	dna = "empiyyvnxca"
+	health = 7.5
+	religion = "perun"
+	culture = "russian"
+	father = 16336
+	1056.1.1 = {
+		birth = "1056.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830042 = {
+	name = "Sviatogor" #turov
+	dynasty = 1100276
+	health = 7.5
+	religion = "perun"
+	culture = "russian"
+	father = 16336
+	1051.1.1 = {
+		birth = "1051.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830043 = {
+	name = "Zavid" #novgsever
+	dynasty = 1100277
+	properties = "gjgcbd00000"
+	health = 7.5
+	religion = "tengri_rod"
+	culture = "russian"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1100.1.2"
+	}
+}
+1830044 = {
+	name = "Labed" #novgsever
+	female = "yes"
+	dynasty = 1100277
+	dna = "scjuvrufbcg"
+	health = 7.5
+	father = 1830043
+	religion = "tengri_rod"
+	culture = "russian"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830045 = {
+	name = "Andrei" #novgsever
+	dynasty = 1100277
+	health = 7.5
+	religion = "tengri_rod"
+	culture = "russian"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830046 = {
+	name = "Davyd" #smolensk
+	dynasty = 705
+	properties = "ch0sdd00000"
+	health = 7.5
+	religion = "slavic_pagan"
+	culture = "russian"
+	add_trait = "hist_rurik"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830047 = {
+	name = "Agafya" #smolensk
+	female = "yes"
+	dynasty = 705
+	dna = "wqmcklnbgcl"
+	health = 7.5
+	father = 1830046
+	religion = "slavic_pagan"
+	culture = "russian"
+	add_trait = "hist_rurik"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830048 = {
+	name = "Feodor" #smolensk
+	dynasty = 705
+	health = 7.5
+	religion = "slavic_pagan"
+	culture = "russian"
+	add_trait = "hist_rurik"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830049 = {
+	name = "Slagve" #tver
+	dynasty = 1100278
+	properties = "ci0edd00000"
+	health = 7.5
+	religion = "slavic_pagan"
+	culture = "varangian"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830050 = {
+	name = "Anna" #tver
+	female = "yes"
+	dynasty = 1100278
+	dna = "nflcdzhpgcf"
+	health = 7.5
+	father = 1830049
+	religion = "slavic_pagan"
+	culture = "varangian"
+	1055.1.1 = {
+		birth = "1055.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830051 = {
+	name = "Sventopluk" #tver
+	dynasty = 1100278
+	health = 7.5
+	religion = "slavic_pagan"
+	culture = "varangian"
+	1050.1.1 = {
+		birth = "1050.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830052 = {
+	name = "Dobroslav" #ryazan
+	dynasty = 1100279
+	properties = "tdrdfd00000"
+	health = 7.5
+	religion = "tengri_rod"
+	culture = "russian"
+	add_trait = "hist_rurik"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830053 = {
+	name = "Yefrosinia" #ryazan
+	female = "yes"
+	dynasty = 1100279
+	dna = "tpwdgjsficb"
+	health = 7.5
+	father = 1830052
+	religion = "tengri_rod"
+	culture = "russian"
+	add_trait = "hist_rurik"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830054 = {
+	name = "Ivan" #ryazan
+	dynasty = 1100279
+	health = 7.5
+	religion = "tengri_rod"
+	culture = "russian"
+	add_trait = "hist_rurik"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830055 = {
+	name = "Marina" #vladimir
+	female = "yes"
+	dynasty = 1100280
+	dna = "hceccnmhgcr"
+	health = 7.5
+	religion = "norse_pagan"
+	culture = "varangian"
+	add_trait = "hist_rurik"
+	father = 13535
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830056 = {
+	name = "Húnrodar" #vladimir
+	dynasty = 1100280
+	health = 7.5
+	religion = "norse_pagan"
+	culture = "varangian"
+	add_trait = "hist_rurik"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830057 = {
+	name = "Bajarnar" #suzdal
+	dynasty = 1100281
+	properties = "gmcdbd00000"
+	health = 7.5
+	religion = "norse_pagan"
+	culture = "varangian"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830058 = {
+	name = "Rogneda" #suzdal
+	female = "yes"
+	dynasty = 1100281
+	dna = "hfpetetcgce"
+	health = 7.5
+	father = 1830057
+	religion = "norse_pagan"
+	culture = "varangian"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830059 = {
+	name = "Ingvarr" #suzdal
+	dynasty = 1100281
+	health = 7.5
+	religion = "norse_pagan"
+	culture = "varangian"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830060 = {
+	name = "Karl" #yaroslavl
+	dynasty = 1100282
+	properties = "ciccbd00000"
+	health = 7.5
+	religion = "norse_pagan"
+	culture = "varangian"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830061 = {
+	name = "Eupraxia" #yaroslavl
+	female = "yes"
+	dynasty = 1100282
+	dna = "wmhpldnnyeq"
+	health = 7.5
+	father = 1830060
+	religion = "norse_pagan"
+	culture = "varangian"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830062 = {
+	name = "Oleg" #yaroslavl
+	dynasty = 1100282
+	health = 7.5
+	religion = "norse_pagan"
+	culture = "varangian"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830063 = {
+	name = "Ormika" #rostov
+	dynasty = 1100283
+	properties = "cc0ebd00000"
+	health = 7.5
+	religion = "norse_pagan"
+	culture = "varangian"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830064 = {
+	name = "Malmfred" #rostov
+	dynasty = 1100283
+	dna = "odqjhevhulw"
+	health = 7.5
+	father = 1830063
+	religion = "norse_pagan"
+	culture = "varangian"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830065 = {
+	name = "Ragnvaldr" #rostov
+	dynasty = 1100283
+	health = 7.5
+	religion = "norse_pagan"
+	culture = "varangian"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830066 = {
+	name = "Kallistos" #adrian
+	dynasty = 171
+	properties = "0b0dad00000"
+	health = 7.5
+	religion = "sol"
+	culture = "greek"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830067 = {
+	name = "Alexeia" #adrian
+	female = "yes"
+	dynasty = 171
+	dna = "ahibfyiiacg"
+	health = 7.5
+	father = 1830066
+	religion = "sol"
+	culture = "greek"
+	1056.1.1 = {
+		birth = "1056.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830068 = {
+	name = "Laomedon" #adrian
+	dynasty = 171
+	health = 7.5
+	religion = "sol"
+	culture = "greek"
+	1051.1.1 = {
+		birth = "1051.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830069 = {
+	name = "Adriana" #thessa
+	female = "yes"
+	dynasty = 1100313
+	dna = "aahkkmkdfbi"
+	health = 7.5
+	religion = "alexandros"
+	culture = "hellenistic"
+	add_trait = quick
+	add_trait = ambitious
+	add_trait = inspiring_leader
+	add_trait = "hist_alexandros"
+	father = 1712340
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830070 = {
+	name = "Eucratides" #thessa
+	dynasty = 1100313
+	health = 7.5
+	religion = "alexandros"
+	culture = "hellenistic"
+	add_trait = brilliant_strategist
+	add_trait = proud
+	add_trait = brave
+	add_trait = master_warrior
+	add_trait = "hist_alexandros"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830071 = {
+	name = "Raphail" #thrace
+	dynasty = 627
+	properties = "ci0sfd00000"
+	health = 7.5
+	religion = "sol"
+	culture = "greek"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830072 = {
+	name = "Phillippa" #thrace
+	female = "yes"
+	dynasty = 627
+	dna = "jcdtpcsbggp"
+	health = 7.5
+	father = 1830071
+	religion = "sol"
+	culture = "greek"
+	add_trait = "ambitious"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830073 = {
+	name = "Symeon" #thrace
+	dynasty = 627
+	health = 7.5
+	religion = "sol"
+	culture = "greek"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830074 = {
+	name = "Timotheos" #dyrac
+	dynasty = 631
+	properties = "ck0ecd00000"
+	health = 7.5
+	religion = "orthodox"
+	culture = "greek"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830075 = {
+	name = "Zenobia" #dyrac
+	female = "yes"
+	dynasty = 631
+	dna = "ingxpthknhe"
+	health = 7.5
+	father = 1830074
+	religion = "orthodox"
+	culture = "greek"
+	1056.1.1 = {
+		birth = "1056.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830076 = {
+	name = "Adrianos" #dyrac
+	dynasty = 631
+	health = 7.5
+	religion = "orthodox"
+	culture = "greek"
+	1051.1.1 = {
+		birth = "1051.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830077 = {
+	name = "Karolina" #vidin
+	female = "yes"
+	dynasty = 36
+	dna = "fsnjmrwotnb"
+	father = 1710957
+	health = 9
+	religion = "orthodox"
+	culture = "serbian"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830078 = {
+	name = "Roman" #vidin
+	dynasty = 36
+	health = 9
+	religion = "orthodox"
+	culture = "serbian"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830079 = {
+	name = "Etosa" #charsi
+	female = "yes"
+	dynasty = 1100304
+	father = 1710272
+	dna = "hznmiugticv"
+	health = 7.5
+	religion = "mithra_sol"
+	culture = "galatian"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830080 = {
+	name = "Ercos" #charsi
+	dynasty = 1100304
+	health = 7.5
+	religion = "mithra_sol"
+	culture = "galatian"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830081 = {
+	name = "Roxtia" #paph
+	female = "yes"
+	dynasty = 1100305
+	father = 1710269
+	dna = "hnjfwjfkecd"
+	health = 7.5
+	religion = "mithra_sol"
+	culture = "galatian"
+	1056.1.1 = {
+		birth = "1056.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830082 = {
+	name = "Reburros" #paph
+	dynasty = 1100305
+	health = 7.5
+	religion = "mithra_sol"
+	culture = "galatian"
+	1051.1.1 = {
+		birth = "1051.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830083 = {
+	name = "Nikarete" #arme
+	female = "yes"
+	dynasty = 632
+	father = 1710768
+	dna = "cxdwjxthmhq"
+	health = 7.5
+	religion = "marcionist"
+	culture = "greek"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830084 = {
+	name = "Nikolaos" #arme
+	dynasty = 632
+	health = 7.5
+	religion = "marcionist"
+	culture = "greek"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830085 = {
+	name = "Marthe" #dtreb
+	female = "yes"
+	dynasty = 1100102
+	father = 1710847
+	dna = "xrdrvqddobx"
+	health = 9
+	religion = "roman_imperial"
+	culture = "greek"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830086 = {
+	name = "Ioustinos" #dtreb
+	dynasty = 1100102
+	health = 9
+	religion = "roman_imperial"
+	culture = "greek"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830087 = {
+	name = "Ya'qub" #negev
+	dynasty = 1100306
+	properties = "mawe0k00000"
+	health = 7.5
+	religion = "ghazi_islam"
+	culture = "bedouin_arabic"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830088 = {
+	name = "Shogofa" #negev
+	female = "yes"
+	dynasty = 1100306
+	dna = "haodjrpteim"
+	health = 7.5
+	father = 1830087
+	religion = "ghazi_islam"
+	culture = "bedouin_arabic"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830089 = {
+	name = "Abd-al-Manaf" #negev
+	dynasty = 1100306
+	health = 7.5
+	religion = "ghazi_islam"
+	culture = "bedouin_arabic"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830090 = {
+	name = "Mariam" #beersheb
+	female = "yes"
+	dynasty = 1100307
+	dna = "nxkcoylvihg"
+	health = 7.5
+	religion = "jud_sabaoth"
+	culture = "jewish"
+	add_trait = "hist_maccabeus"
+	father = 1714199
+	1056.1.1 = {
+		birth = "1056.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830091 = {
+	name = "Jebediah" #beersheb
+	dynasty = 1100307
+	health = 7.5
+	religion = "jud_sabaoth"
+	culture = "jewish"
+	add_trait = "hist_maccabeus"
+	1051.1.1 = {
+		birth = "1051.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830092 = {
+	name = "Bardisan" #irbid
+	dynasty = 1100308
+	properties = "mj0ggk00000"
+	health = 7.5
+	religion = "ghazi_islam"
+	culture = "levantine_arabic"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830093 = {
+	name = "Domarina" #irbid
+	female = "yes"
+	dynasty = 1100308
+	dna = "hjmkskstyaq"
+	health = 7.5
+	father = 1830092
+	religion = "ghazi_islam"
+	culture = "levantine_arabic"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830094 = {
+	name = "Baryamin" #irbid
+	dynasty = 1100308
+	health = 7.5
+	religion = "ghazi_islam"
+	culture = "levantine_arabic"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830095 = {
+	name = "Carmela" #safed
+	female = "yes"
+	dynasty = 101983
+	dna = "oezqdfquaaf"
+	health = 7.5
+	religion = "judaism"
+	culture = "jewish"
+	father = 1714244
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830096 = {
+	name = "Chanoch" #safed
+	dynasty = 101983
+	health = 7.5
+	religion = "judaism"
+	culture = "jewish"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830097 = {
+	name = "Romen" #canarias
+	dynasty = 1100310
+	properties = "ce0cbk00000"
+	health = 7.5
+	religion = "beelshamen"
+	culture = "guanchinet"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830098 = {
+	name = "Teguise" #canarias
+	female = "yes"
+	dynasty = 1100310
+	dna = "hcibvkugaak"
+	health = 7.5
+	father = 1830097
+	religion = "beelshamen"
+	culture = "guanchinet"
+	1056.1.1 = {
+		birth = "1056.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830099 = {
+	name = "Tanausú" #canarias
+	dynasty = 1100310
+	health = 7.5
+	religion = "beelshamen"
+	culture = "guanchinet"
+	1051.1.1 = {
+		birth = "1051.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830100 = {
+	name = "Az'regh" #maghrawa
+	dynasty = 1100311
+	properties = "cg0hck00000"
+	health = 7.5
+	religion = "gurzil"
+	culture = "berber"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830101 = {
+	name = "Fariza" #maghrawa
+	female = "yes"
+	dynasty = 1100311
+	dna = "ylpywsfwvaq"
+	health = 7.5
+	father = 1830100
+	religion = "gurzil"
+	culture = "berber"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830102 = {
+	name = "Bezz'i" #maghrawa
+	dynasty = 1100311
+	health = 7.5
+	religion = "gurzil"
+	culture = "berber"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830103 = {
+	name = "Eunike" #sparta
+	female="yes"
+	dynasty = 1100314
+	father = 1716134
+	dna = "oyccwoxwhmn"
+	health = 7.5
+	religion = "mithra_sol"
+	culture = "hellenistic"
+	add_trait = "hist_agiad"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830104 = {
+	name = "Heraklios" #sparta
+	dynasty = 1100314
+	health = 7.5
+	religion = "mithra_sol"
+	culture = "hellenistic"
+	add_trait = "hist_agiad"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830105 = {
+	name = "Iblia" #tylis
+	female="yes"
+	dynasty = 1100373
+	dna = "pmmhffvmecf"
+	health = 7.5
+	religion = "mithra_sol"
+	culture = "galatian"
+	father = 1711241
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830106 = {
+	name = "Imbetos" #tylis
+	dynasty = 1100373
+	health = 7.5
+	religion = "mithra_sol"
+	culture = "galatian"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830107 = {
+	name = "Clotia" #singid
+	female="yes"
+	dynasty = 1100372
+	dna = "buevuwiisci"
+	health = 7.5
+	religion = "zal_christ"
+	culture = "galatian"
+	father = 1711191
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830108 = {
+	name = "Brico" #singid
+	dynasty = 1100372
+	health = 7.5
+	religion = "zal_christ"
+	culture = "galatian"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830109 = {
+	name = "Neha" #pontus
+	female="yes"
+	dynasty = 1100374
+	father = 1710576
+	dna = "yffrkivunhl"
+	health = 7.5
+	religion = "mithra"
+	culture = "hellenistic"
+	add_trait = "hist_mithridates"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830110 = {
+	name = "Leonidas" #pontus
+	dynasty = 1100374
+	health = 7.5
+	religion = "mithra"
+	culture = "hellenistic"
+	add_trait = "hist_mithridates"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830111 = {
+	name = "Tamura" #sarmatia
+	female="yes"
+	dynasty = 1100375
+	dna = "hukqvsvivij"
+	health = 7.5
+	religion = "zal_mani"
+	culture = "sarmatian"
+	father = 1711275
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830112 = {
+	name = "Kadphyres" #sarmatia
+	dynasty = 1100375
+	health = 7.5
+	religion = "zal_mani"
+	culture = "sarmatian"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830113 = {
+	name = "Elaiodora" #pergamon
+	female="yes"
+	dynasty = 1100376
+	father = 1710915
+	dna = "faarzfowwik"
+	health = 7.5
+	religion = "cybele"
+	culture = "hellenistic"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830114 = {
+	name = "Demetrios" #pergamon
+	dynasty = 1100376
+	health = 7.5
+	religion = "cybele"
+	culture = "hellenistic"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830115 = {
+	name = "Amyntas" #osroene
+	dynasty = 1100377
+	properties = "ch0eck00000"
+	health = 7.5
+	religion = "nestorian"
+	culture = "hellenistic"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830116 = {
+	name = "Amala" #osroene
+	female="yes"
+	dynasty = 1100377
+	father = 1830115
+	dna = "uuojqgeeley"
+	health = 7.5
+	religion = "nestorian"
+	culture = "hellenistic"
+	1054.1.1 = {
+		birth = "1054.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830117 = {
+	name = "Antiochos" #osroene
+	dynasty = 1100377
+	health = 7.5
+	religion = "nestorian"
+	culture = "hellenistic"
+	1049.1.1 = {
+		birth = "1049.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830118 = {
+	name = "Tulga" #diocleia
+	dynasty = 1100378
+	properties = "fi0jaj00000"
+	health = 7.5
+	religion = "sol_christ"
+	culture = "ostrogothic"
+	add_trait = "hist_theodemir"
+	add_trait = "brilliant_strategist"
+	add_trait = "zealous"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830119 = {
+	name = "Amalasuntha" #diocleia
+	female="yes"
+	dynasty = 1100378
+	father = 1830118
+	dna = "dsviiiejurc"
+	health = 7.5
+	religion = "sol_christ"
+	culture = "ostrogothic"
+	add_trait = "hist_theodemir"
+	add_trait = "ambitious"
+	1055.1.1 = {
+		birth = "1055.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830120 = {
+	name = "Achila" #diocleia
+	dynasty = 1100378
+	health = 7.5
+	religion = "sol_christ"
+	culture = "ostrogothic"
+	add_trait = "hist_theodemir"
+	1050.1.1 = {
+		birth = "1050.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830121 = {
+	name = "Basilissa" #rhomania
+	female="yes"
+	dynasty = 1100379
+	dna = "dfgfecaeccs"
+	health = 7.5
+	religion = "sol"
+	culture = "greek"
+	add_trait = "ambitious"
+	add_trait = "hist_augustus"
+	father = 1712480
+	1055.1.1 = {
+		birth = "1055.1.1"
+	}
+	1060.1.1 = {
+		add_claim = e_byzantium
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830122 = {
+	name = "Arkadios" #rhomania
+	dynasty = 1100379
+	health = 7.5
+	religion = "sol"
+	culture = "greek"
+	add_trait = "hist_augustus"
+	1050.1.1 = {
+		birth = "1050.1.1"
+	}
+	1060.1.1 = {
+		add_claim = e_byzantium
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830123 = {
+	name = "Valdemiro" #ancona
+	dynasty = 1100380
+	properties = "cmdfck00000"
+	health = 7.5
+	religion = "mithra_christ"
+	culture = "romanogothic"
+	1005.1.1 = {
+		birth = "1005.1.1"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830124 = {
+	name = "Valatrudia" #ancona
+	female="yes"
+	dynasty = 1100380
+	father = 1830123
+	dna = "fxwldgpdiuz"
+	health = 7.5
+	religion = "mithra_christ"
+	culture = "romanogothic"
+	add_trait = "ambitious"
+	1055.1.1 = {
+		birth = "1055.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830125 = {
+	name = "Viarigo" #ancona
+	dynasty = 1100380
+	health = 7.5
+	religion = "mithra_christ"
+	culture = "romanogothic"
+	1050.1.1 = {
+		birth = "1050.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830126 = {
+	name = "Usunbike" #huns
+	female="yes"
+	dynasty = 1100381
+	dna = "jizmilpksaq"
+	health = 7.5
+	religion = "tengri_ahriman"
+	culture = "hunnic"
+	add_trait = "hist_attila"
+	add_trait = brilliant_strategist
+	add_trait = wroth
+	add_trait = cavalry_leader
+	father = 1711418
+	1055.1.1 = {
+		birth = "1055.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830127 = {
+	name = "Kandik" #huns
+	dynasty = 1100381
+	health = 7.5
+	religion = "tengri_ahriman"
+	culture = "hunnic"
+	add_trait = "hist_attila"
+	add_trait = zealous
+	add_trait = ruthless
+	1050.1.1 = {
+		birth = "1050.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830128 = {
+	name = "Zenobia" #africa
+	female="yes"
+	dynasty = 1100491
+	dna = "crrwepcykxw"
+	health = 7.5
+	religion = "mithra"
+	culture = "roman"
+	add_trait = "brilliant_strategist"
+	add_trait = "hist_vespasian"
+	father = 11906
+	1055.1.1 = {
+		birth = "1055.1.1"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830129 = {
+	name = "Ursus" #africa
+	dynasty = 1100491
+	health = 7.5
+	religion = "mithra"
+	culture = "roman"
+	add_trait = "hist_vespasian"
+	add_trait = "ambitious"
+	1050.1.1 = {
+		birth = "1050.1.1"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830130 = {
+	name = "Simon" #cephalonia
+	dynasty = 559
+	properties = "cc0g0k00000"
+	health = 7.5
+	religion = "catholic"
+	culture = "norman"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830131 = {
+	name = "Wilmot" #cephalonia
+	female="yes"
+	dynasty = 559
+	dna = "oxnpmgdvbcl"
+	health = 7.5
+	father=1830130
+	religion = "catholic"
+	culture = "norman"
+	1056.1.2 = {
+		birth = "1056.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830132 = {
+	name = "Turquetil" #cephalonia
+	dynasty = 559
+	health = 7.5
+	religion = "catholic"
+	culture = "norman"
+	1051.1.2 = {
+		birth = "1051.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830133 = {
+	name = "Turold" #tripol
+	dynasty = 347
+	properties = "cm0s0d00000"
+	health = 7.5
+	religion = "catholic"
+	culture = "norman"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830134 = {
+	name = "Yvon" #tripol
+	female="yes"
+	dynasty = 347
+	dna = "jwynepalfca"
+	health = 7.5
+	father=1830133
+	religion = "catholic"
+	culture = "norman"
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830135 = {
+	name = "Ademar" #tripol
+	dynasty = 347
+	health = 7.5
+	religion = "catholic"
+	culture = "norman"
+	1045.1.2 = {
+		birth = "1045.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830136 = {
+	name = "Barbara" #tyrus
+	female="yes"
+	dynasty = 1100221
+	dna = "dhlfaygiacq"
+	health = 7.5
+	religion = "porphyryan"
+	culture = "hellenistic"
+	father = 1711573
+	martial = 18
+	1056.1.2 = {
+		birth = "1056.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830137 = {
+	name = "Antialkidas" #tyrus
+	dynasty = 1100221
+	health = 7.5
+	religion = "porphyryan"
+	culture = "hellenistic"
+	1051.1.2 = {
+		birth = "1051.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830138 = {
+	name = "Asander" #beirut
+	dynasty = 1100220
+	properties = "0j0dcd00000"
+	health = 7.5
+	religion = "neoplato"
+	culture = "hellenistic"
+	father=1715922
+	add_trait = "hist_seleukos"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830139 = {
+	name = "Apollonia" #beirut
+	female="yes"
+	dynasty = 1100220
+	dna = "delkgbmhacr"
+	health = 7.5
+	religion = "neoplato"
+	culture = "hellenistic"
+	father = 1830138
+	add_trait = "hist_seleukos"
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830140 = {
+	name = "Epander" #beirut
+	dynasty = 1100220
+	health = 7.5
+	religion = "neoplato"
+	culture = "hellenistic"
+	add_trait = "hist_seleukos"
+	1045.1.2 = {
+		birth = "1045.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830141 = {
+	name = "Adelin" #norma
+	female="yes"
+	dynasty = 752
+	dna = "olvygcitgca"
+	health = 7.5
+	religion = "catholic"
+	culture = "norman"
+	father = 17005
+	1056.1.2 = {
+		birth = "1056.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830142 = {
+	name = "Anselm" #norma
+	dynasty = 752
+	health = 7.5
+	religion = "catholic"
+	culture = "norman"
+	1051.1.2 = {
+		birth = "1051.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830143 = {
+	name = "Thomas" #Jerus
+	dynasty = 308
+	properties = "0c0e0k00000"
+	health = 7.5
+	religion = "catholic"
+	culture = "frankish"
+	add_trait = "crusader"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830144 = {
+	name = "Sybille" #Jerus
+	female="yes"
+	dynasty = 308
+	dna = "danvmyombcz"
+	health = 7.5
+	religion = "catholic"
+	culture = "frankish"
+	father = 1830143
+	1052.1.2 = {
+		birth = "1052.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830145 = {
+	name = "Adalbert" #Jerus
+	dynasty = 308
+	health = 7.5
+	religion = "catholic"
+	culture = "frankish"
+	add_trait = "skilled_tactician"
+	1047.1.2 = {
+		birth = "1047.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830146 = {
+	name = "Ida" #anjou
+	female = "yes"
+	dynasty = 81
+	dna = "jdwpezrdgcu"
+	health = 7.5
+	religion = "semipelagian"
+	culture = "frankish"
+	father = 16812
+	1055.1.2 = {
+		birth = "1055.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830147 = {
+	name = "André" #anjou
+	dynasty = 81
+	health = 7.5
+	religion = "semipelagian"
+	culture = "frankish"
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830148 = {
+	name = "Hildebert" #berry
+	dynasty = 1100104
+	properties = "ehog0k00000"
+	health = 7.5
+	religion = "catholic"
+	culture = "frankish"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830149 = {
+	name = "Helvis" #berry
+	female = "yes"
+	dynasty = 1100104
+	dna = "jxbctqeohcs"
+	health = 7.5
+	religion = "catholic"
+	culture = "frankish"
+	father = 1830148
+	1055.1.2 = {
+		birth = "1055.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830150 = {
+	name = "Jaufré" #berry
+	dynasty = 1100104
+	health = 7.5
+	religion = "catholic"
+	culture = "frankish"
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830151 = {
+	name = "Helvis" #orleans
+	female = "yes"
+	dynasty = 100138
+	dna = "xyyyhrktlwq"
+	health = 7.5
+	religion = "catholic"
+	culture = "frankish"
+	father = 1730235
+	1051.1.2 = {
+		birth = "1051.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830152 = {
+	name = "Godefroy" #orleans
+	dynasty = 100138
+	health = 7.5
+	religion = "catholic"
+	culture = "frankish"
+	1046.1.2 = {
+		birth = "1046.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830153 = {
+	name = "Valence" #neustrcap
+	female = "yes"
+	dynasty = 743
+	dna = "ksqydhfgbcz"
+	health = 7.5
+	religion = "semipelagian"
+	culture = "frankish"
+	add_trait = "hist_capet"
+	father = 16739
+	mother = 14791
+	1052.1.2 = {
+		birth = "1052.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830154 = {
+	name = "Thibault" #neustrcap
+	dynasty = 743
+	health = 7.5
+	religion = "semipelagian"
+	culture = "frankish"
+	add_trait = "hist_capet"
+	1047.1.2 = {
+		birth = "1047.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830155 = {
+	name = "Arsenda" #bourblamarche
+	female = "yes"
+	dynasty = 100145
+	dna = "suyzujeifkf"
+	health = 7.5
+	religion = "catholic"
+	culture = "occitan"
+	father = 16805
+	1055.1.2 = {
+		birth = "1055.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830156 = {
+	name = "Alias" #bourblamarche
+	dynasty = 100145
+	health = 7.5
+	religion = "catholic"
+	culture = "occitan"
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830157 = {
+	name = "Bachina" #aqui
+	female = "yes"
+	dynasty = 1999900
+	dna = "afbfemgbbcq"
+	health = 7.5
+	religion = "arian"
+	culture = "romanogothic"
+	add_trait = "hist_theodoric"
+	father = 1720150
+	1051.1.2 = {
+		birth = "1051.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830158 = {
+	name = "Auriolus" #aqui
+	dynasty = 1999900
+	health = 7.5
+	religion = "arian"
+	culture = "romanogothic"
+	add_trait = "hist_theodoric"
+	1046.1.2 = {
+		birth = "1046.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830159 = {
+	name = "Marcellina" #arles
+	female = "yes"
+	dynasty = 1100105
+	dna = "bwwpsdigkag"
+	health = 7.5
+	religion = "arian"
+	culture = "roman"
+	add_trait = "hist_verus"
+	father = 1712049
+	mother = 14790
+	1056.1.2 = {
+		birth = "1056.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830160 = {
+	name = "Marcellus" #arles
+	dynasty = 1100105
+	health = 7.5
+	religion = "arian"
+	culture = "roman"
+	add_trait = "hist_verus"
+	1051.1.2 = {
+		birth = "1051.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830161 = {
+	name = "Agathe" #dburg
+	female = "yes"
+	dynasty = 741
+	dna = "gxrenvjpykl"
+	health = 7.5
+	religion = "catholic"
+	culture = "frankish"
+	father = 16820
+	1055.1.2 = {
+		birth = "1055.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830162 = {
+	name = "Étienne" #dburg
+	dynasty = 741
+	health = 7.5
+	religion = "catholic"
+	culture = "frankish"
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830163 = {
+	name = "Evrard" #framerov
+	dynasty = 1100106
+	properties = "ahwr0a00000"
+	health = 7.5
+	religion = "unctionist"
+	culture = "frankish"
+	add_trait = "hist_merovingian"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830164 = {
+	name = "Denise" #framerov
+	female = "yes"
+	dynasty = 1100106
+	dna = "behlksaukfz"
+	health = 7.5
+	religion = "unctionist"
+	culture = "frankish"
+	father = 1830163
+	add_trait = "hist_merovingian"
+	1052.1.2 = {
+		birth = "1052.1.2"
+	}
+	1100.1.2 = {
+		death = "1100.1.2"
+	}
+}
+1830165 = {
+	name = "Gargamel" #framerov
+	dynasty = 1100106
+	health = 7.5
+	religion = "unctionist"
+	culture = "frankish"
+	add_trait = "hist_merovingian"
+	1047.1.2 = {
+		birth = "1047.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830166 = {
+	name = "Bertrand" #champag
+	dynasty = 301
+	properties = "cl0e0d00000"
+	health = 7.5
+	religion = "unctionist"
+	culture = "frankish"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830167 = {
+	name = "Bonne" #champag
+	female = "yes"
+	dynasty = 301
+	dna = "ahkcruwqhkl"
+	health = 7.5
+	religion = "unctionist"
+	culture = "frankish"
+	father = 1830166
+	1053.1.2 = {
+		birth = "1053.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830168 = {
+	name = "Eudes" #champag
+	dynasty = 301
+	health = 7.5
+	religion = "unctionist"
+	culture = "frankish"
+	1048.1.2 = {
+		birth = "1048.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830169 = {
+	name = "Julien" #valois
+	dynasty = 101
+	properties = "cmhd0d00000"
+	health = 7.5
+	religion = "unctionist"
+	culture = "frankish"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830170 = {
+	name = "Isabelle" #valois
+	female = "yes"
+	dynasty = 101
+	dna = "cmihxlqkrnk"
+	health = 7.5
+	religion = "unctionist"
+	culture = "frankish"
+	father = 1830169
+	1055.1.2 = {
+		birth = "1055.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830171 = {
+	name = "Maurice" #valois
+	dynasty = 101
+	health = 7.5
+	religion = "unctionist"
+	culture = "frankish"
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830172 = {
+	name = "Hugo" #flandr
+	dynasty = 1100107
+	properties = "0chead00000"
+	health = 7.5
+	religion = "pelagian"
+	culture = "dutch"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830173 = {
+	name = "Isabelle" #flandr
+	female = "yes"
+	dynasty = 1100107
+	dna = "omtyctqkgcq"
+	health = 7.5
+	religion = "pelagian"
+	culture = "dutch"
+	father = 1830172
+	1054.1.2 = {
+		birth = "1054.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830174 = {
+	name = "Lodewijk" #flandr
+	dynasty = 1100107
+	health = 7.5
+	religion = "pelagian"
+	culture = "dutch"
+	1049.1.2 = {
+		birth = "1049.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830175 = {
+	name = "Tiborg" #toul
+	female="yes"
+	dynasty = 727
+	dna = "cabmeelifbj"
+	health = 7.5
+	religion = "cathar"
+	culture = "occitan"
+	father = 1720126
+	1055.1.2 = {
+		birth = "1055.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830176 = {
+	name = "Savarics" #toul
+	dynasty = 727
+	health = 7.5
+	religion = "cathar"
+	culture = "occitan"
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830177 = {
+	name = "Willehad" #burgking
+	dynasty = 377
+	properties = "agi0ec00000"
+	health = 7.5
+	religion = "catholic"
+	culture = "burgundian"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1026.1.1 = {
+		add_spouse = "14789"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830178 = {
+	name = "Aubirge" #burgking
+	female = "yes"
+	dynasty = 377
+	dna = "bpjpvjhhgcn"
+	health = 7.5
+	religion = "catholic"
+	culture = "burgundian"
+	father = 1830177
+	mother = 14789
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830179 = {
+	name = "Adelard" #burgking
+	dynasty = 377
+	health = 7.5
+	religion = "catholic"
+	culture = "burgundian"
+	1045.1.2 = {
+		birth = "1045.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830180 = {
+	name = "Klementia" #hre
+	female = "yes"
+	dynasty = 25061
+	dna = "mddlfocggce"
+	health = 7.5
+	religion = "catholic"
+	culture = "german"
+	father = 16508
+	add_trait = "hist_karling"
+	add_trait = "ambitious"
+	add_trait = "brave"
+	1053.1.2 = {
+		birth = "1053.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830181 = {
+	name = "Ludolf" #hre
+	dynasty = 25061
+	health = 7.5
+	religion = "catholic"
+	culture = "german"
+	add_trait = "brilliant_strategist"
+	add_trait = "hist_karling"
+	add_trait = "diligent"
+	1048.1.2 = {
+		birth = "1048.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830182 = {
+	name = "Berthold" #tirol
+	dynasty = 1100108
+	properties = "ca0e0d00000"
+	health = 7.5
+	religion = "antinomian"
+	culture = "bavarian"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830183 = {
+	name = "Binhilde" #tirol
+	female = "yes"
+	dynasty = 1100108
+	dna = "rgbpjnmggcu"
+	health = 7.5
+	religion = "antinomian"
+	culture = "bavarian"
+	father = 1830182
+	1053.1.2 = {
+		birth = "1053.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830184 = {
+	name = "Berengar" #tirol
+	dynasty = 1100108
+	health = 7.5
+	religion = "antinomian"
+	culture = "bavarian"
+	1048.1.2 = {
+		birth = "1048.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830185 = {
+	name = "Arnulf" #badenwsb
+	dynasty = 1100109
+	properties = "gjuc0d00000"
+	health = 7.5
+	religion = "allfather"
+	culture = "teutonic"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830186 = {
+	name = "Adelinde" #badenwsb
+	female = "yes"
+	dynasty = 1100109
+	dna = "ktreblclgcd"
+	health = 7.5
+	religion = "allfather"
+	culture = "teutonic"
+	father = 1830185
+	1055.1.2 = {
+		birth = "1055.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830187 = {
+	name = "Brandulf" #badenwsb
+	dynasty = 1100109
+	health = 7.5
+	religion = "allfather"
+	culture = "teutonic"
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830188 = {
+	name = "Lebuin" #lyon
+	dynasty = 1100110
+	properties = "ec0d0d00000"
+	health = 7.5
+	religion = "sol_christ"
+	culture = "burgundian"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830189 = {
+	name = "Madelgarde" #lyon
+	dynasty = 1100110
+	dna = "bluuizwjgco"
+	health = 7.5
+	religion = "sol_christ"
+	culture = "burgundian"
+	father = 1830188
+	1056.1.2 = {
+		birth = "1056.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830190 = {
+	name = "Letard" #lyon
+	dynasty = 1100110
+	health = 7.5
+	religion = "sol_christ"
+	culture = "burgundian"
+	1051.1.2 = {
+		birth = "1051.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830191 = {
+	name = "Sicco" #brabant
+	dynasty = 307
+	properties = "0i0ebd00000"
+	health = 7.5
+	religion = "catholic"
+	culture = "dutch"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830192 = {
+	name = "Willemine" #brabant
+	female = "yes"
+	dynasty = 307
+	dna = "zrbyckjmgci"
+	health = 7.5
+	religion = "catholic"
+	culture = "dutch"
+	father = 1830191
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830193 = {
+	name = "Waelram" #brabant
+	dynasty = 307
+	health = 7.5
+	religion = "catholic"
+	culture = "dutch"
+	1045.1.2 = {
+		birth = "1045.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830194 = {
+	name = "Avutet" #holland
+	dynasty = 432
+	properties = "0d0edd00000"
+	health = 7.5
+	religion = "allfather"
+	culture = "frisian"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830195 = {
+	name = "Agaete" #holland
+	female = "yes"
+	dynasty = 432
+	dna = "wcfklgeegcv"
+	health = 7.5
+	religion = "allfather"
+	culture = "frisian"
+	father = 1830194
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830196 = {
+	name = "Eilbern" #holland
+	dynasty = 432
+	health = 7.5
+	religion = "allfather"
+	culture = "frisian"
+	1045.1.2 = {
+		birth = "1045.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830197 = {
+	name = "Avin" #frisia
+	dynasty = 1100111
+	properties = "aj00cc00000"
+	health = 7.5
+	religion = "allfather"
+	culture = "frisian"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830198 = {
+	name = "Benedicta" #frisia
+	female = "yes"
+	dynasty = 1100111
+	dna = "pjkwmmijscb"
+	health = 7.5
+	religion = "allfather"
+	culture = "frisian"
+	father = 1830197
+	1054.1.2 = {
+		birth = "1054.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830199 = {
+	name = "Bentet" #frisia
+	dynasty = 1100111
+	health = 7.5
+	religion = "allfather"
+	culture = "frisian"
+	1049.1.2 = {
+		birth = "1049.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830200 = {
+	name = "Helga" #nordmark
+	female = "yes"
+	dynasty = 651
+	dna = "fanfuqdebcu"
+	health = 7.5
+	religion = "catholic"
+	culture = "german"
+	father = 16546
+	1054.1.2 = {
+		birth = "1054.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830201 = {
+	name = "Hesso" #nordmark
+	dynasty = 651
+	health = 7.5
+	religion = "catholic"
+	culture = "german"
+	1049.1.2 = {
+		birth = "1049.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830202 = {
+	name = "Mathilde" #saxons
+	female = "yes"
+	dynasty = 1100112
+	dna = "immkjrehgcc"
+	health = 7.5
+	religion = "irminsul"
+	culture = "teutonic"
+	father = 1740008
+	add_trait = "patient"
+	add_trait = "hist_arminius"
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830203 = {
+	name = "Landwart" #saxons
+	dynasty = 1100112
+	health = 7.5
+	religion = "irminsul"
+	culture = "teutonic"
+	add_trait = "brilliant_strategist"
+	add_trait = "hist_arminius"
+	1045.1.2 = {
+		birth = "1045.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830204 = {
+	name = "Adolf" #thuringia
+	dynasty = 1100113
+	properties = "ca0cad00000"
+	health = 7.5
+	religion = "allfather"
+	culture = "teutonic"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830205 = {
+	name = "Berta" #thuringia
+	female = "yes"
+	dynasty = 1100113
+	dna = "hfttkomzgce"
+	health = 7.5
+	religion = "allfather"
+	culture = "teutonic"
+	father = 1830204
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830206 = {
+	name = "Asculf" #thuringia
+	dynasty = 1100113
+	health = 7.5
+	religion = "allfather"
+	culture = "teutonic"
+	1045.1.2 = {
+		birth = "1045.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830207 = {
+	name = "Wilhelm" #franco
+	dynasty = 1100114
+	properties = "cibdad00000"
+	health = 7.5
+	religion = "teiwaz"
+	culture = "teutonic"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830208 = {
+	name = "Winfrida" #franco
+	female = "yes"
+	dynasty = 1100114
+	dna = "gmloakqzrto"
+	health = 7.5
+	religion = "teiwaz"
+	culture = "teutonic"
+	father = 1830207
+	1056.1.2 = {
+		birth = "1056.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830209 = {
+	name = "Albrecht" #franco
+	dynasty = 1100114
+	health = 7.5
+	religion = "teiwaz"
+	culture = "teutonic"
+	1051.1.2 = {
+		birth = "1051.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830210 = {
+	name = "Landwart" #schw
+	dynasty = 1100115
+	properties = "td0dcd00000"
+	health = 7.5
+	religion = "german_pagan"
+	culture = "teutonic"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830211 = {
+	name = "Karlotte" #schw
+	female = "yes"
+	dynasty = 1100115
+	dna = "rtekymlvzxi"
+	health = 7.5
+	religion = "german_pagan"
+	culture = "teutonic"
+	father = 1830210
+	1053.1.2 = {
+		birth = "1053.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830212 = {
+	name = "Ludwig" #schw
+	dynasty = 1100115
+	health = 7.5
+	religion = "german_pagan"
+	culture = "teutonic"
+	1048.1.2 = {
+		birth = "1048.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830213 = {
+	name = "Helga" #lothar
+	female = "yes"
+	dynasty = 1100206
+	dna = "lanfkndggnl"
+	health = 7.5
+	religion = "antinomian"
+	culture = "german"
+	add_trait = "hist_karling"
+	father = 16532
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830214 = {
+	name = "Herbert" #lothar
+	dynasty = 1100206
+	health = 7.5
+	religion = "antinomian"
+	culture = "german"
+	add_trait = "hist_karling"
+	1045.1.2 = {
+		birth = "1045.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830215 = {
+	name = "Konrad" #alsace
+	dynasty = 428
+	properties = "cjmd0d00000"
+	health = 7.5
+	religion = "antinomian"
+	culture = "german"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830216 = {
+	name = "Ilsa" #alsace
+	female = "yes"
+	dynasty = 428
+	dna = "usqfbwdabbs"
+	health = 7.5
+	religion = "antinomian"
+	culture = "german"
+	father = 1830215
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830217 = {
+	name = "Ludolf" #alsace
+	dynasty = 428
+	health = 7.5
+	religion = "antinomian"
+	culture = "german"
+	1045.1.2 = {
+		birth = "1045.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830218 = {
+	name = "Franz" #upperlor
+	dynasty = 100127
+	properties = "gi0hch00000"
+	health = 7.5
+	religion = "antinomian"
+	culture = "german"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830219 = {
+	name = "Gertrude" #upperlor
+	female = "yes"
+	dynasty = 100127
+	dna = "mhrcqsaazwv"
+	health = 7.5
+	religion = "antinomian"
+	culture = "german"
+	father = 1830218
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830220 = {
+	name = "Gottschalk" #upperlor
+	dynasty = 100127
+	health = 7.5
+	religion = "antinomian"
+	culture = "german"
+	1045.1.2 = {
+		birth = "1045.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830221 = {
+	name = "Otto" #lowerlor
+	dynasty = 7145
+	properties = "ca0c0d00000"
+	health = 7.5
+	religion = "catholic"
+	culture = "german"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830222 = {
+	name = "Sofie" #lowerlor
+	female = "yes"
+	dynasty = 7145
+	dna = "tjldhdetlco"
+	health = 7.5
+	religion = "catholic"
+	culture = "german"
+	father = 1830221
+	1054.1.2 = {
+		birth = "1054.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830223 = {
+	name = "Ruprecht" #lowerlor
+	dynasty = 7145
+	health = 7.5
+	religion = "catholic"
+	culture = "german"
+	1049.1.2 = {
+		birth = "1049.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830224 = {
+	name = "Maria" #austrasia
+	female = "yes"
+	dynasty = 1100207
+	dna = "dedjlqozfcz"
+	health = 7.5
+	religion = "catholic"
+	culture = "german"
+	add_trait = "hist_karling"
+	father = 16520
+	1053.1.2 = {
+		birth = "1053.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830225 = {
+	name = "Karloman" #austrasia
+	dynasty = 1100207
+	health = 7.5
+	religion = "catholic"
+	culture = "german"
+	add_trait = "hist_karling"
+	1048.1.2 = {
+		birth = "1048.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830226 = {
+	name = "Leopold" #luxemb
+	dynasty = 420
+	properties = "ch0d0d00000"
+	health = 7.5
+	religion = "catholic"
+	culture = "german"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830227 = {
+	name = "Luitgard" #luxemb
+	female = "yes"
+	dynasty = 420
+	dna = "gryzixnzgce"
+	health = 7.5
+	religion = "catholic"
+	culture = "german"
+	father = 1830226
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830228 = {
+	name = "Magnus" #luxemb
+	dynasty = 420
+	health = 7.5
+	religion = "catholic"
+	culture = "german"
+	1045.1.2 = {
+		birth = "1045.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830229 = {
+	name = "Britta" #poitou
+	female = "yes"
+	dynasty = 1100384
+	dna = "uxajkhiwfoj"
+	health = 7.5
+	religion = "semipelagian"
+	culture = "galloroman"
+	father = 1712301
+	1056.1.2 = {
+		birth = "1056.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830230 = {
+	name = "Brictius" #poitou
+	dynasty = 1100384
+	health = 7.5
+	religion = "semipelagian"
+	culture = "galloroman"
+	1051.1.2 = {
+		birth = "1051.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830231 = {
+	name = "Ordinus" #septima
+	dynasty = 1100116
+	properties = "cm0f0f00000"
+	health = 7.5
+	religion = "cathar"
+	culture = "romanogothic"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830232 = {
+	name = "Pagusa" #septima
+	female = "yes"
+	dynasty = 1100116
+	dna = "iyszuctsiex"
+	health = 7.5
+	religion = "cathar"
+	culture = "romanogothic"
+	father = 1830231
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830233 = {
+	name = "Pantaleon" #septima
+	dynasty = 1100116
+	health = 7.5
+	religion = "cathar"
+	culture = "romanogothic"
+	1045.1.2 = {
+		birth = "1045.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830234 = {
+	name = "Lopus" #savoi
+	dynasty = 1100117
+	properties = "cc0chd00000"
+	health = 7.5
+	religion = "sol_christ"
+	culture = "romanogothic"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830235 = {
+	name = "Manina" #savoi
+	female = "yes"
+	dynasty = 1100117
+	dna = "wxdkkqmoxbv"
+	health = 7.5
+	religion = "sol_christ"
+	culture = "romanogothic"
+	father = 1830234
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830236 = {
+	name = "Maginus" #savoi
+	dynasty = 1100117
+	health = 7.5
+	religion = "sol_christ"
+	culture = "romanogothic"
+	1045.1.2 = {
+		birth = "1045.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830237 = {
+	name = "Nichomachus" #genoa
+	dynasty = 1100118
+	health = 7.5
+	religion = "mithra_christ"
+	culture = "roman"
+	1049.1.2 = {
+		birth = "1049.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830238 = {
+	name = "Natalia" #genoa
+	female = "yes"
+	dynasty = 1100118
+	dna = "mkflcdfvxbk"
+	health = 7.5
+	religion = "mithra_christ"
+	culture = "roman"
+	father = 1712127
+	1054.1.2 = {
+		birth = "1054.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830239 = {
+	name = "Giseltrude" #lombardia
+	female = "yes"
+	dynasty = 1100119
+	dna = "ohchjhyqlja"
+	health = 7.5
+	religion = "catholic"
+	culture = "lombard"
+	father = 14788
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830240 = {
+	name = "Ajo" #lombardia
+	dynasty = 1100119
+	health = 7.5
+	religion = "catholic"
+	culture = "lombard"
+	1045.1.2 = {
+		birth = "1045.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830241 = {
+	name = "Rudolf" #bavaria
+	dynasty = 1100120
+	properties = "ejng0h00000"
+	health = 7.5
+	religion = "mani_germanic"
+	culture = "bavarian"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830242 = {
+	name = "Romilda" #bavaria
+	female = "yes"
+	dynasty = 1100120
+	dna = "zzcbcdqzgcx"
+	health = 7.5
+	religion = "mani_germanic"
+	culture = "bavarian"
+	father = 1830241
+	1055.1.2 = {
+		birth = "1055.1.2"
+	}
+	1110.1.2 = {
+		death = "1110.1.2"
+	}
+}
+1830243 = {
+	name = "Ulrich" #bavaria
+	dynasty = 1100120
+	health = 7.5
+	religion = "mani_germanic"
+	culture = "bavarian"
+	1050.1.2 = {
+		birth = "1050.1.2"
+	}
+	1105.1.2 = {
+		death = "1105.1.2"
+	}
+}
+1830244 = {
+	name = "Stanij" #sorbs
+	dynasty = 1100121
+	properties = "cj0hck00000"
+	health = 7.5
+	religion = "dazhbog"
+	culture = "sorbian"
+	1005.1.2 = {
+		birth = "1005.1.2"
+	}
+	1065.1.2 = {
+		death = "1065.1.2"
+	}
+}
+1830245 = {
+	name = "Lubina" #sorbs
+	female = "yes"
+	dynasty = 1100121
+	dna = "ekdzkxsomcc"
+	health = 7.5
+	religion = "dazhbog"
+	culture = "sorbian"
+	father = 1830244
+	1046.1.2 = {
+		birth = "1046.1.2"
+	}
+	1100.1.2 = {
+		death = "1100.1.2"
+	}
+}

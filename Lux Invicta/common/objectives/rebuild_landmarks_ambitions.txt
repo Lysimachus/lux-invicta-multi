@@ -1,0 +1,86 @@
+obj_become_arinnitis_consort = {
+	type = character
+	
+	allow = {
+		religion_group = luwian_group
+		is_heretic = no
+		is_adult = yes
+		is_female = no
+		is_ruler = yes
+		primary_title = {
+			higher_tier_than = duke
+		}
+		NOR = {
+			has_character_flag = rejected_by_arinniti
+			trait = arinnitis_consort
+			trait = incapable
+			trait = scion_of_arinniti
+		}
+		capital_scope = {
+			has_province_modifier = chattousa_temple
+		}
+	}
+	chance = {
+		factor = 0
+	}
+	success = {
+		trait = arinnitis_consort
+	}
+	effect = {
+		piety = 500
+	}
+	abort = {
+		OR = {
+			trait = incapable
+			has_character_flag = rejected_by_arinniti
+			NOT = {
+				religion_group = luwian_group
+			}
+		}
+	}
+	abort_effect = {
+		set_character_flag = rejected_by_arinniti
+	}
+}
+obj_become_arinniti_in_flesh = {
+	type = character
+	
+	allow = {
+		religion_group = luwian_group
+		is_heretic = no
+		is_adult = yes
+		is_female = yes
+		is_ruler = yes
+		primary_title = {
+			higher_tier_than = duke
+		}
+		NOR = {
+			has_character_flag = rejected_by_arinniti
+			trait = arinniti_in_flesh
+			trait = incapable
+			trait = scion_of_arinniti
+		}
+		capital_scope = {
+			has_province_modifier = chattousa_temple
+		}
+	}
+	chance = {
+		factor = 0
+	}
+	success = {
+		trait = arinniti_in_flesh
+	}
+	effect = {
+		piety = 500
+	}
+	abort = {
+		trait = incapable
+		has_character_flag = rejected_by_arinniti
+		NOT = {
+			religion = luwian
+		}
+	}
+	abort_effect = {
+		set_character_flag = rejected_by_arinniti
+	}
+}

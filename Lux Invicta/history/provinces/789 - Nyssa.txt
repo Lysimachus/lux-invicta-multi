@@ -1,0 +1,23 @@
+# 381 - Nyssa
+
+# County Title
+title = c_nyssa
+
+# Settlements
+max_settlements = 4
+b_raseborg2 = castle
+
+b_espoo2 = city
+#b_porvoo2 = city
+
+#b_helsinge2 = castle
+
+#b_svartholm2 = castle
+#b_siuntio2 = castle
+#b_hanko2 = city
+#b_lohja2 = city
+
+
+# Misc
+culture = galatian
+religion = mithra_sol

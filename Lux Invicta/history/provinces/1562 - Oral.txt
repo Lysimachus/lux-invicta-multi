@@ -1,0 +1,21 @@
+# 1562 - Oral
+
+# County Title
+title = c_oral_aqtobe
+
+# Settlements
+max_settlements = 3
+b_kurgan2 = tribal
+b_vagay2 = temple
+
+#b_lebyazhe2 = castle
+#b_yurgamysh2 = castle
+#b_shumikha2 = castle
+#b_mishkino2 = castle
+#b_makushino2 = castle
+
+# Misc
+culture = cuman
+religion = tengri_pagan
+
+# History

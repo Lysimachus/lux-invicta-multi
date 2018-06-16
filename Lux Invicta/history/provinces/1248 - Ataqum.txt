@@ -1,0 +1,20 @@
+# 1248 - Ataqum
+
+# County Title
+title = c_kyzylorda
+
+# Settlements
+max_settlements = 4
+b_akmechet = tribal
+b_kazaly = temple
+
+#b_terenuzyak = castle
+#b_dzhanadzhol = castle
+#b_kyzyleginshi = castle
+#b_zhalagash = castle
+#b_sarytogay = city
+
+# Misc
+culture = turkish
+religion = tengri_bud
+1066.1.1 = { }

@@ -1,0 +1,19 @@
+# 325 - Arborea
+
+# County Title
+title = c_arborea
+
+# Settlements
+max_settlements = 3
+b_tharros = castle
+b_oristano = city
+b_sanluri = temple
+#b_santa_giusta = castle
+#b_pabillonis = castle
+#b_cabras = castle
+#b_fordongianus = castle
+#b_sorgono = castle
+
+# Misc
+culture = roman
+religion = graeco_roman

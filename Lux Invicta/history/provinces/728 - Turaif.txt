@@ -1,0 +1,20 @@
+# 715 - Al Habbariyah
+
+# County Title
+title = c_al_habbariyah
+
+# Settlements
+max_settlements = 1
+b_alhabbariyah = tribal
+#b_nukhaib = temple
+#b_shabakah = city
+
+#b_qutaysh = castle
+#b_aljirami = castle
+#b_adhaman = city
+#b_nuayj = castle
+#b_daydab = castle
+
+# Misc
+culture = bedouin_arabic
+religion = haruri

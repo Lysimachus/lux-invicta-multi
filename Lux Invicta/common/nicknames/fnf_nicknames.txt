@@ -1,0 +1,1917 @@
+#################################
+#These aren't new nicknames, but they were triggered-only in Vanilla
+#################################
+nick_the_hammer = {
+	allow = {
+		trait = brave
+		trait = champion
+		martial = 14
+		OR = {
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+	}
+	chance = {
+		factor = 3
+				
+		modifier = {
+			factor = 0.9
+			NOT = { prestige = 1000 }
+		}
+		
+		modifier = {
+			factor = 1.1
+			prestige = 1500
+		}
+		
+		modifier = {
+			factor = 1.2
+			tier = duke
+		}
+		
+		modifier = {
+			factor = 1.4
+			tier = king
+		}
+		
+		modifier = {
+			factor = 1.1
+			martial = 16
+		}
+		
+		modifier = {
+			factor = 1.15
+			trait = zealous
+		}
+		
+		
+		modifier = {
+			factor = 1.5
+			trait = brilliant_strategist
+		}
+		
+		modifier = {
+			factor = 1.25
+			trait = skilled_tactician
+		}
+		
+#		modifier = {
+#			factor = 5 #OBJGETNICK
+#			has_ambition = obj_get_nick
+#		}
+	}
+}
+nick_the_victorious = {
+	allow = {
+		NOT = {trait = craven}
+		OR={
+			trait = champion
+			trait = crusader	
+		}
+		martial = 14
+		OR = {
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+	}
+	chance = {
+		factor = 2
+				
+		modifier = {
+			factor = 0.9
+			NOT = { prestige = 1000 }
+		}
+		
+		modifier = {
+			factor = 1.1
+			prestige = 1500
+		}
+		
+		modifier = {
+			factor = 1.2
+			tier = duke
+		}
+		
+		modifier = {
+			factor = 1.4
+			tier = king
+		}
+		
+		modifier = {
+			factor = 1.1
+			martial = 16
+		}
+		
+		modifier = {
+			factor = 1.15
+			trait = veteran
+		}
+		
+		modifier = {
+			factor = 1.15
+			trait = zealous
+		}
+		
+		modifier = {
+			factor = 1.2
+			trait = brave
+		}
+		
+		modifier = {
+			factor = 2
+			trait = champion
+		}
+		
+		modifier = {
+			factor = 1.5
+			trait = brilliant_strategist
+		}
+		
+		modifier = {
+			factor = 1.25
+			trait = skilled_tactician
+		}
+		
+#		modifier = {
+#			factor = 5 #OBJGETNICK
+#			has_ambition = obj_get_nick
+#		}
+	}
+}
+
+nick_the_crusader = {
+	allow = {
+		trait = crusader
+		religion_group = christian
+		martial = 14
+		OR = {
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+	}
+	chance = {
+		factor = 2
+				
+		modifier = {
+			factor = 0.9
+			NOT = { prestige = 1000 }
+		}
+		
+		modifier = {
+			factor = 1.1
+			prestige = 1500
+		}
+		
+		modifier = {
+			factor = 1.2
+			tier = duke
+		}
+		
+		modifier = {
+			factor = 1.4
+			tier = king
+		}
+		
+		modifier = {
+			factor = 1.1
+			martial = 16
+		}
+		
+		modifier = {
+			factor = 1.15
+			trait = veteran
+		}
+		
+		modifier = {
+			factor = 1.15
+			trait = zealous
+		}
+		
+		modifier = {
+			factor = 1.2
+			trait = brave
+		}
+		
+		modifier = {
+			factor = 0.2
+			trait = craven
+		}
+		
+		modifier = {
+			factor = 2
+			trait = champion
+		}
+		
+		modifier = {
+			factor = 1.5
+			trait = brilliant_strategist
+		}
+		
+		modifier = {
+			factor = 1.25
+			trait = skilled_tactician
+		}
+		
+#		modifier = {
+#			factor = 5 #OBJGETNICK
+#			has_ambition = obj_get_nick
+#		}
+	}
+}
+nick_the_avenger = {
+	allow = {
+		NOT = {trait = craven}
+		OR = {
+			trait = champion
+			trait = crusader	
+		}
+		martial = 14
+		OR = {
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+	}
+	chance = {
+		factor = 2
+				
+		modifier = {
+			factor = 0.9
+			NOT = { prestige = 1000 }
+		}
+		
+		modifier = {
+			factor = 1.1
+			prestige = 1500
+		}
+		
+		modifier = {
+			factor = 1.2
+			tier = duke
+		}
+		
+		modifier = {
+			factor = 1.4
+			tier = king
+		}
+		
+		modifier = {
+			factor = 1.1
+			martial = 16
+		}
+		
+		modifier = {
+			factor = 1.15
+			trait = veteran
+		}
+		
+		modifier = {
+			factor = 1.15
+			trait = zealous
+		}
+		
+		modifier = {
+			factor = 1.2
+			trait = brave
+		}
+		
+		modifier = {
+			factor = 2
+			trait = champion
+		}
+		
+		modifier = {
+			factor = 1.5
+			trait = brilliant_strategist
+		}
+		
+		modifier = {
+			factor = 1.25
+			trait = skilled_tactician
+		}
+		
+#		modifier = {
+#			factor = 5 #OBJGETNICK
+#			has_ambition = obj_get_nick
+#		}
+	}
+}
+
+nick_the_brave = {
+	allow = {
+		martial = 10
+		trait = brave
+		OR = {
+			trait = tough_soldier
+			trait = brilliant_strategist
+			trait = skilled_tactician
+			trait = crusader
+			trait = veteran
+			trait = champion
+		}
+	}
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0.9
+			NOT = { prestige = 1000 }
+		}
+		modifier = {
+			factor = 1.05
+			prestige = 1500
+		}
+		
+		modifier = {
+			factor = 1.05
+			prestige = 2000
+		}
+		
+		modifier = {
+			factor = 1.05
+			tier = duke
+		}
+		
+		modifier = {
+			factor = 1.1
+			tier = king
+		}
+		
+		modifier = {
+			factor = 1.1
+			trait = veteran
+		}
+		
+		modifier = {
+			factor = 1.2
+			trait = champion
+		}
+		
+		modifier = {
+			factor = 2
+			trait = brilliant_strategist
+		}
+		
+		modifier = {
+			factor = 1.3
+			trait = skilled_tactician
+		}
+		
+#		modifier = {
+#			factor = 5 #OBJGETNICK
+#			has_ambition = obj_get_nick
+#		}
+	}
+}
+
+nick_the_fearless = {
+	allow = {
+		martial = 12
+		trait = brave
+		trait = veteran
+		OR = {
+			trait = brilliant_strategist
+			trait = skilled_tactician
+			trait = crusader
+			trait = champion
+		}
+	}
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0.9
+			NOT = { prestige = 1000 }
+		}
+		modifier = {
+			factor = 1.05
+			prestige = 1500
+		}
+		
+		modifier = {
+			factor = 1.05
+			prestige = 2000
+		}
+		
+		modifier = {
+			factor = 1.05
+			tier = duke
+		}
+		
+		modifier = {
+			factor = 1.1
+			tier = king
+		}
+		
+		modifier = {
+			factor = 1.2
+			trait = champion
+		}
+		
+		modifier = {
+			factor = 2
+			trait = brilliant_strategist
+		}
+		
+		modifier = {
+			factor = 1.3
+			trait = skilled_tactician
+		}
+		
+#		modifier = {
+#			factor = 5 #OBJGETNICK
+#			has_ambition = obj_get_nick
+#		}
+	}
+}
+nick_the_effeminate = {
+	allow = {
+		is_female = no
+		is_adult = yes
+		trait = homosexual
+	}
+	chance={
+		factor = 4
+		modifier = {
+			factor = 0.9
+			NOT = { prestige = 1000 }
+		}
+		modifier = {
+			factor = 1.05
+			prestige = 1500
+		}
+		
+		modifier = {
+			factor = 1.05
+			prestige = 2000
+		}
+		
+		modifier = {
+			factor = 1.05
+			tier = duke
+		}
+		
+		modifier = {
+			factor = 1.1
+			tier = king
+		}
+
+#		modifier = {
+#			factor = 5 #OBJGETNICK
+#			has_ambition = obj_get_nick
+#		}
+	}
+}
+nick_the_holy = {
+	allow={
+		piety = 500
+		NOR = {
+			trait = lustful
+			trait = hedonist
+			trait = cynical
+			trait = greedy
+			trait = proud
+			trait = cruel
+			trait = envious
+			trait = wroth
+		}
+	}
+	chance={
+		factor = 2
+		modifier = {
+			factor = 0.9
+			NOT = { prestige = 1000 }
+		}
+		
+		modifier = {
+			factor = 1.1
+			prestige = 1500
+		}
+		
+		modifier = {
+			factor = 1.1
+			prestige = 2000
+		}
+		
+		modifier = {
+			factor = 1.1
+			trait = kind
+		}
+
+		modifier = {
+			factor = 1.1
+			trait = temperate
+		}
+
+		modifier = {
+			factor = 1.1
+			trait = chaste
+		}
+		
+		modifier = {
+			factor = 1.1
+			trait = charitable
+		}
+		
+		modifier = {
+			factor = 1.1
+			trait = patient
+		}
+		
+		modifier = {
+			factor = 1.5
+			trait = zealous
+		}
+		
+		modifier = {
+			factor = 1.05
+			tier = duke
+		}
+		
+		modifier = {
+			factor = 1.5
+			trait = crusader
+		}
+		
+		modifier = {
+			factor = 1.2
+			tier = king
+		}
+		
+		modifier = {
+			factor = 1.3
+			piety = 750
+		}
+		
+		modifier = {
+			factor = 1.3
+			piety = 1000
+		}
+		modifier = {
+			factor = 1.3
+			piety = 1500
+		}
+		modifier = {
+			factor = 1.3
+			piety = 2000
+		}
+#		modifier = {
+#			factor = 5 #OBJGETNICK
+#			has_ambition = obj_get_nick
+#		}
+	}
+}
+nick_the_martyr = {
+	allow={
+		piety = 500
+		NOR = {
+			trait = lustful
+			trait = hedonist
+			trait = cynical
+			trait = greedy
+			trait = proud
+			trait = cruel
+			trait = envious
+			trait = wroth
+		}
+	}
+	chance={
+		factor = 2
+		modifier = {
+			factor = 0.9
+			NOT = { prestige = 1000 }
+		}
+		
+		modifier = {
+			factor = 1.1
+			prestige = 1500
+		}
+		
+		modifier = {
+			factor = 1.1
+			prestige = 2000
+		}
+		
+		modifier = {
+			factor = 1.05
+			tier = duke
+		}
+		
+		modifier = {
+			factor = 1.2
+			tier = king
+		}
+		
+		modifier = {
+			factor = 1.5
+			trait = crusader
+		}
+		
+		modifier = {
+			factor = 1.1
+			trait = champion
+		}
+		
+		modifier = {
+			factor = 1.5
+			trait = zealous
+		}
+		
+		modifier = {
+			factor = 1.3
+			piety = 750
+		}
+		
+		modifier = {
+			factor = 1.3
+			piety = 1000
+		}
+		modifier = {
+			factor = 1.3
+			piety = 1500
+		}
+		modifier = {
+			factor = 1.3
+			piety = 2000
+		}
+#		modifier = {
+#			factor = 5 #OBJGETNICK
+#			has_ambition = obj_get_nick
+#		}
+	}
+}
+nick_the_saint = {
+	allow = {
+		piety = 500
+		religion_group = christian
+		NOR = {
+			trait = lustful
+			trait = hedonist
+			trait = cynical
+			trait = greedy
+			trait = proud
+			trait = cruel
+			trait = envious
+			trait = wroth
+		}
+	}
+	chance={
+		factor = 2
+		modifier = {
+			factor = 0.9
+			NOT = { prestige = 1000 }
+		}
+		
+		modifier = {
+			factor = 1.1
+			prestige = 1500
+		}
+		
+		modifier = {
+			factor = 1.1
+			prestige = 2000
+		}
+		
+		modifier = {
+			factor = 1.05
+			tier = duke
+		}
+		
+		modifier = {
+			factor = 1.2
+			tier = king
+		}
+
+		modifier = {
+			factor = 1.3
+			piety = 750
+		}
+		
+		modifier = {
+			factor = 1.1
+			trait = kind
+		}
+
+		modifier = {
+			factor = 1.1
+			trait = temperate
+		}
+
+		modifier = {
+			factor = 1.5
+			trait = crusader
+		}
+		
+		modifier = {
+			factor = 1.1
+			trait = champion
+		}
+
+		modifier = {
+			factor = 1.1
+			trait = chaste
+		}
+		
+		modifier = {
+			factor = 1.1
+			trait = charitable
+		}
+		
+		modifier = {
+			factor = 1.1
+			trait = patient
+		}
+		
+		modifier = {
+			factor = 1.3
+			piety = 1000
+		}
+		
+		modifier = {
+			factor = 1.3
+			piety = 1500
+		}
+		
+		modifier = {
+			factor = 1.3
+			piety = 2000
+		}
+		
+#		modifier = {
+#			factor = 5 #OBJGETNICK
+#			has_ambition = obj_get_nick
+#		}
+	}
+}
+nick_the_clueless = {
+	allow = {
+		is_smart_trigger = no
+		NOR = {
+			diplomacy = 12
+			martial = 12
+			stewardship = 12
+			intrigue = 12
+			learning = 10
+			trait = diligent
+			trait = ambitious
+			trait = just
+		}
+		OR = {
+			is_dumb_trigger = yes
+			trait = inbred
+			trait = arbitrary
+			trait = amateurish_plotter
+			trait = naive_appeaser
+			trait = indulgent_wastrel
+			trait = misguided_warrior
+		}
+	}
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 1.5
+			OR = {
+				trait = slow
+				trait = dull
+			}
+		}
+		modifier = {
+			factor = 2
+			trait = imbecile
+		}
+		modifier = {
+			factor = 2
+			trait = inbred
+		}
+		modifier = {
+			factor = 1.2
+			tier = baron
+		}
+
+		modifier = {
+			factor = 0.85
+			tier = duke
+		}
+		
+		modifier = {
+			factor = 0.75
+			tier = king
+		}
+
+#		modifier = {
+#			factor = 5 #OBJGETNICK
+#			has_ambition = obj_get_nick
+#		}
+	}
+}
+###################### added BY ASH ####################
+########################### FRIENDS & FOES MOD #########
+
+nick_the_whiner = {
+	allow = {
+		age = 40
+		ruled_years = 5
+		
+		NOR = {
+			trait = greedy
+			trait = ambitious
+			trait = content
+			trait = brave
+			trait = diligent
+			trait = proud
+			trait = just
+			trait = genius
+			trait = trusting
+			martial = 7
+			diplomacy = 7
+		}
+		
+		trait = slothful
+		
+		OR = {
+			trait = selfpitying
+			trait = pessimistic
+			trait = moody
+			trait = nervous
+			trait = impatient
+			trait = demanding
+			trait = worrier
+			trait = harsh
+			trait = judgemental
+			trait = irrational
+			trait = frivolous
+		}
+		
+	}
+
+	chance = {
+		factor = 15		### was 10(BY ASH)
+		modifier = {
+			factor = 3.0
+			trait = selfpitying
+		}
+		modifier = {
+			factor = 2.0
+			trait = stressed
+		}
+		modifier = {
+			factor = 2.0
+			trait = irrational
+		}
+		modifier = {
+			factor = 2.0
+			trait = frivolous
+		}
+	}
+}
+
+nick_the_resolute = {
+	allow = {
+		age = 20
+		ruled_years = 10
+		prestige = 500
+		
+		diplomacy = 12
+		martial = 10
+
+		NOR = {
+			trait = humble
+			trait = shy
+			trait = craven
+			trait = cynical
+			trait = arbitrary
+			trait = deceitful
+		}
+		trait = diligent
+		OR = {
+			trait = stubborn
+			trait = constant
+			trait = oldfashioned
+			trait = predictable
+			trait = confident
+			trait = obstinate
+			trait = authoritative
+			trait = rigid
+		}
+		
+	}
+
+	chance = {
+		factor = 15		### was 10(BY ASH)
+		modifier = {
+			factor = 2.0
+			trait = rigid
+		}
+		modifier = {
+			factor = 3.0
+			trait = obstinate
+		}
+		modifier = {
+			factor = 2.0
+			trait = stubborn
+		}
+	}
+}
+
+nick_the_stallion = {
+	allow = {
+		age = 40
+		is_female = no
+		is_married = yes
+ 		num_of_children = 7
+		
+		martial = 10
+		
+		trait = lustful
+		OR = {
+			trait = sensual
+			trait = romantic
+			trait = energetic
+			trait = friendly
+			trait = lively
+			trait = shallow
+			trait = plain
+		}
+		
+	}
+
+	chance = {
+		factor = 15
+		modifier = {
+			factor = 2.0
+			trait = sensual
+		}
+		modifier = {
+			factor = 2.0
+			trait = lively
+		}
+		modifier = {
+			factor = 2.0
+			trait = energetic
+		}
+	}
+}
+
+nick_the_bottomlesspurse = {
+	allow = {
+		age = 30
+		is_smart_trigger = no
+		NOR = {
+			trait = temperate
+			trait = ambitious
+			trait = diligent
+			trait = just
+			trait = paranoid
+			trait = deceitful
+			stewardship = 8
+		}
+		trait = charitable
+		trait = indulgent_wastrel
+
+		OR = {
+			trait = careless
+			trait = unreliable
+			trait = fanciful
+			trait = vain
+			trait = impulsive
+			trait = pompous
+			trait = gullible
+			trait = submissive
+			trait = weakwilled
+			trait = frivolous
+			trait = impatient
+		}
+		
+	}
+
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 5.0
+			trait = fanciful
+		}
+		modifier = {
+			factor = 3.0
+			trait = pompous
+		}
+		modifier = {
+			factor = 3.0
+			trait = vain
+		}
+		modifier = {
+			factor = 3.0
+			trait = frivolous
+		}
+	}
+}
+
+nick_the_donothing = {
+	allow = {
+		age = 30
+		ruled_years = 5
+
+		NOR = {
+			trait = greedy
+			trait = brave
+			trait = proud
+			trait = ambitious
+			trait = idealistic
+			trait = just
+			trait = constant
+			trait = practical
+			trait = resentful
+			trait = money
+			trait = cunning
+			martial = 8
+			diplomacy = 8
+			stewardship = 7
+		}
+		
+		trait = slothful
+		OR = {
+			trait = inbred
+			is_dumb_trigger = yes
+			trait = incapable
+			trait = gardener
+			trait = drunkard
+		}
+#		OR = {
+#		trait = phlegmbbile
+#		trait = phlegmybile
+#		trait = bloodphlegm
+#		trait = bloodybile
+#		}
+		
+	}
+
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 6.0
+			trait = procrastinator
+		}
+		modifier = {
+			factor = 2.0
+			trait = stubborn
+		}
+		modifier = {
+			factor = 2.0
+			trait = irrational
+		}
+		modifier = {
+			factor = 2.0
+			trait = frivolous
+		}
+	}
+}
+
+nick_the_voiceofgod = {
+	allow = {
+		age = 20
+		prestige = 500
+		diplomacy = 12
+		martial = 10
+
+		NOR = {
+			trait = humble
+			trait = shy
+			trait = slothful
+			trait = hedonist
+			trait = craven
+			trait = cynical
+			trait = gullible
+			trait = impulsive
+			trait = selfish
+			trait = philosophical
+			trait = funny
+			trait = curious
+			trait = nervous
+			trait = shallow
+			trait = fickle
+			trait = tattler
+			trait = indecisive
+			trait = secretive
+			trait = familyperson
+			trait = procrastinator
+		}
+#		OR = {
+#		trait = ybilebbile
+#		trait = ybileblood
+#		trait = ybilephlegm
+#		trait = bloodybile
+#		trait = phlegmbbile
+#		}
+		
+	}
+
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 5.0
+			trait = bible
+		}
+		modifier = {
+			factor = 8.0
+			trait = loud
+		}
+		modifier = {
+			factor = 5.0
+			trait = naturalleader
+		}
+	}
+}
+
+nick_the_elegant = {
+	allow = {
+		age = 20
+		prestige = 500
+		diplomacy = 14
+
+		NOR = {
+			trait = shy
+			trait = callous
+			trait = firstinline
+			trait = submissive
+			trait = nervous
+			trait = worrier
+		}
+		trait = proud
+#		OR = {
+#		trait = ybilebbile
+#		trait = bloodybile
+#		trait = bloodphlegm
+#		}
+		
+	}
+
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 7.0
+			trait = graceful
+		}
+		modifier = {
+			factor = 4.0
+			trait = fanciful
+		}
+		modifier = {
+			factor = 3.0
+			trait = pompous
+		}
+	}
+}
+
+nick_the_impotent = {
+	allow = {
+		age = 50
+		is_female = no
+		is_married = yes
+ 
+
+		NOR = { 
+			num_of_children = 1
+			fertility = 0.4
+			prestige = 300
+		}
+		
+	}
+
+	chance = {
+		factor = 20
+		modifier = {
+			factor = 2.0
+			trait = infirm
+		}
+		modifier = {
+			factor = 2.0
+			trait = incapable
+		}
+		modifier = {
+			factor = 2.0
+			trait = syphilitic
+		}
+	}
+}
+
+nick_the_childless = {
+	allow = {
+		age = 50
+		piety = 300
+		trait = chaste
+		trait = celibate
+		is_married = yes
+
+		NOT = { 
+			num_of_children = 1
+		}
+		
+	}
+
+	chance = {
+		factor = 20
+		modifier = {
+			factor = 2.0
+			trait = spiritual
+		}
+		modifier = {
+			factor = 2.0
+			trait = bible
+		}
+	}
+}
+
+nick_the_pacific = {
+	allow = {
+		age = 20
+		piety = 300
+		learning = 12
+
+		NOR = {
+			trait = greedy
+			trait = cruel
+			trait = paranoid
+			trait = wroth
+			trait = ambitious
+			trait = brave
+			trait = arbitrary
+			trait = proud
+			trait = cynical
+			trait = eccentric
+			trait = rude
+			trait = moody
+			trait = irrational
+		}
+		
+		trait = kind
+		OR = {
+			trait = scholar
+			trait = gardener
+			trait = celibate
+		}
+#		OR = {
+#		trait = phlegmbbile
+#		trait = bloodbbile
+#		trait = phlegmblood
+		trait = calm
+#		}
+		
+	}
+
+	chance = {
+		factor = 10		### was 5 (BY ASH)
+		modifier = {
+			factor = 5.0
+			trait = spiritual
+		}
+		modifier = {
+			factor = 3.0
+			trait = bible
+		}
+		modifier = {
+			factor = 3.0
+			trait = familyperson
+		}
+		modifier = {
+			factor = 10
+			trait = calm
+		}
+	}
+}
+
+nick_the_booklover = {
+	allow = {
+		age = 25
+		learning = 16
+
+		NOR = {
+			trait = gregarious
+			trait = greedy
+			trait = cruel
+			trait = wroth
+			trait = paranoid
+			trait = procrastinator
+			trait = arbitrary
+			trait = proud
+			trait = cynical
+			trait = eccentric
+			trait = rude
+			trait = stoic
+			trait = irrational
+		}
+		
+		trait = scholar
+#		OR = {
+#		trait = phlegmbbile
+		trait = philosophical
+#		trait = phlegmblood
+#		}
+		
+	}
+
+	chance = {
+		factor = 10		### was 10(BY ASH)
+		modifier = {
+			factor = 3
+			trait = books
+		}
+		modifier = {
+			factor = 3
+			trait = bible
+		}
+		modifier = {
+			factor = 2
+			trait = philosophical
+		}
+	}
+}
+
+nick_the_velvethand = {
+	allow = {
+		age = 20
+		diplomacy = 14
+
+		NOR = {
+			trait = shy
+			trait = humble
+			trait = greedy
+			trait = cruel
+			trait = paranoid
+			trait = wroth
+			trait = fickle
+			trait = nervous
+			trait = noblespirit
+			trait = callous
+			trait = dogmatic
+			trait = hardworking
+			trait = firstinline
+			trait = romantic
+		}
+		
+		trait = kind
+#		OR = {
+#		trait = bloodphlegm
+#		trait = ybilebbile
+#		trait = bloodbbile
+#		}
+		
+	}
+
+	chance = {
+		factor = 10  ### was 5 (BY ASH)
+		modifier = {
+			factor = 3.0
+			trait = pompous
+		}
+		modifier = {
+			factor = 5.0
+			trait = graceful
+		}
+		modifier = {
+			factor = 3.0
+			trait = homosexual
+		}	
+		modifier = {
+			factor = 3.0
+			trait = eloquent
+		}	
+	}
+}
+
+nick_the_extravagant = {
+	allow = {
+		age = 20
+		ruled_years = 5
+		NOT = {
+		stewardship = 10
+		}
+		
+		trait = arbitrary
+		trait = charitable
+		
+		NOR = {
+			trait = shy
+			trait = temperate
+			trait = humble
+			trait = greedy
+			trait = cruel
+			trait = paranoid
+			trait = wroth
+			trait = goodintuition
+			trait = cautious
+			trait = noblespirit
+			trait = diligent
+			trait = dogmatic
+			trait = hardworking
+			trait = trusting
+			trait = gullible
+			trait = firstinline
+			trait = naturalleader
+			trait = manipulative
+			trait = cunning
+			trait = submissive
+		}
+		
+#		OR = {
+#		trait = bloodphlegm
+#		trait = ybilebbile
+#		trait = bloodbbile
+#		}
+		
+	}
+
+	chance = {
+		factor = 2   ### was 5 (BY ASH)
+		modifier = {
+			factor = 5.0
+			trait = pompous
+		}
+		modifier = {
+			factor = 5.0
+			trait = fanciful
+		}
+		modifier = {
+			factor = 5.0
+			trait = frivolous
+		}	
+	}
+}
+
+nick_the_outspoken = {
+	allow = {
+		age = 20
+		ruled_years = 5
+		prestige = 500
+		NOR = {
+			trait = cruel
+			trait = shy
+			trait = craven
+			trait = callous
+			trait = gullible
+			trait = trusting
+		}
+		trait = honest
+		OR = {
+			trait = eloquent
+			is_smart_trigger = yes
+			trait = clever
+#			trait = ybilebbile
+		}
+		
+	}
+
+	chance = {
+		factor = 10   ### was 10 (BY ASH)
+		modifier = {
+			factor = 4
+			trait = eloquent
+		}
+#		modifier = {
+#			factor = 2
+#			trait = ybilebbile
+#		}	
+	}
+}
+
+nick_the_beggar = {
+	allow = {
+		age = 20
+		ruled_years = 5
+		NOR = {
+			trait = charitable
+			trait = patient
+			trait = calm
+			trait = tolerant
+			trait = romantic
+			trait = trusting
+			trait = lively
+			trait = friendly
+			trait = funny
+			trait = quipster
+			trait = graceful
+			trait = fanciful
+			trait = pompous
+			trait = efficient
+		}
+		trait = humble
+		trait = greedy
+	}
+
+	chance = {
+		factor = 10   ### was 5 (BY ASH)
+		modifier = {
+			factor = 7.0
+			trait = haggler
+		}
+		modifier = {
+			factor = 3.0
+			trait = frugal
+		}
+		modifier = {
+			factor = 3.0
+			trait = plain
+		}	
+	}
+}
+
+nick_the_serious = {
+	allow = {
+		age = 20
+		ruled_years = 15
+		prestige = 500
+		NOR = {
+			trait = charitable
+			trait = patient
+			trait = calm
+			trait = tolerant
+			trait = romantic
+			trait = trusting
+			trait = lively
+			trait = friendly
+			trait = funny
+			trait = quipster
+			trait = gregarious
+			trait = fanciful
+		}
+		trait = proud
+		trait = diligent
+	}
+
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 5.0
+			trait = unfriendly
+		}
+		modifier = {
+			factor = 5.0
+			trait = reserved
+		}
+		modifier = {
+			factor = 5.0
+			trait = authoritative
+		}
+		modifier = {
+			factor = 5.0
+			trait = stoic
+		}
+		modifier = {
+			factor = 5.0
+			trait = harsh
+		}
+		modifier = {
+			factor = 5.0
+			trait = idealistic
+		}
+		modifier = {
+			factor = 5.0
+			trait = demanding
+		}
+		modifier = {
+			factor = 5.0
+			trait = callous
+		}
+		modifier = {
+			factor = 5.0
+			trait = worrier
+		}
+		modifier = {
+			factor = 5.0
+			trait = pessimistic
+		}
+		modifier = {
+			factor = 5.0
+			trait = judgemental
+		}
+	}
+}
+
+nick_the_silkytongue = {
+	allow = {
+		age = 20
+		diplomacy = 14
+		intrigue = 8
+		NOR = {
+			trait = shy
+			trait = wroth
+			trait = honest
+			trait = slothful
+			trait = content
+			trait = humble
+			trait = trusting
+			trait = secretive
+			trait = reserved
+		}
+		trait = proud
+	}
+
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 3.0
+			trait = homosexual
+		}
+		modifier = {
+			factor = 3.0
+			trait = quipster
+		}
+		modifier = {
+			factor = 7.0
+			trait = eloquent
+		}
+		modifier = {
+			factor = 3.0
+			trait = graceful
+		}
+		modifier = {
+			factor = 3.0
+			trait = clever
+		}
+		modifier = {
+			factor = 3.0
+			trait = bible
+		}
+		modifier = {
+			factor = 3.0
+			trait = manipulative
+		}
+		modifier = {
+			factor = 3.0
+			trait = cunning
+		}
+		modifier = {
+			factor = 5.0
+			trait = genius
+		}
+	}
+}
+
+nick_the_sour = {
+	allow = {
+		age = 20
+		ruled_years = 5
+		NOR = {
+			trait = charitable
+			trait = patient
+			trait = calm
+			trait = tolerant
+			trait = romantic
+			trait = trusting
+			trait = lively
+			trait = friendly
+			trait = funny
+			trait = quipster
+			trait = gregarious
+		}
+		trait = proud
+		trait = envious
+	}
+
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 5.0
+			trait = unfriendly
+		}
+		modifier = {
+			factor = 5.0
+			trait = irrational
+		}
+		modifier = {
+			factor = 3.0
+			trait = bloodthirsty
+		}
+		modifier = {
+			factor = 5.0
+			trait = stoic
+		}
+		modifier = {
+			factor = 5.0
+			trait = harsh
+		}
+		modifier = {
+			factor = 5.0
+			trait = demanding
+		}
+	}
+}
+
+nick_the_foul = {
+	allow = {
+		age = 20
+		trait = ugly
+		trait = rude
+		OR = { 
+			trait = cynical
+			trait = gluttonous
+		}
+
+	}
+	chance = {
+		factor = 15
+		modifier = {
+			factor = 3
+			trait = hunchback
+		}
+		modifier = {
+			factor = 3
+			trait = dwarf
+		}
+	}
+}
+
+nick_the_vicious = {
+	allow = {
+		age = 20
+		ruled_years = 5
+		NOR = {
+			trait = charitable
+			trait = kind
+			trait = calm
+			trait = tolerant
+			trait = romantic
+			trait = trusting
+			trait = humble
+			trait = friendly
+			trait = funny
+		}
+		trait = cruel
+		trait = impaler
+	}
+
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 5.0
+			trait = unfriendly
+		}
+		modifier = {
+			factor = 5.0
+			trait = irrational
+		}
+		modifier = {
+			factor = 5.0
+			trait = bloodthirsty
+		}
+		modifier = {
+			factor = 5.0
+			trait = unreliable
+		}
+		modifier = {
+			factor = 10.0
+			trait = kinslayer
+		}
+	}
+}
+
+nick_the_depraved = {
+	allow = {
+		age = 20
+		ruled_years = 5
+		NOR = {
+			trait = kind
+			trait = diligent
+			trait = temperate
+			trait = patient
+		}
+		trait = cynical
+		trait = lustful
+		trait = cruel
+		OR = { 
+		trait = ugly
+		trait = rude
+		trait = sensual
+		}
+
+	}
+	chance = {
+		factor = 10
+		modifier = {
+			factor = 3.0
+			trait = rude
+		}
+		modifier = {
+			factor = 3.0
+			trait = sensual
+		}
+		modifier = {
+			factor = 3.0
+			trait = hunchback
+		}
+		modifier = {
+			factor = 3.0
+			trait = dwarf
+		}
+	}
+}
+
+nick_the_spineless = {
+	allow = {
+		age = 20
+		ruled_years = 10
+		NOR = {
+			trait = wroth
+			trait = just
+			trait = duelist
+			trait = ambitious
+			trait = cruel
+		}
+		trait = craven
+	}
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 3.0
+			trait = indecisive
+		}
+		modifier = {
+			factor = 3.0
+			trait = selfpitying
+		}
+		modifier = {
+			factor = 5.0
+			trait = weakwilled
+		}
+		modifier = {
+			factor = 3.0
+			trait = unreliable
+		}
+		modifier = {
+			factor = 2.0
+			trait = calm
+		}
+		modifier = {
+			factor = 2.0
+			trait = cautious
+		}
+		modifier = {
+			factor = 5.0
+			trait = fickle
+		}
+	}
+
+}
+
+nick_one_eye = {
+	allow = {
+		age = 10
+		trait = maimed
+	}
+	chance = {
+		factor = 1
+	}
+}
+
+nick_the_broken = {
+	allow = {
+		age = 50
+
+		NOR = {
+			trait = greedy
+			trait = envious
+			trait = brave
+			trait = ambitious
+			trait = diligent
+			trait = proud
+			trait = hardworking
+			trait = energetic
+			trait = just
+			trait = genius
+		}
+		any_spouse_even_if_dead = {
+			is_alive = no
+		}
+		OR = {
+			trait = stressed
+			trait = depressed
+			trait = incapable
+		}
+		
+		
+	}
+
+	chance = {
+		factor = 2		### BY ASH
+		modifier = {
+			factor = 3.0
+			trait = selfpitying
+		}
+		modifier = {
+			factor = 2.0
+			trait = depressed
+		}
+		modifier = {
+			factor = 2.0
+			trait = worrier
+		}
+		modifier = {
+			factor = 2.0
+			trait = irrational
+		}
+		modifier = {
+			factor = 2.0
+			trait = pessimistic
+		}
+		modifier = {
+			factor = 2.0
+			trait = moody
+		}
+	}
+}

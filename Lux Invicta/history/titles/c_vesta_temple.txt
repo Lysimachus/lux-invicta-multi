@@ -1,0 +1,6 @@
+1060.1.1 = {
+	law = succ_open_elective
+	law = enatic_succession
+	holder = 1715926
+	liege = "k_naples"
+}

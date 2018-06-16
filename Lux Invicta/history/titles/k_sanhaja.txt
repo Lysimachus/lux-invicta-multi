@@ -1,0 +1,7 @@
+1060.1.1=
+{
+	holder=801
+	law = cognatic_succession
+	law = status_of_women_3
+	historical_nomad = yes
+}

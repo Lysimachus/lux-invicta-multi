@@ -1,0 +1,20 @@
+
+# 593 - Alatyr
+
+# County Title
+title = c_chuvash
+
+# Settlements
+max_settlements = 4
+b_vedasuvar = tribal
+b_makaryevo = temple
+
+#b_alatyr = castle
+#b_kozlovka = castle
+#b_sundyr = castle
+#b_tsivilsk = castle
+#b_yadrin = castle
+
+# Misc
+culture = bulgar
+religion = chumbylat

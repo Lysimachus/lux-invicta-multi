@@ -1,0 +1,12 @@
+# 893 - Zvongombe
+
+# County Title
+title = c_zvongombe
+
+# Settlements
+max_settlements = 2
+b_zvongombe = castle
+
+# Misc
+culture = shona
+religion = mwari

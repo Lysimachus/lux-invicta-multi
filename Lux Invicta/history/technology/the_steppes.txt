@@ -1,0 +1,77 @@
+#THE STEPPES
+
+technology = {
+	titles = {
+		d_arakhosia				#Added
+		d_badashan				#Added
+		d_baktria				#Added
+		d_gedrosia				#Added
+		d_zarangiana			#Added
+		d_verkana				#Added
+		d_almatu				#Added
+		d_balkhash				#Added
+		d_aral					#Added
+		d_bashkiria				#Added
+		d_aktobe				#Added
+		d_tyumen				#Added
+		d_oral					#Added
+		d_altai					#Added
+		d_yugh					#Added
+		d_ngari					#Added
+		d_nagqu					#Added
+		d_lhasa					#Added
+		d_shigatse				#Added
+		d_srinagara				#Added
+		d_pamir					#Added
+		d_leh					#Added
+		d_komiland				#Added
+		d_lapland				#Added
+		d_tuniit_nunaat			#Added
+		d_perm					#Checked
+#		d_yugra					#Checked - absent
+		d_itil					#Checked
+		d_sarkel				#Checked
+#		d_yaik					#Checked - absent
+#		d_sibir					#Checked - absent
+		d_kipchak				#Checked
+#		d_kimak					#Checked - absent
+#		d_kirghiz				#Checked - absent
+		d_crimea				#Checked
+		d_alania				#Checked
+		d_azov					#Checked
+#		d_turkestan				#Checked - absent
+#		d_zhetysu				#Checked - absent
+		d_syr_darya				#Checked
+#		d_khiva					#Checked
+#		d_samarkand				#Checked - absent
+		d_bulgar				#Checked
+		d_hlynov				#Checked
+		d_bjarmia				#Checked
+		d_cheremisa				#Checked
+		
+		d_merv					#Checked
+#		d_dihistan				#Checked - absent
+		d_beloozero				#Checked
+	}
+
+	#preliminary flattening
+	1066 = { 
+		military = 0.0
+		economy = 0.0
+		culture = 0.0		
+	}
+}
+
+# Trade republics
+technology = {
+	titles = {
+		d_cherson				#Checked
+	}
+
+	1066 = {
+		military = 0.0
+		economy = 0.1
+		culture = 0.0
+		TECH_TRADE_PRACTICES = 1.0
+	}
+}

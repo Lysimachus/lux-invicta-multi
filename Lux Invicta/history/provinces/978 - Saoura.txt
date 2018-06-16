@@ -1,0 +1,12 @@
+# 909 - Sahara Desert
+
+# County Title
+title = c_bechar
+
+# Settlements
+max_settlements = 1
+b_bechar = tribal
+
+# Misc
+culture = berber
+religion = gurzil

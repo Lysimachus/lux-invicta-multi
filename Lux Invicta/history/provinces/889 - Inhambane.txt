@@ -1,0 +1,13 @@
+# 889 - Inhambane
+
+# County Title
+title = c_inhambane
+
+# Settlements
+max_settlements = 3
+b_inhambane = tribal
+#b_matola = city
+
+# Misc
+culture = zulu
+religion = zulu_pagan

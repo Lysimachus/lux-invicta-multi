@@ -1,0 +1,140 @@
+#######################################
+# DECISIONS
+#######################################
+
+# grant_estate = {
+	# grant_limit = 1
+	
+	# allow = {
+		# FROM = { ai = no wealth = 50 }
+		# is_ruler = no
+		# NOT = {
+			# has_character_modifier = estates_5
+		# }
+	# }
+	
+	# gain_effect = {
+		# FROM = { character_event = { id = liestates.1 } }
+	# }
+	
+	# lose_effect = { }
+	
+	# message = no
+# }
+
+
+
+title_lord = {
+	dignity = 0.01
+	realm_in_name = yes
+	grant_limit = 1000
+	opinion_effect = 0
+	
+	allowed_to_hold = {
+		OR = {
+			primary_title = { temporary = no }
+			NOT = {
+				primary_title = {
+					always = yes
+				}
+			}
+		}
+		has_minor_title = title_lord
+	}
+	
+	allowed_to_grant = {
+		always = no		#By event only
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = no
+}
+
+title_king_of_romans = {
+	dignity = 150
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = yes
+	realm_in_name = no
+	
+	monthly_prestige = 0.5
+	
+	allowed_to_hold = {
+		OR = {
+			primary_title = { temporary = no }
+			NOT = {
+				primary_title = {
+					always = yes
+				}
+			}
+		}
+		age = 16
+		is_female = no
+		is_primary_heir = yes
+	}
+	allowed_to_grant = {
+		OR = {
+			is_feudal = yes
+			is_tribal = yes
+		}
+		OR = {
+			has_landed_title = e_hre
+			has_landed_title = e_roman_empire
+		}
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+#Buddhist
+
+title_saintly_monk = {
+	dignity = 0.01
+	grant_limit = 2
+	opinion_effect = 10
+	
+	monthly_prestige = 0.02
+	
+	allowed_to_hold = {
+		OR = {
+			primary_title = { temporary = no }
+			NOT = {
+				primary_title = {
+					always = yes
+				}
+			}
+		}
+		age = 16
+		LI_bud_trigger = yes
+		is_theocracy = yes
+		is_ruler = yes
+	}
+	allowed_to_grant = {
+		LI_bud_trigger = yes
+		OR = {
+			is_feudal = yes
+			is_merchant_republic = yes
+		}
+		primary_title = {
+			OR = {
+				tier = king
+				tier = emperor
+			}
+		}
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}

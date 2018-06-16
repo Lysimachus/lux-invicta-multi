@@ -1,0 +1,17 @@
+# 769 - Safed
+
+# County Title
+title = c_safed
+
+# Settlements
+max_settlements = 4
+b_damascus = castle
+b_dumayr = city
+b_mt_hermon = temple
+
+#b_kumidi = castle
+
+# Misc
+culture = levantine_arabic
+religion = murjiah
+1066.1.1 = { }

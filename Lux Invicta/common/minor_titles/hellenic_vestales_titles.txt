@@ -1,0 +1,76 @@
+title_vestalis = {
+	dignity = 0.91
+	grant_limit = 5
+	opinion_effect = 10
+	show_as_title = yes
+	revoke_allowed = no
+
+	monthly_salary = 0.005
+	monthly_prestige = 0.300
+	monthly_piety = 0.100
+
+	allowed_to_hold = {
+		OR = {
+			primary_title = { temporary = no }
+			NOT = {
+				primary_title = {
+					always = yes
+				}
+			}
+		}
+		trait = vestalis
+	}
+	
+	allowed_to_grant = {
+		always = no
+	}
+
+	gain_effect = {
+		remove_trait = hedonist
+		add_trait = celibate
+		add_trait = vestalis
+		recalc_succession = yes
+		set_character_flag = flag_vestalis
+		c_vesta_temple = { owner = { change_variable = { which = "num_vestales" value = 1 } } }
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_vestalis_maxima = {
+	dignity = 0.92
+	grant_limit = 1
+	opinion_effect = 15
+	show_as_title = yes
+	revoke_allowed = no
+	
+	monthly_salary = 0.010
+	monthly_prestige = 0.500
+	monthly_piety = 0.200
+
+	allowed_to_hold = {
+		OR = {
+			primary_title = { temporary = no }
+			NOT = {
+				primary_title = {
+					always = yes
+				}
+			}
+		}
+		trait = vestalis
+	}
+	
+	allowed_to_grant = {
+		always = no
+	}
+
+	gain_effect = {
+		remove_title = title_vestalis
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}

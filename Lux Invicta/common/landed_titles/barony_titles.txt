@@ -1,0 +1,230 @@
+######################################
+#  Merchant Republic Palaces
+######################################
+
+### Ulster
+b_halfdaning = {
+	culture = norsegael
+	religion = norse_pagan
+}
+
+b_uineill = {
+	culture = irish
+	religion = celtic_pagan
+}
+
+b_manaw = {
+	culture = brython
+	religion = celtic_pagan
+}
+
+b_macgregoir = {
+	culture = scottish
+	religion = celtic_christ
+}
+
+b_macraghnal = {
+	culture = norsegael
+	religion = lugh
+}
+
+### Bergen
+b_bergenberger = {
+	culture = norwegian
+	religion = catholic
+}
+
+b_tronde = {
+	culture = norwegian
+	religion = norse_pagan
+}
+
+b_gautske = {
+	culture = geat
+	religion = norse_christ
+}
+
+b_falk = {
+	culture = swedish
+	religion = norse_war
+}
+
+b_viss = {
+	culture = norwegian
+	religion = catholic
+}
+
+### Cherson
+b_dalassenos = {
+	culture = greek
+	religion = audianist
+}
+
+b_amelungs = {
+	culture = ostrogothic
+	religion = antinomian
+}
+
+b_demopilos = {
+	culture = hellenistic
+	religion = sol_boreas
+}
+
+b_drakon = {
+	culture = greek
+	religion = audianist
+}
+
+b_hektorios = {
+	culture = hellenistic
+	religion = graeco_roman
+}
+
+### Athens
+b_athenaios = {
+	culture = greek
+	religion = neoplato
+}
+
+b_heraklides = {
+	culture = hellenistic
+	religion = graeco_roman
+}
+
+b_alcmaeonid = {
+	culture = hellenistic
+	religion = neoplato
+}
+
+b_xiphilinos = {
+	culture = greek
+	religion = plato_christ
+}
+
+b_mamonas = {
+	culture = greek
+	religion = sol
+}
+
+### Rhodos = {
+b_apollonios = {
+	culture = hellenistic
+	religion = sol_apollo
+}
+
+### Carthago Nova
+b_gundericing = {
+	culture = vandal
+	religion = mithra
+}
+
+### Aqabah
+b_rabbel = {
+	culture = nabatean
+	religion = shams
+}
+
+### Pwenet ( Back to being a feudal to calibrate the number of republics in the zone )
+# b_talabid = {
+	# culture = sabaean
+	# religion = talab
+# }
+
+### Suqotra
+b_latid = {
+	culture = sabaean
+	religion = allat
+}
+
+### Hormuz
+b_hormuzi = {
+	culture = persian
+	religion = zor_hindu
+}
+
+### Maitraka
+b_maitraka = {
+	culture = saurashtra
+	religion = bud_bahusrutiya
+}
+
+### Diva
+b_indica = {
+	culture = roman
+	religion = bud_mahayana
+}
+
+### Mombasa
+b_badranga = {
+	culture = swahili
+	religion = mazdakism
+}
+
+### Aboisso
+b_konare = {
+	culture = mandinka
+	religion = anansi
+}
+
+### Rhapta
+b_rhaptaios = {
+	culture = hellenistic
+	religion = dionysos
+}
+
+### Kambra (Qarthadast)
+b_hannolid = {
+	culture = phoenician
+	religion = hadad
+}
+
+### OFFMAP SITES ###
+#Invader Home Cities#
+c_tenochtitlan = {
+	color = { 19 20 21 }
+	landless = yes
+	culture = nahuatl
+	religion = aztec
+	holy_site = aztec
+}
+c_teotihuacan = {
+	color = { 16 17 18 }
+	landless = yes
+	culture = nahuatl
+	religion = aztec
+	holy_site = aztec
+}
+c_cemanahuac = {
+	color = { 13 14 15 }
+	landless = yes
+	culture = nahuatl
+	religion = aztec
+}
+c_tzintzuntzan = {
+	color = { 10 11 12 }
+	landless = yes
+	culture = nahuatl
+	religion = aztec
+}
+
+#Holy Sites
+c_nishan = {
+	color = { 7 8 9 }
+	landless = yes
+	culture = han
+	religion = confucian
+	holy_site = confucian
+}
+c_alexandria_tsangana = {
+	color = { 4 5 6 }
+	landless = yes
+	culture = han
+	religion = indoh_confucian
+	holy_site = indoh_confucian
+}
+c_nunavik = {
+	color = { 1 2 3 }
+	landless = yes
+	culture = tuniq
+	religion = inuit_pagan
+}

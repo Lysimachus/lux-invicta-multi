@@ -1,0 +1,13 @@
+# 933 - Roslavl
+
+# County Title
+title = c_roslavl
+
+# Settlements
+max_settlements = 2
+b_roslavl = tribal
+
+# Misc
+culture = russian
+religion = slavic_pagan
+1066.1.1 = { }

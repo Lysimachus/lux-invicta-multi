@@ -1,0 +1,13 @@
+# 879 - Lukuledi
+
+# County Title
+title = c_lukuledi
+
+# Settlements
+max_settlements = 2
+b_lukuledi = tribal
+b_muidumbe = temple
+
+# Misc
+culture = makonde
+religion = makonde_pagan

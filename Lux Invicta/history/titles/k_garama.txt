@@ -1,0 +1,6 @@
+1066.1.1={
+	holder = 163004
+	law = agnatic_succession
+	historical_nomad = yes
+	law = status_of_women_2
+}

@@ -1,0 +1,17 @@
+# 709 - Asas
+
+# County Title
+title = c_asas
+
+# Settlements
+max_settlements = 4
+
+b_rakka = castle
+b_tabqa = city
+b_resafa = temple
+#b_jazrah = castle
+#b_hamat = castle
+
+# Misc
+culture = greek
+religion = malakbel

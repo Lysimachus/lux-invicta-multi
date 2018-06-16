@@ -1,0 +1,15 @@
+# 932 - Tjust
+
+# County Title
+title = c_tjust
+
+# Settlements
+max_settlements = 2
+
+b_tornsfall = tribal
+#b_vastervik = city
+
+# Misc
+culture = geat
+religion = norse_pagan
+1066.1.1 = { }

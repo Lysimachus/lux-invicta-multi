@@ -1,0 +1,15 @@
+# 1240 - Almatu
+
+# County Title
+title = c_almatu
+
+# Settlements
+max_settlements = 5
+b_kaskelen = tribal
+#b_boralday =
+#b_karaoy =
+#b_chemolgan =
+
+# Misc
+culture = hunnic
+religion = erlik

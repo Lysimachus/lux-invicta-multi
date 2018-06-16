@@ -1,0 +1,17 @@
+# 1252 - Otrar
+
+# County Title
+title = c_otrar
+
+# Settlements
+max_settlements = 6
+b_zarnuk = tribal
+b_talapty = temple
+#b_bayaldyr =
+#b_shaulder =
+#b_chingildy =
+#b_kumkal =
+
+# Misc
+culture = turkish
+religion = bud_pureland

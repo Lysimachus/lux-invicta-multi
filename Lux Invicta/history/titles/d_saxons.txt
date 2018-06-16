@@ -1,0 +1,27 @@
+765.1.1 = {
+	holder = 1740000
+	law = agnatic_succession
+}
+785.1.25 = {
+	holder = 1740001
+}
+835.12.25 = {
+	holder = 1740005
+}
+876.1.1 = {
+	holder = 1740003
+}
+953.10.12 = {
+	holder = 1740002
+}
+983.1.27 = {
+	holder = 1740006
+}
+1001.2.26 = {
+	holder = 1740008
+}
+1060.2.3={
+	holder = 224
+	law = cognatic_succession
+	law = status_of_women_3
+}
